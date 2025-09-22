@@ -96,13 +96,13 @@ export default function Home() {
 
       <div className="w-full h-200 items-center justify-between md:flex md:max-w-7xl mx-auto">
         <div className="md:mt-20 mt-30 relative w-full h-200 md:max-w-mx md:mx-2">
-          <div className="mt-40 md:flex md:justify-between md:items-center lg:mx-0 mx-5">
+          <div className=" max-w-90 sm:max-w-180 mt-40 md:flex md:justify-between md:items-center lg:mx-0 mx-5">
             <div>
               <h2 className="text-4xl text-white font-inriasans font-bold mb-6">
              About Us
              <span className="block w-16 h-[2px] bg-red-600 mt-2"></span>
             </h2>
-            <p className="font-inriasans mb-6 leading-relaxed text-gray-200 md:max-w-xl max-w-80 sm:max-w-full">
+            <p className="font-inriasans mb-6 leading-relaxed text-gray-200 md:max-w-xl md:max-w-280 max-w-80 sm:max-w-full ">
               Welcome to The Coffee Shop by AIDA Group, the newest and trendiest coffee shop in Bentota, Sri Lanka. 
               We serve authentic Lavazza coffee, brewed to perfection on our professional LaCimbali espresso machine, 
               paired with a wide selection of freshly baked pastries, signature cakes, fresh juices, and smoothies.
