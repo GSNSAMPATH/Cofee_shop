@@ -7,17 +7,17 @@ export default function BlogSection() {
     {
       title: "OUR BLOG",
       desc: "Our blog brings together stories from coffee culture, travel, and AIDA’s legacy in hospitality",
-      image: "/galleryimage2.jpg", // replace with your real images
+      image: "/about (2).jpg", // replace with your real images
     },
     {
       title: "OUR BLOG",
       desc: "Best Coffee Shops in Bentota – Why AIDA’s Coffee Shop",
-      image: "/galleryimage2.jpg",
+      image: "/about (2).jpg",
     },
     {
       title: "OUR BLOG",
       desc: "Discover the art of brewing coffee with AIDA’s experts",
-      image: "/galleryimage2.jpg",
+      image: "/about (2).jpg",
     },
   ];
 
@@ -43,8 +43,8 @@ export default function BlogSection() {
           transition={{ duration: 0.8, delay: 0.2 }}
           viewport={{ once: true }}
         >
-          Our blog brings together stories from coffee culture, travel, and
-          AIDA’s legacy in hospitality
+          Our blog brings together stories from coffee culture, travel, and AIDA’s legacy in hospitality
+          Best Coffee Shops in Bentota – Why AIDA’s Coffee Shop
         </motion.p>
 
         {/* Blog Cards */}
@@ -69,8 +69,8 @@ export default function BlogSection() {
 
               {/* Overlay */}
               <div className="absolute inset-0 bg-black/40 flex flex-col justify-end p-6 transition duration-500 group-hover:bg-black/60">
-                <h3 className="text-white text-xl font-bold">{blog.title}</h3>
-                <p className="text-white/80 text-sm mt-2">{blog.desc}</p>
+                <h3 className="text-white text-xl text-left font-bold">{blog.title}</h3>
+                <p className="text-white/80 text-left text-sm mt-2">{blog.desc}</p>
               </div>
             </motion.div>
           ))}

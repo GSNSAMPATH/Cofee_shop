@@ -97,23 +97,24 @@ export default function Home() {
       <div className="w-full h-200 items-center justify-between md:flex md:max-w-7xl mx-auto">
         <div className="md:mt-20 mt-30 relative w-full h-200 md:max-w-mx md:mx-2">
           <div className="mt-40 md:flex md:justify-between md:items-center lg:mx-0 mx-5">
-            <div><h2 className="text-4xl text-white font-inriasans font-bold mb-6">
+            <div>
+              <h2 className="text-4xl text-white font-inriasans font-bold mb-6">
              About Us
              <span className="block w-16 h-[2px] bg-red-600 mt-2"></span>
             </h2>
-            <p className="font-inriasans mb-6 leading-relaxed text-gray-200 md:max-w-xl max-w-80">
+            <p className="font-inriasans mb-6 leading-relaxed text-gray-200 md:max-w-xl max-w-80 sm:max-w-full">
               Welcome to The Coffee Shop by AIDA Group, the newest and trendiest coffee shop in Bentota, Sri Lanka. 
               We serve authentic Lavazza coffee, brewed to perfection on our professional LaCimbali espresso machine, 
               paired with a wide selection of freshly baked pastries, signature cakes, fresh juices, and smoothies.
             </p>
-            <p className="leading-relaxed text-gray-300 md:max-w-xl max-w-80">
+            <p className="leading-relaxed text-gray-300 sm:max-w-full max-w-80">
               Our café is designed as a work-friendly, relaxing, and aesthetic space, perfect for travelers, locals, and 
               digital nomads looking for a cozy spot with WiFi. As part of the trusted AIDA Group, known for over 50 years 
               in hospitality, we bring you not just coffee—but a full lifestyle experience in the heart of Bentota.
             </p>
             </div>
           </div>
-          <div className="relative justify-center md:flex mr-20 mt-10">
+          <div className="relative justify-center md:flex mr-20 mt-10 ">
             <div className="grid grid-cols-2 w-fit mx-auto text-center text-white divide-x divide-y divide-white ">
               {Array(4)
                 .fill("10+")
@@ -173,7 +174,7 @@ export default function Home() {
       </section>
       <section className=" py-16 bg-black w-full">
           <div className="w-full items-center justify-between md:flex md:max-w-7xl mx-auto ">
-              <div className="mt-0md:flex md:justify-between md:items-center md:mx-0 mx-5">
+              <div className="mt-0md:flex md:justify-between md:items-center lg:mx-0 mx-5">
                 <h2 className="text-white text-3xl font-bold text-center mb-10 relative inline-block mx-auto">
                   OUR MENU
                   <span className="block w-16 h-[2px] bg-red-600 mt-2 "></span>
@@ -185,7 +186,7 @@ export default function Home() {
 
       <section className="py-16 bg-black w-full">
         <div className="w-full items-center justify-between md:flex md:max-w-7xl mx-auto">
-            <div className="mt-0 md:justify-between md:items-center md:mx-0 mx-5">
+            <div className="mt-0 md:justify-between md:items-center lg:mx-0 mx-5">
               <h2 className="text-white text-3xl font-bold text-center mb-1 relative inline-block mx-auto">
                 OUR SERVICES
                 <span className="block w-16 h-[2px] bg-red-600 mt-2"></span>
