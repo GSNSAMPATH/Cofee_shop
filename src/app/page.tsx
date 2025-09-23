@@ -200,12 +200,12 @@ export default function Home() {
         <Service />
       </section>
       <section className="bg-gradient-to-r from-black to-[#4E2A20] h-full py-16 mt-40 m:mt-0 mt-40 w-full">
-        <div className="w-full items-center justify-between md:flex md:max-w-7xl mx-auto">
+        <div className="w-full items-center justify-between md:flex  mx-auto">
                 <CustomerFeedback />
         </div>
       </section>
       <section className="bg-gradient-to-t from-black to-[#4E2A20] h-full py-16 md:mt-10 mt-40 w-full">
-         <div className="w-full items-center justify-between md:flex md:max-w-7xl mx-auto">
+         <div className="w-full items-center justify-between md:flex  mx-auto">
            <BlogSection/>
          </div>
        

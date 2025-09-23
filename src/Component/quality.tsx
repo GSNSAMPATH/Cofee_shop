@@ -1,14 +1,11 @@
 "use client";
 import Image from "next/image";
 
-export default function CustomerFeedback() {
+export default function Quality() {
   const feedbacks = [
     {
       name: "Customer",
-      position: "Position",
-      image: "/9abbe7b302816291cf6ff286092702df2db92c25.jpg",
-      rating: 5,
-      text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum amet, consectetur adipisicing elit.",
+      text: " We proudly serve Lavazza, one of the world’s finest coffee brands, to ensure every cup meets international standards —while our setting, hospitality, and atmosphere reflect the warm soul of Sri Lanka.",
     },
     {
       name: "Customer",
@@ -27,14 +24,8 @@ export default function CustomerFeedback() {
   ];
 
   return (
- 
-      <div className="container mx-auto py-16 px-6 text-center">
-        {/* Title */}
-        <h2 className="text-center text-white text-3xl font-bold mb-12">
-          OUR CUSTOMERS FEEDBACK
-          <span className="block w-16 h-[2px] bg-red-600 mx-auto  mt-2"></span>
-        </h2>
-
+    <section className="">
+      <div className="max-w-auto  mx-auto px-6">
         {/* Grid Layout */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
           {feedbacks.map((item, i) => (
@@ -45,33 +36,29 @@ export default function CustomerFeedback() {
               {/* Top part */}
               <div className="flex items-center mb-4">
                 <Image
-                  src={item.image}
+                  src="/405a13dc41782b46aad8026d211eadca804f85a3.png"
                   alt={item.name}
-                  width={50}
-                  height={50}
+                  width={60}
+                  height={60}
                   className="rounded-full"
                 />
                 <div className="ml-4">
                   <h3 className="font-bold">{item.name}</h3>
-                  <p className="text-sm opacity-80">{item.position}</p>
+                        <p className="text-sm leading-relaxed">{item.text}</p>
                 </div>
               </div>
 
               {/* Rating */}
               <div className="flex mb-3">
-                {Array.from({ length: item.rating }).map((_, i) => (
-                  <span key={i} className="text-yellow-400 text-xl">
-                    ★
-                  </span>
-                ))}
+
               </div>
 
               {/* Text */}
-              <p className="text-sm leading-relaxed">{item.text}</p>
+     
             </div>
           ))}
         </div>
       </div>
- 
+    </section>
   );
 }

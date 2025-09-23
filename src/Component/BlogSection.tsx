@@ -32,7 +32,7 @@ export default function BlogSection() {
           viewport={{ once: true }}
         >
           OUR BLOG
-        <span className="block w-16 h-[2px] bg-red-600 mx-auto  mt-2"></span>
+        <span className="block w-16 h-[2px] bg-red-600 mx-auto mt-2"></span>
         </motion.h2>
 
         {/* Subtitle */}
@@ -48,7 +48,7 @@ export default function BlogSection() {
         </motion.p>
 
         {/* Blog Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
           {blogs.map((blog, i) => (
             <motion.div
               key={i}
