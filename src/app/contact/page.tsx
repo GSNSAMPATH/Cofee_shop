@@ -43,7 +43,7 @@ export default function ContactPage() {
                              GET IN TOUCH
                             </h3>
                             <p className="text-gray-400">
-                            We're open for any suggestions or just to have a chat. Feel free to reach out to us through the form below.
+                            We are open for any suggestions or just to have a chat. Feel free to reach out to us through the form below.
                             </p>
                                 </div> 
                             <div className=" mt-0 md:flex md:justify-between mt-10 md:items-center lg:mx-0 mx-5">
