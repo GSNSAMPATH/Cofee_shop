@@ -51,17 +51,17 @@ export default function ContactPage() {
                             <input
                                 type="text"
                                 placeholder="Name"
-                                className="text-white w-full bg-transparent border-b border-gray-600 py-2 outline-none focus:border-white"
+                                className="text-white text-xl w-full bg-transparent border-b border-gray-600 py-6 outline-none focus:border-white"
                                 />
                             <input
                                 type="email"
                                 placeholder="Mail"
-                                className="text-white w-full bg-transparent border-b border-gray-600 py-2 outline-none focus:border-white"
+                                className="text-white text-xl w-full bg-transparent border-b border-gray-600 py-6 outline-none focus:border-white"
                                 />
                             <textarea
                                 placeholder="Message"
                                 rows={3}
-                                className="w-full bg-transparent border-b border-gray-600 py-2 outline-none focus:border-white"
+                                className="text-white text-xl w-full bg-transparent border-b border-gray-600 py-6 outline-none focus:border-white"
                                 >
                             </textarea>
                             <div className="flex">
@@ -74,7 +74,7 @@ export default function ContactPage() {
                             </div>
                             </form>
                         </div>
-                        <div className="relative  lg:left-100 xl:left-170 mt-20 xl:top-31 lg:top-25 z-0 bg-[#E3D7C5] p-3 h-15 max-w-sm flex flex-col items-center lg:block lg:flex-row justify-center rounded-4xl shadow-lg ">
+                        <div className="relative  lg:left-100 xl:left-170 mt-20 xl:top-2 lg:top-25 z-0 bg-[#E3D7C5] p-3 h-15 max-w-sm flex flex-col items-center lg:block lg:flex-row justify-center rounded-4xl shadow-lg ">
                             <div className="flex space-x-6 text-4xl 0 text-black justify-center lg:mr-40">
                                 <a href="https://facebook.com" target="_blank" rel="noreferrer">
                                 <FaFacebook />
