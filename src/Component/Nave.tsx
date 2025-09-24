@@ -39,7 +39,7 @@ export default function Navbar() {
 
       {/* Mobile Dropdown Menu */}
       {isOpen && (
-        <div className="md:hidden bg-white shadow-lg">
+        <div className="md:hidden absolute top-16 right-0 w-full bg-black shadow-lg ">
           <div className="flex flex-col space-y-4 px-6 py-4 text-gray-700 font-medium">
             <Link href="/" onClick={toggleMenu} className="hover:text-teal-600">Home</Link>
             <Link href="/about" onClick={toggleMenu} className="hover:text-teal-600">About</Link>

@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function Quality() {
   const feedbacks = [
@@ -24,14 +25,18 @@ export default function Quality() {
   ];
 
   return (
-    <section className="">
-      <div className="max-w-auto  mx-auto px-6">
+   
+      <div className=" container mx-auto py-16 px-6 text-center">
         {/* Grid Layout */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
           {feedbacks.map((item, i) => (
-            <div
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: i * 0.2 }}
+              viewport={{ once: true }}
               key={i}
-              className="bg-[#6a5d55] text-white p-6 rounded-xl shadow-lg "
+              className="bg-[#6a5d55] text-white p-6 rounded-xl shadow-lg mouuse-pointer"
             >
               {/* Top part */}
               <div className="flex items-center mb-4">
@@ -55,10 +60,10 @@ export default function Quality() {
 
               {/* Text */}
      
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
-    </section>
+
   );
 }

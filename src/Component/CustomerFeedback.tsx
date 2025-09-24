@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function CustomerFeedback() {
   const feedbacks = [
@@ -30,17 +31,26 @@ export default function CustomerFeedback() {
  
       <div className="container mx-auto py-16 px-6 text-center">
         {/* Title */}
-        <h2 className="text-center text-white text-3xl font-bold mb-12">
+        <motion.h2
+          initial={{ opacity: 0, y: -30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+         className="text-center text-white text-3xl font-bold mb-12">
           OUR CUSTOMERS FEEDBACK
           <span className="block w-16 h-[2px] bg-red-600 mx-auto  mt-2"></span>
-        </h2>
+        </motion.h2>
 
         {/* Grid Layout */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
           {feedbacks.map((item, i) => (
-            <div
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: i * 0.2 }}
+              viewport={{ once: true }}
               key={i}
-              className="bg-[#6a5d55] text-white p-6 rounded-xl shadow-lg "
+              className="bg-[#6a5d55] text-white p-6 rounded-xl shadow-lg mouuse-pointer"
             >
               {/* Top part */}
               <div className="flex items-center mb-4">
@@ -67,8 +77,8 @@ export default function CustomerFeedback() {
               </div>
 
               {/* Text */}
-              <p className="text-sm leading-relaxed">{item.text}</p>
-            </div>
+              <p className="text-sm text-left leading-relaxed">{item.text}</p>
+            </motion.div>
           ))}
         </div>
       </div>

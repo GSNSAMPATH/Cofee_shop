@@ -1,9 +1,13 @@
+"use client";
+
 import BlogSection from "@/Component/BlogSection";
 import CustomerFeedback from "@/Component/CustomerFeedback";
 import OurMenu from "@/Component/menu";
 import Navbar from "@/Component/Nave";
 import Service from "@/Component/service";
 import Image from "next/image";
+import { motion } from "framer-motion";
+import { use } from "react";
 
 export default function Home() {
   return (
@@ -37,10 +41,20 @@ export default function Home() {
         </div>
         <div className="w-full h-200 items-center justify-between md:flex md:max-w-7xl mx-auto ">
           <div className="md:mt-80 mt-30 relative md:w-full h-200 md:justify-between md:items-center lg:mx-0 mx-5">
-            <h1 className="text-5xl md:mt-10 text-white font-bold mb-6 max-w-90 ">Bentota’s Newest Coffee</h1>
-            <p className="text-lg text-white leading-relaxed mb-8 max-w-90">
+            <motion.h1
+              initial={{ opacity: 0, y: -30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+              className="inria-heading text-white md:mt-10 mb-6 max-w-90">Bentota’s Newest Coffee</motion.h1>
+            <motion.p
+              initial={{ opacity: 0, y: -30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              viewport={{ once: true }}
+             className="inria-headingtext-lg text-white leading-relaxed mb-8 max-w-90">
               Bentota’s Newest Coffee Experience – Lavazza Coffee, Fresh Pastries & More..
-            </p>
+            </motion.p>
             <a
               href="/menu"
               className="inline-flex items-center px-6 py-2 border border-red-500 rounded-full text-white font-medium 
@@ -50,9 +64,9 @@ export default function Home() {
             </a>
           </div>
           <div className="hidden lg:flex relative  w-full h-100 left-0">
-            <div className="mt-50 flex  justify-center items-center  bottom-35">
+            <div className="mt-50 flex  justify-center items-center  bottom-35 ">
               {/* Big Front Cup */}
-              <div className="absolute Bottom-1 mb-50 right-15 w-[580px] h-[780px] z-30 ">
+              <div className="absolute Bottom-1 mb-50 right-15 w-[580px] h-[780px] z-30 mouuse-pointer">
                 <Image
                   src="/cofeecup.png"
                   alt="Front Coffee Cup"
@@ -66,7 +80,7 @@ export default function Home() {
               </div>
                 
               {/* Medium Cup */}
-              <div className="absolute bottom-55 right-20 w-[400px] h-[400px] z-20 ">
+              <div className="absolute bottom-55 right-20 w-[400px] h-[400px] z-20 mouuse-pointer">
                 <Image
                   src="/cofeecup.png"
                   alt="Middle Coffee Cup"
@@ -78,7 +92,7 @@ export default function Home() {
               </div>
                 
               {/* Small Cup */}
-              <div className="absolute bottom-94 right-5  w-[200px] h-[200px] z-10">
+              <div className="absolute bottom-94 right-5  w-[200px] h-[200px] z-10 mouuse-pointer">
                 <Image
                   src="/cofeecup.png"
                   alt="Back Coffee Cup"
@@ -92,26 +106,43 @@ export default function Home() {
         </div>
       </div>
     </section>
-     <section className=" h-250 bg-black w-full">
+     <section className=" h-220 bg-black w-full">
 
-      <div className="w-full h-200 items-center justify-between md:flex lg:max-w-7xl mx-auto">
+      <div className="w-full h-160 items-center justify-between md:flex lg:max-w-7xl mx-auto">
         <div className="md:mt-20 mt-30 relative w-full h-200 lg:max-w-mx md:mx-2">
-          <div className=" max-w-full sm:max-w-full mt-40 md:flex md:justify-between md:items-center lg:mx-0 mx-5">
+          <div className=" max-w-90 sm:max-w-180 mt-40 md:flex md:justify-between md:items-center lg:mx-0 mx-5">
             <div>
-              <h2 className="text-4xl text-white font-inriasans font-bold mb-6">
+              <motion.h2
+                initial={{ opacity: 0, y: -30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6 }}
+                viewport={{ once: true }}
+                className="text-4xl text-white font-inriasans font-bold mb-6"
+              >
              About Us
              <span className="block w-16 h-[2px] bg-red-600 mt-2"></span>
-            </h2>
-            <p className="font-inriasans mb-6 leading-relaxed text-gray-200 md:max-w-280 max-w-full sm:max-w-full ">
+            </motion.h2>
+            <motion.p
+              initial={{ opacity: 0, y: -30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="font-inriasans mb-6 leading-relaxed text-gray-200 md:max-w-280 max-w-80 sm:max-w-full ">
               Welcome to The Coffee Shop by AIDA Group, the newest and trendiest coffee shop in Bentota, Sri Lanka. 
               We serve authentic Lavazza coffee, brewed to perfection on our professional LaCimbali espresso machine, 
               paired with a wide selection of freshly baked pastries, signature cakes, fresh juices, and smoothies.
-            </p>
-            <p className="leading-relaxed text-gray-300 sm:max-w-full max-w-full">
+            </motion.p>
+            <motion.p
+              initial={{ opacity: 0, y: -30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="leading-relaxed text-gray-300 sm:max-w-full max-w-80"
+            >
               Our café is designed as a work-friendly, relaxing, and aesthetic space, perfect for travelers, locals, and 
               digital nomads looking for a cozy spot with WiFi. As part of the trusted AIDA Group, known for over 50 years 
               in hospitality, we bring you not just coffee—but a full lifestyle experience in the heart of Bentota.
-            </p>
+            </motion.p>
             </div>
           </div>
           <div className="relative justify-center md:flex mr-20 mt-10 ">
@@ -144,13 +175,18 @@ export default function Home() {
             {/* Vertical brown bar */}
             <div className="hidden lg:block absolute h-250 mt-55 w-36 bg-[#4E2A20] rounded-lg"></div>               
               {/* Top image */}
-              <div className="hidden lg:block relative z-10 ml-10 bottom-20">
+              <motion.div
+                initial={{ opacity: 0, y: -30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="hidden lg:block relative z-10 ml-10 bottom-20">
                 <Image
                   src="/about (1).jpg"
                   alt="Coffee & Pastries"
                   width={250}
                   height={300}
-                  className="rounded-lg shadow-lg mt-40 mb-6 ml-50"
+                  className="rounded-lg shadow-lg mt-40 mb-6 ml-50 mouse-pointer"
                 />
                 {/* Bottom image */}
                 <Image
@@ -158,48 +194,63 @@ export default function Home() {
                   alt="Coffee Latte"
                   width={250}
                   height={300}
-                  className="absolute top-100 rounded-lg shadow-lg mr-40 "
+                  className="absolute top-100 rounded-lg shadow-lg mr-40 mouse-pointer"
                 />
                 <Image
                   src="/about (1).png"
                   alt="Coffee & Pastries"
                   width={400}
                   height={300}
-                  className="absolute top-20 rounded-lg shadow-lg mb-6 ml-10"
+                  className="absolute top-20 rounded-lg shadow-lg mb-6 ml-10 mouse-pointer"
                 />
-              </div>
+              </motion.div>
             </div>  
           </div>
         </div>
       </section>
       <section className=" py-16 bg-black w-full">
           <div className="w-full items-center justify-between md:flex md:max-w-7xl mx-auto ">
-              <div className="mt-0md:flex md:justify-between md:items-center lg:mx-0 mx-5">
-                <h2 className="text-white text-3xl font-bold text-center mb-10 relative inline-block mx-auto">
+              <div className="mt-0 md:flex md:justify-between md:items-center lg:mx-0 mx-5">
+                <motion.h2
+                  initial={{ opacity: 0, y: -30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6 }}
+                  viewport={{ once: true }}
+                  className="text-white text-3xl font-bold text-center mb-10 relative inline-block mx-auto">
                   OUR MENU
                   <span className="block w-16 h-[2px] bg-red-600 mt-2 "></span>
-                </h2>
+                </motion.h2>
               </div>
           </div>
           <OurMenu />
       </section>
 
-      <section className="py-16 bg-black w-full">
+      <section className="py-10 bg-black w-full">
         <div className="w-full items-center justify-between md:flex md:max-w-7xl mx-auto">
             <div className="mt-0 md:justify-between md:items-center lg:mx-0 mx-5">
-              <h2 className="text-white text-3xl font-bold text-center mb-1 relative inline-block mx-auto">
+              <motion.h2
+                initial={{ opacity: 0, y: -30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6 }}
+                viewport={{ once: true }}
+                className="text-white text-3xl font-bold text-center mb-1 relative inline-block mx-auto">
                 OUR SERVICES
                 <span className="block w-16 h-[2px] bg-red-600 mt-2"></span>
-              </h2>
-              <p className="text-white leading-relaxed">
+              </motion.h2>
+              <motion.p
+                initial={{ opacity: 0, y: -30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+              className="text-white leading-relaxed">
                 why choose us
-              </p>
+              </motion.p>
             </div>
            
         </div>
         <Service />
       </section>
-      <section className="bg-gradient-to-r from-black to-[#4E2A20] h-full py-16 mt-40 m:mt-0 mt-40 w-full">
+      <section className="bg-gradient-to-r from-black to-[#4E2A20] h-full py-16 mt-40 md:mt-10 mt-40 w-full">
         <div className="w-full items-center justify-between md:flex  mx-auto">
                 <CustomerFeedback />
         </div>

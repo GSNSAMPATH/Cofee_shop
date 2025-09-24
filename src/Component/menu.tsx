@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function OurMenu() {
   const menuItems = [
@@ -63,7 +64,11 @@ export default function OurMenu() {
     <section className="bg-black py-16">
       <div className="mx-auto grid grid-cols-2 md:grid-cols-4 auto-rows-[300px] h-full gap-4">
         {menuItems.map((item, i) => (
-          <div
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: i * 0.2 }}
+            viewport={{ once: true }}
             key={i}
             className={`relative overflow-hidden rounded-lg shadow-lg group ${item.className}`}
           >
@@ -82,7 +87,7 @@ export default function OurMenu() {
               </h1>
               <p className={`${item.className2}`}>{item.description}</p>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </section>

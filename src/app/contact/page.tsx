@@ -76,10 +76,10 @@ export default function ContactPage() {
                         </div>
                         <div className="relative  lg:left-100 xl:left-170 mt-20 xl:top-2 lg:top-25 z-0 bg-[#E3D7C5] p-3 h-15 max-w-sm flex flex-col items-center lg:block lg:flex-row justify-center rounded-4xl shadow-lg ">
                             <div className="flex space-x-6 text-4xl 0 text-black justify-center lg:mr-40">
-                                <a href="https://facebook.com" target="_blank" rel="noreferrer">
+                                <a href="https://facebook.com" target="_blank" rel="noreferrer" className="hover:text-teal-600 transition">
                                 <FaFacebook />
                                 </a>
-                                <a href="https://wa.me/123456789" target="_blank" rel="noreferrer">
+                                <a href="https://wa.me/123456789" target="_blank" rel="noreferrer" className="hover:text-teal-600 transition">
                                 <FaWhatsapp />
                                 </a>
                             </div>
