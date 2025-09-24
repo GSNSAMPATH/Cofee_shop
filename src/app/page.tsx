@@ -94,20 +94,20 @@ export default function Home() {
     </section>
      <section className=" h-250 bg-black w-full">
 
-      <div className="w-full h-200 items-center justify-between md:flex md:max-w-7xl mx-auto">
-        <div className="md:mt-20 mt-30 relative w-full h-200 md:max-w-mx md:mx-2">
-          <div className=" max-w-90 sm:max-w-180 mt-40 md:flex md:justify-between md:items-center lg:mx-0 mx-5">
+      <div className="w-full h-200 items-center justify-between md:flex lg:max-w-7xl mx-auto">
+        <div className="md:mt-20 mt-30 relative w-full h-200 lg:max-w-mx md:mx-2">
+          <div className=" max-w-full sm:max-w-full mt-40 md:flex md:justify-between md:items-center lg:mx-0 mx-5">
             <div>
               <h2 className="text-4xl text-white font-inriasans font-bold mb-6">
              About Us
              <span className="block w-16 h-[2px] bg-red-600 mt-2"></span>
             </h2>
-            <p className="font-inriasans mb-6 leading-relaxed text-gray-200 md:max-w-xl md:max-w-280 max-w-80 sm:max-w-full ">
+            <p className="font-inriasans mb-6 leading-relaxed text-gray-200 md:max-w-280 max-w-full sm:max-w-full ">
               Welcome to The Coffee Shop by AIDA Group, the newest and trendiest coffee shop in Bentota, Sri Lanka. 
               We serve authentic Lavazza coffee, brewed to perfection on our professional LaCimbali espresso machine, 
               paired with a wide selection of freshly baked pastries, signature cakes, fresh juices, and smoothies.
             </p>
-            <p className="leading-relaxed text-gray-300 sm:max-w-full max-w-80">
+            <p className="leading-relaxed text-gray-300 sm:max-w-full max-w-full">
               Our café is designed as a work-friendly, relaxing, and aesthetic space, perfect for travelers, locals, and 
               digital nomads looking for a cozy spot with WiFi. As part of the trusted AIDA Group, known for over 50 years 
               in hospitality, we bring you not just coffee—but a full lifestyle experience in the heart of Bentota.
@@ -130,7 +130,7 @@ export default function Home() {
           </div>
         </div>
         
-        <div className="relative bottom-10 w-full h-100">
+        <div className="hidden lg:block relative bottom-10 w-full h-100">
         <div className="hidden lg:block absolute mt-100 mb-50  right-0 w-[480px] h-[380px] z-0 ">
           <Image
             src="/bg_cofeenut.png"
