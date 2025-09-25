@@ -44,7 +44,6 @@ export default function Navbar() {
             <Link href="/" onClick={toggleMenu} className="hover:text-teal-600">Home</Link>
             <Link href="/about" onClick={toggleMenu} className="hover:text-teal-600">About</Link>
             <Link href="/menu" onClick={toggleMenu} className="hover:text-teal-600">Menu</Link>
-            <Link href="/gallery" onClick={toggleMenu} className="hover:text-teal-600">Gallery</Link>
             <Link href="/contact" onClick={toggleMenu} className="hover:text-teal-600">Contact</Link>
           </div>
         </div>

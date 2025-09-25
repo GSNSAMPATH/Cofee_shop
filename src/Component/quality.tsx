@@ -26,7 +26,7 @@ export default function Quality() {
 
   return (
    
-      <div className=" container mx-auto py-16 px-6 text-center">
+      <div className=" container mx-auto py-16 px-6">
         {/* Grid Layout */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
           {feedbacks.map((item, i) => (
@@ -49,7 +49,7 @@ export default function Quality() {
                 />
                 <div className="ml-4">
                   <h3 className="font-bold">{item.name}</h3>
-                        <p className="text-sm leading-relaxed">{item.text}</p>
+                        <p className="poppins-text leading-relaxed">{item.text}</p>
                 </div>
               </div>
 

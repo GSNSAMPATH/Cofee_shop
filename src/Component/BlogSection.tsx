@@ -25,7 +25,7 @@ export default function BlogSection() {
       <div className="container mx-auto py-16 px-6 text-center">
         {/* Title */}
         <motion.h2
-          className="text-white text-3xl font-bold mb-4"
+          className="text-white text-center inria-heading2-bold font-bold mb-4"
           initial={{ opacity: 0, y: -30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -37,7 +37,7 @@ export default function BlogSection() {
 
         {/* Subtitle */}
         <motion.p
-          className="text-white/80 mb-12 max-w-2xl mx-auto"
+          className="inria-text font-regular text-white/80 mb-12 max-w-4xl mx-auto"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
@@ -69,8 +69,8 @@ export default function BlogSection() {
 
               {/* Overlay */}
               <div className="absolute inset-0 bg-black/40 flex flex-col justify-end p-6 transition duration-500 group-hover:bg-black/60">
-                <h3 className="text-white text-xl text-left font-bold">{blog.title}</h3>
-                <p className="text-white/80 text-left text-sm mt-2">{blog.desc}</p>
+                <h3 className="text-white text-xl text-left inria-heading2-bold">{blog.title}</h3>
+                <p className="text-white/80 text-left inria-text-small mt-2">{blog.desc}</p>
               </div>
             </motion.div>
           ))}

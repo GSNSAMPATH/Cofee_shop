@@ -7,11 +7,11 @@ export default function OurMenu() {
     {
       src: "/galleryimage2.jpg",
       alt: "Tea Cup",
-      className: "col-span-1 row-span-2",
+      className: "col-span-1  row-span-2",
       title: "Coffee",
       description:
         "Enjoy handcrafted espresso, pour over, and cold brew made with premium beans.",
-      className2: "absolute bottom-10 left-4 text-white",
+      className2: "absolute bottom-10  left-4 text-white",
     },
     {
       src: "/Rectangle 17.png",
@@ -81,11 +81,11 @@ export default function OurMenu() {
             />
             <div className="absolute inset-0 flex flex-col justify-center items-center">
               <h1
-                className={`mb-24 sm:mb-16 text-2xl font-bold text-center ${item.className2}`}
+                className={`mb-38 sm:mb-22 inria-heading2-bold text-center ${item.className2}`}
               >
                 {item.title}
               </h1>
-              <p className={`${item.className2}`}>{item.description}</p>
+              <p className={`inria-text  ${item.className2}`}>{item.description}</p>
             </div>
           </motion.div>
         ))}

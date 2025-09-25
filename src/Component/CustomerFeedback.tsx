@@ -36,7 +36,7 @@ export default function CustomerFeedback() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-         className="text-center text-white text-3xl font-bold mb-12">
+         className="text-center inria-heading2-bold text-white text-3xl font-bold mb-12">
           OUR CUSTOMERS FEEDBACK
           <span className="block w-16 h-[2px] bg-red-600 mx-auto  mt-2"></span>
         </motion.h2>
@@ -50,10 +50,10 @@ export default function CustomerFeedback() {
               transition={{ duration: 0.6, delay: i * 0.2 }}
               viewport={{ once: true }}
               key={i}
-              className="bg-[#6a5d55] text-white p-6 rounded-xl shadow-lg mouuse-pointer"
+              className="bg-[#6a5d55] text-white p-6 rounded-xl shadow-lg mouuse-pointer "
             >
               {/* Top part */}
-              <div className="flex items-center mb-4">
+              <div className="flex  mb-4">
                 <Image
                   src={item.image}
                   alt={item.name}
@@ -61,9 +61,9 @@ export default function CustomerFeedback() {
                   height={50}
                   className="rounded-full"
                 />
-                <div className="ml-4">
-                  <h3 className="font-bold">{item.name}</h3>
-                  <p className="text-sm opacity-80">{item.position}</p>
+                <div className="ml-4 text-left">
+                  <h3 className="poppins-heading">{item.name}</h3>
+                  <p className="poppins-heading2 mt-2 opacity-80">{item.position}</p>
                 </div>
               </div>
 
@@ -77,7 +77,7 @@ export default function CustomerFeedback() {
               </div>
 
               {/* Text */}
-              <p className="text-sm text-left leading-relaxed">{item.text}</p>
+              <p className="poppins-text text-left leading-relaxed">{item.text}</p>
             </motion.div>
           ))}
         </div>

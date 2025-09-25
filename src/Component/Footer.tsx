@@ -8,10 +8,10 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-12">
         {/* Left - About */}
         <div>
-          <h3 className="text-xl font-bold mb-3">
+          <h3 className="text-xl text-center sm:text-left font-bold mb-3">
             <span className="border-b-2 border-red-600">COFFEE</span>
           </h3>
-          <p className="text-gray-300 leading-relaxed">
+          <p className="text-gray-300 text-center sm:text-left leading-relaxed">
             Xtreamdigital is a results-driven digital marketing company focused on
             transforming ambitious brands into powerhouses. We combine strategic
             thinking, innovative technology, and creative execution to help startups

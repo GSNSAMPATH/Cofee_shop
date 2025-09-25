@@ -46,14 +46,14 @@ export default function Home() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
-              className="inria-heading text-white md:mt-10 mb-6 max-w-90">Bentota’s Newest Coffee</motion.h1>
+              className="inria-heading text-white md:mt-10 mb-6 ">Bentota’s Newest Coffee</motion.h1>
             <motion.p
               initial={{ opacity: 0, y: -30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
               viewport={{ once: true }}
-             className="inria-headingtext-lg text-white leading-relaxed mb-8 max-w-90">
-              Bentota’s Newest Coffee Experience – Lavazza Coffee, Fresh Pastries & More..
+             className="inria-text text-lg text-white leading-relaxed mb-8 ">
+              Bentota’s Newest Coffee Experience – Lavazza Coffee, Fresh Pastries & More
             </motion.p>
             <a
               href="/menu"
@@ -110,24 +110,24 @@ export default function Home() {
 
       <div className="w-full h-160 items-center justify-between md:flex lg:max-w-7xl mx-auto">
         <div className="md:mt-20 mt-30 relative w-full h-200 lg:max-w-mx md:mx-2">
-          <div className=" max-w-90 sm:max-w-180 mt-40 md:flex md:justify-between md:items-center lg:mx-0 mx-5">
+          <div className="mt-40 md:flex md:justify-between md:items-center lg:mx-0 mx-5">
             <div>
               <motion.h2
                 initial={{ opacity: 0, y: -30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
                 viewport={{ once: true }}
-                className="text-4xl text-white font-inriasans font-bold mb-6"
+                className="text-4xl text-white inria-heading2 mb-6"
               >
              About Us
-             <span className="block w-16 h-[2px] bg-red-600 mt-2"></span>
+             <span className=" block w-16 h-[2px] bg-red-600 mt-2"></span>
             </motion.h2>
             <motion.p
               initial={{ opacity: 0, y: -30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
               viewport={{ once: true }}
-              className="font-inriasans mb-6 leading-relaxed text-gray-200 md:max-w-280 max-w-80 sm:max-w-full ">
+              className="inria-text mb-6 text-justify leading-relaxed text-gray-200 md:max-w-280 max-w-full sm:max-w-full ">
               Welcome to The Coffee Shop by AIDA Group, the newest and trendiest coffee shop in Bentota, Sri Lanka. 
               We serve authentic Lavazza coffee, brewed to perfection on our professional LaCimbali espresso machine, 
               paired with a wide selection of freshly baked pastries, signature cakes, fresh juices, and smoothies.
@@ -137,7 +137,7 @@ export default function Home() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
               viewport={{ once: true }}
-              className="leading-relaxed text-gray-300 sm:max-w-full max-w-80"
+              className="inria-text text-justify mb-6 leading-relaxed text-gray-300 sm:max-w-full max-w-full"
             >
               Our café is designed as a work-friendly, relaxing, and aesthetic space, perfect for travelers, locals, and 
               digital nomads looking for a cozy spot with WiFi. As part of the trusted AIDA Group, known for over 50 years 
@@ -145,7 +145,7 @@ export default function Home() {
             </motion.p>
             </div>
           </div>
-          <div className="relative justify-center md:flex mr-20 mt-10 ">
+          <div className="relative justify-center md:flex sm:mr-20 mx-10 mt-10 ">
             <div className="grid grid-cols-2 w-fit mx-auto text-center text-white divide-x divide-y divide-white ">
               {Array(4)
                 .fill("10+")
@@ -210,13 +210,13 @@ export default function Home() {
       </section>
       <section className=" py-16 bg-black w-full">
           <div className="w-full items-center justify-between md:flex md:max-w-7xl mx-auto ">
-              <div className="mt-0 md:flex md:justify-between md:items-center lg:mx-0 mx-5">
+              <div className="mt-20 md:flex md:justify-between md:items-center lg:mx-0 mx-5">
                 <motion.h2
                   initial={{ opacity: 0, y: -30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6 }}
                   viewport={{ once: true }}
-                  className="text-white text-3xl font-bold text-center mb-10 relative inline-block mx-auto">
+                  className="text-white inria-heading2 text-center mb-10 relative inline-block mx-auto">
                   OUR MENU
                   <span className="block w-16 h-[2px] bg-red-600 mt-2 "></span>
                 </motion.h2>
@@ -233,7 +233,7 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
                 viewport={{ once: true }}
-                className="text-white text-3xl font-bold text-center mb-1 relative inline-block mx-auto">
+                className="text-white inria-heading2 text-3xl font-regular text-center mb-1 relative inline-block mx-auto">
                 OUR SERVICES
                 <span className="block w-16 h-[2px] bg-red-600 mt-2"></span>
               </motion.h2>
@@ -242,7 +242,7 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
                 viewport={{ once: true }}
-              className="text-white leading-relaxed">
+              className="inria-text font-regular text-white leading-relaxed">
                 why choose us
               </motion.p>
             </div>
@@ -250,12 +250,12 @@ export default function Home() {
         </div>
         <Service />
       </section>
-      <section className="bg-gradient-to-r from-black to-[#4E2A20] h-full py-16 mt-40 md:mt-10 mt-40 w-full">
+      <section className="bg-gradient-to-r from-black to-[#4E2A20] h-full py-16 mt-160 sm:mt-80 md:mt-10  w-full">
         <div className="w-full items-center justify-between md:flex  mx-auto">
                 <CustomerFeedback />
         </div>
       </section>
-      <section className="bg-gradient-to-t from-black to-[#4E2A20] h-full py-16 md:mt-10 mt-40 w-full">
+      <section className="bg-gradient-to-t from-black to-[#4E2A20] h-full py-16 md:mt-10 mt-30 w-full">
          <div className="w-full items-center justify-between md:flex  mx-auto">
            <BlogSection/>
          </div>
