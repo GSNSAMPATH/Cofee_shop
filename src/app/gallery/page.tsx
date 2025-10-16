@@ -44,7 +44,7 @@ export default async function GalleryPage() {
       </section>
 
       {/* Gallery Grid */}
- <section className="py-1 md:px-4 lg:px-20 bg-white w-full flex justify-center md:h-650 mb-10 md:mb-0 sm:px-8 md:px-8  lg:px-30">
+ <section className="py-1 md:px-4 lg:px-20 w-full flex justify-center md:h-650 mb-10 md:mb-0 sm:px-8 md:px-8  lg:px-30">
 
                             {/* Masonry Grid */}
                             <div className="hidden md:grid grid-cols-1">
@@ -100,7 +100,7 @@ export default async function GalleryPage() {
                                         {/* Row 3 */}
                                             <div className="md:col-span-3 relative bottom-93 rounded-2xl overflow-hidden">
                                             <Image
-                                                src={urlFor(galleryImages[4].image).url() ?? ""}
+                                                src={urlFor(galleryImages[7].image).url() ?? ""}
                                                 alt="spot"
                                                 width={1200}
                                                 height={400}
@@ -110,10 +110,10 @@ export default async function GalleryPage() {
                                             </div>
 
                                         {/* Row 4 */}
-                                        <div className="relative flex justify-center w-full col-span-3  gap-5 w-full bg-gray-100 ">
+                                        <div className="relative flex justify-center w-full col-span-3  gap-5 w-full">
                                             <div className="rounded-2xl bottom-93 relative overflow-hidden bg-white ">
                                               <Image
-                                                src={urlFor(galleryImages[5].image).url() ?? ""}
+                                                src={urlFor(galleryImages[8].image).url() ?? ""}
                                                 alt="spot"
                                                 width={800}
                                                 height={300}
@@ -123,7 +123,7 @@ export default async function GalleryPage() {
                                             </div>
                                             <div className="rounded-2xl bottom-93 relative overflow-hidden">
                                               <Image
-                                                src={urlFor(galleryImages[6].image).url() ?? ""}
+                                                src={urlFor(galleryImages[5].image).url() ?? ""}
                                                 alt="spot"
                                                 width={800}
                                                 height={300}
@@ -137,7 +137,7 @@ export default async function GalleryPage() {
                                     <div className="relative bottom-93 rounded-2xl flex flex-row justify-center w-full col-span-3  gap-5 overflow-hidden">
                                     <div className=" rounded-2xl overflow-hidden  bg-white h-[700px] md:h-[675px] group">
                                         <Image
-                                            src={urlFor(galleryImages[7].image).url() ?? ""}
+                                            src={urlFor(galleryImages[6].image).url() ?? ""}
                                             alt="spot"
                                             width={800}
                                             height={700}
@@ -148,7 +148,7 @@ export default async function GalleryPage() {
 
                                     <div className="relative flex flex-col rounded-2xl overflow-hidden gap-5 group w-full">
                                         <Image
-                                            src={urlFor(galleryImages[8].image).url() ?? ""}
+                                            src={urlFor(galleryImages[4].image).url() ?? ""}
                                             alt="spot"
                                             width={800}
                                             height={500}
@@ -159,7 +159,7 @@ export default async function GalleryPage() {
                                 
 
                                         <Image
-                                            src={urlFor(galleryImages[9].image).url() ?? ""}
+                                            src={urlFor(galleryImages[10].image).url() ?? ""}
                                             alt="spot"
                                             width={800}
                                             height={500}
@@ -174,7 +174,7 @@ export default async function GalleryPage() {
 
                                                                               <div className="md:col-span-3 relative bottom-93 rounded-2xl overflow-hidden">
                                             <Image
-                                                src={urlFor(galleryImages[10].image).url() ?? ""}
+                                                src={urlFor(galleryImages[9].image).url() ?? ""}
                                                 alt="spot"
                                                 width={1200}
                                                 height={400}
@@ -186,12 +186,12 @@ export default async function GalleryPage() {
                                 </div>
                             </div>
 
-                                 <div className="mt-6 space-y-3 block md:hidden bg-white ">
+                                 <div className="mt-6 space-y-3 block md:hidden bg-black ">
                                     {/* Row 1 */}
                                     <div className="grid grid-cols-2 gap-3">
                                       <div className="relative rounded-lg overflow-hidden">
                                         <Image
-                                          src={urlFor(galleryImages[0].image).url() ?? ""}
+                                          src={urlFor(galleryImages[2].image).url() ?? ""}
                                           alt="Tangalle"
                                           width={400}
                                           height={300}
@@ -216,7 +216,7 @@ export default async function GalleryPage() {
                                     {/* Row 2 (wide image) */}
                                     <div className="relative rounded-lg overflow-hidden">
                                       <Image
-                                        src={urlFor(galleryImages[2].image).url() ?? ""}
+                                        src={urlFor(galleryImages[0].image).url() ?? ""}
                                         alt="Tangalle"
                                         width={600}
                                         height={300}
@@ -279,7 +279,7 @@ export default async function GalleryPage() {
                                       </div>
                                       <div className="relative rounded-lg overflow-hidden">
                                         <Image
-                                          src= {urlFor(galleryImages[7].image).url() ?? ""}
+                                          src= {urlFor(galleryImages[8].image).url() ?? ""}
                                           alt="Tangalle"
                                           width={400}
                                           height={300}
@@ -293,7 +293,7 @@ export default async function GalleryPage() {
                                     {/* Row 2 (wide image) */}
                                     <div className="relative rounded-lg overflow-hidden">
                                       <Image
-                                        src={urlFor(galleryImages[8].image).url() ?? ""}
+                                        src={urlFor(galleryImages[9].image).url() ?? ""}
                                         alt="Tangalle"
                                         width={600}
                                         height={300}
@@ -308,7 +308,7 @@ export default async function GalleryPage() {
                                       <div className="relative rounded-lg overflow-hidden gap-3 flex flex-col">
                                         <div className="relative rounded-lg overflow-hidden">
                                           <Image
-                                            src={urlFor(galleryImages[9].image).url() ?? ""}
+                                            src={urlFor(galleryImages[7].image).url() ?? ""}
                                             alt="Tangalle"
                                             width={400}
                                             height={300}
@@ -319,7 +319,7 @@ export default async function GalleryPage() {
                                         </div>
                                         <div className="relative rounded-lg overflow-hidden">
                                           <Image
-                                            src={urlFor(galleryImages[10].image).url() ?? ""}
+                                            src={urlFor(galleryImages[11].image).url() ?? ""}
                                             alt="Tangalle"
                                             width={400}
                                             height={300}
@@ -331,7 +331,7 @@ export default async function GalleryPage() {
                                       </div>
                                       <div className="relative rounded-lg overflow-hidden">
                                         <Image
-                                          src={urlFor(galleryImages[11].image).url() ?? ""}
+                                          src={urlFor(galleryImages[10].image).url() ?? ""}
                                           alt="Tangalle"
                                           width={400}
                                           height={300}

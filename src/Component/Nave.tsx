@@ -21,13 +21,13 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex space-x-8 text-white font-medium">
-          <Link href="/" className="hover:text-red-600 transition px-6 py-1  border border-red-500 rounded-full">Home</Link>
-          <Link href="/about" className="hover:text-red-600 transition px-6 py-1  border border-red-500 rounded-full">About</Link>
-          <Link href="/offer" className="hover:text-red-600 transition px-6 py-1  border border-red-500 rounded-full">Offer</Link>
-          <Link href="/blog" className="hover:text-red-600 transition px-7 py-1  border border-red-500 rounded-full">Blog</Link>
-          <Link href="/gallery" className="hover:text-red-600 transition px-5 py-1  border border-red-500 rounded-full">Gallery</Link>
-          <Link href="/contact" className="hover:text-red-600 transition px-4 py-1  border border-red-500 rounded-full">Contact</Link>
+        <div className="hidden md:flex space-x-4 lg:space-x-8 text-white font-medium">
+          <Link href="/" className="hover:text-red-600 transition text-[14px]  lg:text-[16px] px-4 lg:px-6  lg:py-1  border border-red-500 rounded-full">Home</Link>
+          <Link href="/about" className="hover:text-red-600 transition text-[14px]  lg:text-[16px] px-4 lg:px-6 lg:py-1  border border-red-500 rounded-full">About</Link>
+          <Link href="/offer" className="hover:text-red-600 transition text-[14px]  lg:text-[16px] px-4 lg:px-6 lg:py-1  border border-red-500 rounded-full">Offer</Link>
+          <Link href="/blog" className="hover:text-red-600 transition text-[14px]  lg:text-[16px] px-4 lg:px-7 lg:py-1  border border-red-500 rounded-full">Blog</Link>
+          <Link href="/gallery" className="hover:text-red-600 transition text-[14px]  lg:text-[16px] px-3 lg:px-5 lg:py-1  border border-red-500 rounded-full">Gallery</Link>
+          <Link href="/contact" className="hover:text-red-600 transition text-[14px]  lg:text-[16px] px-3 lg:px-4 lg:py-1  border border-red-500 rounded-full">Contact</Link>
         </div>
 
         {/* Mobile Menu Button */}
