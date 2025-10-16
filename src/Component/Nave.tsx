@@ -22,10 +22,12 @@ export default function Navbar() {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-8 text-white font-medium">
-          <Link href="/" className="hover:text-teal-600 transition px-4  border border-red-500 rounded-full">Home</Link>
-          <Link href="/about" className="hover:text-teal-600 transition px-4  border border-red-500 rounded-full">About</Link>
-          <Link href="/menu" className="hover:text-teal-600 transition px-4  border border-red-500 rounded-full">Menu</Link>
-          <Link href="/contact" className="hover:text-teal-600 transition px-4  border border-red-500 rounded-full">Contact</Link>
+          <Link href="/" className="hover:text-red-600 transition px-6 py-1  border border-red-500 rounded-full">Home</Link>
+          <Link href="/about" className="hover:text-red-600 transition px-6 py-1  border border-red-500 rounded-full">About</Link>
+          <Link href="/offer" className="hover:text-red-600 transition px-6 py-1  border border-red-500 rounded-full">Offer</Link>
+          <Link href="/blog" className="hover:text-red-600 transition px-7 py-1  border border-red-500 rounded-full">Blog</Link>
+          <Link href="/gallery" className="hover:text-red-600 transition px-5 py-1  border border-red-500 rounded-full">Gallery</Link>
+          <Link href="/contact" className="hover:text-red-600 transition px-4 py-1  border border-red-500 rounded-full">Contact</Link>
         </div>
 
         {/* Mobile Menu Button */}
@@ -43,7 +45,9 @@ export default function Navbar() {
           <div className="flex flex-col space-y-4 px-6 py-4 text-gray-700 font-medium">
             <Link href="/" onClick={toggleMenu} className="hover:text-teal-600">Home</Link>
             <Link href="/about" onClick={toggleMenu} className="hover:text-teal-600">About</Link>
-            <Link href="/menu" onClick={toggleMenu} className="hover:text-teal-600">Menu</Link>
+            <Link href="/offer" onClick={toggleMenu} className="hover:text-teal-600">Offer</Link>
+            <Link href="/gallery" onClick={toggleMenu} className="hover:text-teal-600">Gallery</Link>
+            <Link href="/blog" onClick={toggleMenu} className="hover:text-teal-600">Blog</Link>
             <Link href="/contact" onClick={toggleMenu} className="hover:text-teal-600">Contact</Link>
           </div>
         </div>

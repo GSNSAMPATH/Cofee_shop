@@ -1,29 +1,71 @@
 "use client";
+
 import Image from "next/image";
 import { motion } from "framer-motion";
+import imageUrlBuilder from "@sanity/image-url";
+import { useEffect, useState } from "react";
+import { client } from "@/app/lib/sanity.config";
+
+const builder = imageUrlBuilder(client);
+function urlFor(source: any) {
+  return source ? builder.image(source).url() : "";
+}
+
+interface MenuCard {
+  index: number;
+  title: string;
+  paragraph?: string;
+  image?: any;
+}
 
 export default function OurMenu() {
+  const [cards, setCards] = useState<MenuCard[]>([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      // Fetch from "menuCard" schema ordered by index
+      const data = await client.fetch(
+        `*[_type == "menuCard"] | order(index asc){
+          index, title, paragraph, image
+        }`
+      );
+      setCards(data);
+      console.log(data);
+    };
+    fetchData();
+  }, []);
+
+  const getImage = (image: any, fallback: string) =>
+    image ? urlFor(image) : fallback;
+
   const menuItems = [
+    // 1️⃣ Dynamic from Sanity
     {
-      src: "/galleryimage2.jpg",
-      alt: "Tea Cup",
-      className: "col-span-1  row-span-2",
-      title: "Coffee",
+      src: getImage(cards[0]?.image, "/Rectangle2.png"),
+      alt: cards[0]?.title || "Coffee",
+      title: cards[0]?.title || "Coffee",
       description:
+        cards[0]?.paragraph ||
         "Enjoy handcrafted espresso, pour over, and cold brew made with premium beans.",
-      className2: "absolute bottom-10  left-4 text-white",
+      className: "col-span-1 row-span-2 ",
+      className2: "  mt-90 text-white mt-0 left-4 ",
     },
+
+    // 2️⃣ Dynamic from Sanity
+    {
+      src: getImage(cards[1]?.image, "/Rectangle17.png"),
+      alt: cards[1]?.title || "Croissant",
+      title: cards[1]?.title || "Croissant",
+      description:
+        cards[1]?.paragraph ||
+        "Freshly baked buttery croissants every morning.",
+      className: "col-span-1 row-span-1",
+      className2: " text-center bottom-20 text-white",
+    },
+
+    // 3️⃣ Static (Don’t change)
     {
       src: "/Rectangle 17.png",
-      alt: "Croissant",
-      className: "col-span-1 row-span-1",
-      title: "Coffee",
-      description:
-        "Enjoy handcrafted espresso, pour over, and cold brew made with premium beans.",
-      className2: "absolute text-center bottom-20 text-white",
-    },
-    {
-      src: "/492fa468f7a3106ea9eff6a77a531836f19d2783.jpg",
       alt: "Cupcake",
       className: "col-span-1 row-span-1",
       title: "Coffee",
@@ -31,17 +73,22 @@ export default function OurMenu() {
         "Enjoy handcrafted espresso, pour over, and cold brew made with premium beans.",
       className2: "absolute bottom-10 left-4 text-white",
     },
+
+    // 4️⃣ Dynamic from Sanity
     {
-      src: "/galleryimage1.jpg",
-      alt: "Strawberry Drink",
+      src: getImage(cards[2]?.image, "/galleryimage1.jpg"),
+      alt: cards[2]?.title || "Strawberry Drink",
+      title: cards[2]?.title || "Strawberry Drink",
+      description:
+        cards[2]?.paragraph ||
+        "Refreshing cold brews and fruit drinks made fresh.",
       className: "col-span-1 row-span-2",
-      title: "Coffee",
-      description:
-        "Enjoy handcrafted espresso, pour over, and cold brew made with premium beans.",
       className2: "absolute bottom-10 left-4 text-white",
     },
+
+    // 5️⃣ Static (Don’t change)
     {
-      src: "/54fc38f73008258e6fdf2850511c19c06bba69f7.jpg",
+      src: "/Rectangle 17.png",
       alt: "Croissant",
       className: "col-span-1 row-span-1",
       title: "Coffee",
@@ -49,13 +96,16 @@ export default function OurMenu() {
         "Enjoy handcrafted espresso, pour over, and cold brew made with premium beans.",
       className2: "absolute bottom-10 left-4 text-white",
     },
+
+    // 6️⃣ Dynamic from Sanity
     {
-      src: "/Rectangle 17.png",
-      alt: "Cupcake",
-      className: "col-span-1 row-span-1",
-      title: "Coffee",
+      src: getImage(cards[3]?.image, "/Rectangle17.png"),
+      alt: cards[3]?.title || "Cupcake",
+      title: cards[3]?.title || "Cupcake",
       description:
-        "Enjoy handcrafted espresso, pour over, and cold brew made with premium beans.",
+        cards[3]?.paragraph ||
+        "Sweet cupcakes with rich chocolate and vanilla frosting.",
+      className: "col-span-1 row-span-1",
       className2: "absolute text-center bottom-20 text-white",
     },
   ];
@@ -72,20 +122,27 @@ export default function OurMenu() {
             key={i}
             className={`relative overflow-hidden rounded-lg shadow-lg group ${item.className}`}
           >
-            {/* Image scales when parent is hovered */}
-            <Image
-              src={item.src}
-              alt={item.alt}
-              fill
-              className="object-cover transition-transform duration-500 group-hover:scale-110"
-            />
-            <div className="absolute inset-0 flex flex-col justify-center items-center">
+            {/* Image */}
+            {item.src && (
+              <Image
+                src={item.src}
+                alt={item.alt}
+                fill
+                className="object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+            )}
+
+            {/* Overlay */}
+            <div className={ `absolute inset-0 flex flex-col justify-center bg-black/40` }>
+            <div className={`${item.className2}`}></div>
               <h1
-                className={`mb-38 sm:mb-22 inria-heading2-bold text-center ${item.className2}`}
+                className={`inria-heading2-bold  text-white `}
               >
                 {item.title}
               </h1>
-              <p className={`inria-text  ${item.className2}`}>{item.description}</p>
+              <p className={`inria-text text-white/80 mt-2 max-w-xs`}>
+                {item.description}
+              </p>
             </div>
           </motion.div>
         ))}

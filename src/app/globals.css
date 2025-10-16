@@ -35,31 +35,26 @@ body {
 
 
 
+/* Desktop (default) */
 .inria-text {
   font-family: "Inria Sans";
   font-weight: 400;
-  font-style: normal;
   font-size: 24px;
   line-height: 100%;
-  letter-spacing: 0%;
 }
 
 .inria-text-small {
   font-family: "Inria Sans";
   font-weight: 400;
-  font-style: normal;
   font-size: 16px;
   line-height: 100%;
-  letter-spacing: 0%;
 }
 
 .inria-heading {
   font-family: "Inria Sans";
   font-weight: 700;
-  font-style: normal;
   font-size: 48px;
   line-height: 100%;
-  letter-spacing: 0;
 }
 
 .inria-heading2 {
@@ -67,8 +62,6 @@ body {
   font-weight: 700;
   font-size: 36px;
   line-height: 100%;
-  letter-spacing: 0;
-
 }
 
 .inria-heading2-bold {
@@ -76,60 +69,110 @@ body {
   font-weight: 700;
   font-size: 32px;
   line-height: 100%;
-  letter-spacing: 0;
 }
 
-.inter-text {
-  font-family: "Inter";
-  font-weight: 400;
-  font-style: normal;
-  font-size: 24px;
-  line-height: 100%;
-  letter-spacing: 0%;
+/* Tablet */
+@media (max-width: 768px) {
+  .inria-text { font-size: 20px; }
+  .inria-text-small { font-size: 14px; }
+  .inria-heading { font-size: 36px; }
+  .inria-heading2 { font-size: 28px; }
+  .inria-heading2-bold { font-size: 24px; }
 }
 
-.inter-heading {
-  font-family: "inter";
-  font-weight: 400;
-  font-style: normal;
-  font-size: 32px;
-  line-height: 100%;
-  letter-spacing: 0%;
+/* Mobile */
+@media (max-width: 480px) {
+  .inria-text { font-size: 16px; }
+  .inria-text-small { font-size: 12px; }
+  .inria-heading { font-size: 28px; }
+  .inria-heading2 { font-size: 22px; }
+  .inria-heading2-bold { font-size: 20px; }
 }
 
-.poppins-heading {
-  font-family: "Poppins";
-  font-weight: 600;
-  font-style: semi-bold;
-  font-size: 18px;
-  line-height: 100%;
-  letter-spacing: 0%;
+/* Inter */
+.inter-text { font-family: "Inter"; font-weight: 400; font-size: 24px; line-height: 100%; }
+.inter-heading { font-family: "Inter"; font-weight: 400; font-size: 32px; line-height: 100%; }
+
+@media (max-width: 768px) {
+  .inter-text { font-size: 20px; }
+  .inter-heading { font-size: 28px; }
 }
 
-.poppins-heading2 {
-  font-family: "Poppins";
-  font-weight: 600;
-  font-style: semi-bold;
-  font-size: 14px;
-  line-height: 100%;
-  letter-spacing: 0%;
+@media (max-width: 480px) {
+  .inter-text { font-size: 16px; }
+  .inter-heading { font-size: 22px; }
 }
 
-.poppins-text {
-  font-family: "Poppins";
-  font-weight: 500;
-  font-style: medium;
-  font-size: 12px;
-  line-height: 20px;
-  letter-spacing: 0%;
+/* Poppins */
+.poppins-heading { font-family: "Poppins"; font-weight: 600; font-size: 18px; line-height: 100%; }
+.poppins-heading2 { font-family: "Poppins"; font-weight: 600; font-size: 14px; line-height: 100%; }
+.poppins-text { font-family: "Poppins"; font-weight: 500; font-size: 12px; line-height: 20px; }
+
+@media (max-width: 768px) {
+  .poppins-heading { font-size: 16px; }
+  .poppins-heading2 { font-size: 12px; }
+  .poppins-text { font-size: 10px; }
 }
 
+@media (max-width: 480px) {
+  .poppins-heading { font-size: 14px; }
+  .poppins-heading2 { font-size: 10px; }
+  .poppins-text { font-size: 9px; }
+}
 
-
+/* Hover effect */
 .mouuse-pointer:hover {
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   transform: scale(1.05);
-  @apply scale-105 transition duration-300 ease-in-out;
+}
 
+
+.carousel {
+  --nav-btn-size: 40px;
+  --nav-btn-bg: rgb(15, 23, 43);
+  --nav-btn-txt: white;
+  --nav-marker-bg: rgb(15, 23, 43);
+
+  width: min(calc(100% - 2rem), 700px);
+  list-style: none;
+  padding-block: 2rem;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 250px;
+  gap: 0;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.carousel > div {
+  scroll-snap-align: center;
+  text-align: center;
+}
+
+.carousel > div h2 {
+  margin: 1rem 0 0 0;
+  font-size: 1.3rem;
+  transition: all 300ms ease-in-out;
+}
+
+.carousel > div p {
+  margin: 0;
+  transition: all 300ms ease-in-out;
+}
+
+.carousel .img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  transition: all 300ms ease-in-out;
+}
+
+.carousel .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
 }

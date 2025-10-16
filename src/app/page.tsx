@@ -7,12 +7,39 @@ import Navbar from "@/Component/Nave";
 import Service from "@/Component/service";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { use } from "react";
+import { useEffect, useState } from "react";
+import SpotlightSection from "@/Component/SpotlightSection";
 
+
+const coffees = [
+  { name: "Americano", src: "/cofeecup.png" },
+  { name: "Iced Latte", src: "/cofeecup.png" },
+  { name: "Affogato", src: "/cofeecup.png" },
+  { name: "Cappuccino", src: "/cofeecup.png" },
+  { name: "Espresso", src: "/cofeecup.png" },
+];
 export default function Home() {
+
+  const [coffeeIndex, setCoffeeIndex] = useState(0);
+
+  // auto-change index every 3 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCoffeeIndex((prev) => (prev + 1) % coffees.length);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, []);
+
+  // next 3 cups based on index
+  const cups = [
+    coffees[coffeeIndex % coffees.length],
+    coffees[(coffeeIndex + 1) % coffees.length],
+    coffees[(coffeeIndex + 2) % coffees.length],
+  ];
+
   return (
     <section className="w-full bg-black">
-      <section className="relative h-160 bg-black w-full">
+      <section className="relative h-100 md:h-170 bg-black w-full">
         <Navbar />
         <Image
           src="/Background.png"
@@ -26,7 +53,7 @@ export default function Home() {
             src="/bg_cofeenut.png"
             alt="Coffee Background2"
             fill
-            className=" top-30 left-30 h-10 w-10 opacity-30"
+            className=" top-30 left-30 h-10 w-10 opacity-30 object-cover object-top-left "
             priority
           /> 
           <div className="absolute top-30 mb-50 left- w-[380px] h-[280px] z-0 ">
@@ -34,7 +61,7 @@ export default function Home() {
               src="/bg_cofeenut.png"
               alt="Coffee Background2"
               fill
-              className="absolute top-10 left-30 h-10 w-10 opacity-50"
+              className="absolute top-10 left-30 h-10 w-10 opacity-50 object-cover object-top-left "
               priority
             />
           </div>
@@ -66,49 +93,49 @@ export default function Home() {
           <div className="hidden lg:flex relative  w-full h-100 left-0">
             <div className="mt-50 flex  justify-center items-center  bottom-35 ">
               {/* Big Front Cup */}
-              <div className="absolute Bottom-1 mb-50 right-15 w-[580px] h-[780px] z-30 mouuse-pointer">
+              <div className="absolute Bottom-1 mb-50 right-15 w-[580px] h-[780px] z-10 mouuse-pointer">
                 <Image
-                  src="/cofeecup.png"
-                  alt="Front Coffee Cup"
+                  src={cups[0].src}
+                  alt={cups[0].name}
                   fill
                   className="object-contain drop-shadow-xl rotate-[-10deg]"
                               
                 />
                 {/* Connector Line */}
-                <div className="relative top-60 -right-8 mr-40 w-44 h-[2px] bg-white"><text className="absolute text-white bottom-1 right-1 text-2xl">Iced Americano</text></div>              
+                <div className="relative top-60 -right-8 mr-40 w-44 h-[2px] bg-white"><text className="absolute text-white bottom-1 right-1 text-2xl">{cups[0].name}</text></div>              
                 <div className="absolute top-74 -right-12 mr-80 w-33 h-[2px] bg-white rotate-60"></div>
               </div>
                 
               {/* Medium Cup */}
-              <div className="absolute bottom-55 right-20 w-[400px] h-[400px] z-20 mouuse-pointer">
+              <div className="absolute bottom-60 right-20 w-[400px] h-[400px] z-20 mouuse-pointer">
                 <Image
-                  src="/cofeecup.png"
-                  alt="Middle Coffee Cup"
+                  src={cups[1].src}
+                  alt={cups[1].name}
                   fill
                   className="object-contain drop-shadow-lg rotate-[-10deg]"
                 />
-                <div className="absolute top-28 -right-0 mr-66 w-30 h-[2px] bg-white"><text className="absolute text-white bottom-1 right-1 text-lg">Iced Latte</text></div>
+                <div className="absolute top-28 -right-0 mr-66 w-30 h-[2px] bg-white"><text className="absolute text-white bottom-1 right-1 text-lg">{cups[1].name}</text></div>
                 <div className="absolute top-38 -right-0 mr-48 w-24 h-[2px] bg-white rotate-60"></div>
               </div>
                 
               {/* Small Cup */}
-              <div className="absolute bottom-94 right-5  w-[200px] h-[200px] z-10 mouuse-pointer">
+              <div className="absolute bottom-94 right-5  w-[200px] h-[200px] z-30 mouuse-pointer">
                 <Image
-                  src="/cofeecup.png"
-                  alt="Back Coffee Cup"
+                  src={cups[2].src}
+                  alt={cups[2].name}
                   fill
                   className="object-contain drop-shadow-md rotate-[-10deg]"
                   />
-                <div className="absolute mt-1 top-8 -right-1 mr-35 w-20 h-[2px] bg-white"><text className="absolute text-white bottom-1 right-1 text-sm">Affogato</text></div>
+                <div className="absolute mt-1 top-8 -right-1 mr-35 w-20 h-[2px] bg-white"><text className="absolute text-white bottom-1 right-1 text-sm">{cups[2].name}</text></div>
                 <div className="absolute top-18 -right-1 mr-20 w-20 h-[2px] bg-white rotate-60"></div>
               </div>
             </div>
         </div>
       </div>
     </section>
-     <section className=" h-220 bg-black w-full">
+     <section className="h-auto md:h-220 bg-black w-full">
 
-      <div className="w-full h-160 items-center justify-between md:flex lg:max-w-7xl mx-auto">
+      <div className="w-full h-130 md:h-160 items-center justify-between md:flex lg:max-w-7xl mx-auto">
         <div className="md:mt-20 mt-30 relative w-full h-200 lg:max-w-mx md:mx-2">
           <div className="mt-40 md:flex md:justify-between md:items-center lg:mx-0 mx-5">
             <div>
@@ -146,18 +173,35 @@ export default function Home() {
             </div>
           </div>
           <div className="relative justify-center md:flex sm:mr-20 mx-10 mt-10 ">
-            <div className="grid grid-cols-2 w-fit mx-auto text-center text-white divide-x divide-y divide-white ">
-              {Array(4)
-                .fill("10+")
-                .map((exp, i) => (
-                  <div key={i} className="p-10">
-                    <h3 className="text-4xl font-bold">
-                      10<span className="align-super text-lg">+</span>
-                    </h3>
-                    <p className="uppercase tracking-wide">Experience</p>
-                  </div>
-                ))}
-            </div>
+<div className="grid grid-cols-2 w-fit mx-auto text-center text-white ">
+  <div className="p-5 border-r border-b">
+    <h3 className="text-4xl font-bold text-[22px] md:text-4xl">
+      10<span className="align-super md:text-lg">+</span>
+    </h3>
+    <p className="uppercase tracking-wide text-[14px] md:text-[22px]">Experience</p>
+  </div>
+
+  <div className="p-5 border-l border-b">
+    <h3 className="text-4xl font-bold text-[22px] md:text-4xl">
+      10<span className="align-super text-lg">+</span>
+    </h3>
+    <p className="uppercase tracking-wide text-[14px] md:text-[22px]">Experience</p>
+  </div>
+
+  <div className="p-5 border-r border-t">
+    <h3 className="text-4xl font-bold text-[22px] md:text-4xl">
+      10<span className="align-super text-lg">+</span>
+    </h3>
+    <p className="uppercase tracking-wide text-[14px] md:text-[22px]">Experience</p>
+  </div>
+  <div className="p-5 border-l border-t">
+    <h3 className="text-4xl font-bold text-[22px] md:text-4xl">
+      10<span className="align-super text-lg ">+</span>
+    </h3>
+    <p className="uppercase tracking-wide text-[14px] md:text-[22px]">Experience</p>
+  </div>
+</div>
+
           </div>
         </div>
         
@@ -167,7 +211,7 @@ export default function Home() {
             src="/bg_cofeenut.png"
             alt="Coffee Background2"
             fill
-            className=" top-30 left-30 h-10 w-10 opacity-60"
+            className=" top-30 left-30 h-10 w-10 opacity-60 object-cover object-top-left"
             priority
           /> 
         </div>
@@ -182,7 +226,7 @@ export default function Home() {
                 viewport={{ once: true }}
                 className="hidden lg:block relative z-10 ml-10 bottom-20">
                 <Image
-                  src="/about (1).jpg"
+                  src="https://res.cloudinary.com/diatamf9x/image/upload/v1760607805/MKN05652_xjq9sa.webp"
                   alt="Coffee & Pastries"
                   width={250}
                   height={300}
@@ -190,7 +234,7 @@ export default function Home() {
                 />
                 {/* Bottom image */}
                 <Image
-                  src="/about (2).jpg"
+                  src="https://res.cloudinary.com/diatamf9x/image/upload/v1760608885/MKN05685_u3sbe6.webp"
                   alt="Coffee Latte"
                   width={250}
                   height={300}
@@ -223,9 +267,10 @@ export default function Home() {
               </div>
           </div>
           <OurMenu />
+          <SpotlightSection/>
       </section>
 
-      <section className="py-10 bg-black w-full">
+      {/* <section className="py-10 bg-black w-full">
         <div className="w-full items-center justify-between md:flex md:max-w-7xl mx-auto">
             <div className="mt-0 md:justify-between md:items-center lg:mx-0 mx-5">
               <motion.h2
@@ -248,9 +293,9 @@ export default function Home() {
             </div>
            
         </div>
-        <Service />
-      </section>
-      <section className="bg-gradient-to-r from-black to-[#4E2A20] h-full py-16 mt-160 sm:mt-80 md:mt-10  w-full">
+        <Service /> 
+      </section> */}
+      <section className="bg-gradient-to-r from-black to-[#4E2A20] h-full py-16  sm:mt-80 md:mt-10  w-full">
         <div className="w-full items-center justify-between md:flex  mx-auto">
                 <CustomerFeedback />
         </div>

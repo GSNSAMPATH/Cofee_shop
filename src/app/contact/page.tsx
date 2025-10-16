@@ -74,7 +74,7 @@ export default function ContactPage() {
                             </div>
                             </form>
                         </div>
-                        <div className="relative  lg:left-100 xl:left-170 mt-20 xl:top-2 lg:top-25 z-0 bg-[#E3D7C5] p-3 h-15 max-w-sm flex flex-col items-center lg:block lg:flex-row justify-center rounded-4xl shadow-lg ">
+                        <div className="relative  lg:left-100 xl:left-150 2xl:left-170 mt-20 xl:top-[-15]  lg:top-[-20] md:top-[-20] z-0 bg-[#E3D7C5] p-3 h-15 max-w-sm flex flex-col items-center lg:block lg:flex-row justify-center rounded-4xl shadow-lg ">
                             <div className="flex space-x-6 text-4xl 0 text-black justify-center lg:mr-40">
                                 <a href="https://facebook.com" target="_blank" rel="noreferrer" className="hover:text-teal-600 transition">
                                 <FaFacebook />

@@ -1,87 +1,96 @@
 "use client";
+import { useEffect, useState, useRef } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { client } from "@/app/lib/sanity.config";
+import imageUrlBuilder from "@sanity/image-url";
+
+const builder = imageUrlBuilder(client);
+function urlFor(source: any) {
+  return builder.image(source).url();
+}
 
 export default function CustomerFeedback() {
-  const feedbacks = [
-    {
-      name: "Customer",
-      position: "Position",
-      image: "/9abbe7b302816291cf6ff286092702df2db92c25.jpg",
-      rating: 5,
-      text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum amet, consectetur adipisicing elit.",
-    },
-    {
-      name: "Customer",
-      position: "Position",
-      image: "/9abbe7b302816291cf6ff286092702df2db92c25.jpg",
-      rating: 5,
-      text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum amet, consectetur adipisicing elit.",
-    },
-    {
-      name: "Customer",
-      position: "Position",
-      image: "/9abbe7b302816291cf6ff286092702df2db92c25.jpg",
-      rating: 5,
-      text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum amet, consectetur adipisicing elit.",
-    },
-  ];
+  const [feedbacks, setFeedbacks] = useState<any[]>([]);
+  const [scrollWidth, setScrollWidth] = useState(0);
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  // Fetch feedback data from Sanity
+  useEffect(() => {
+    const fetchData = async () => {
+      const query = `*[_type == "feedback"] | order(_createdAt desc){
+        name, position, rating, text, image
+      }`;
+      const data = await client.fetch(query);
+      setFeedbacks(data);
+    };
+    fetchData();
+  }, []);
+
+  // Calculate width for seamless looping
+  useEffect(() => {
+    if (containerRef.current) {
+      setScrollWidth(containerRef.current.scrollWidth);
+    }
+  }, [feedbacks]);
 
   return (
- 
-      <div className="container mx-auto py-16 px-6 text-center">
-        {/* Title */}
-        <motion.h2
-          initial={{ opacity: 0, y: -30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-         className="text-center inria-heading2-bold text-white text-3xl font-bold mb-12">
-          OUR CUSTOMERS FEEDBACK
-          <span className="block w-16 h-[2px] bg-red-600 mx-auto  mt-2"></span>
-        </motion.h2>
+    <div className="container mx-auto py-16 px-6 text-center overflow-hidden">
+      {/* Title */}
+      <motion.h2
+        initial={{ opacity: 0, y: -30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
+        className="text-center inria-heading2-bold text-white text-3xl font-bold mb-12"
+      >
+        OUR CUSTOMERS FEEDBACK
+        <span className="block w-16 h-[2px] bg-red-600 mx-auto mt-2"></span>
+      </motion.h2>
 
-        {/* Grid Layout */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
-          {feedbacks.map((item, i) => (
-            <motion.div
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: i * 0.2 }}
-              viewport={{ once: true }}
+      {/* Infinite Loop Scroll */}
+      <div className="relative w-full overflow-hidden ">
+        <motion.div
+          ref={containerRef}
+          className="flex  grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8"
+ 
+        >
+          {/* Duplicate cards to make infinite scroll seamless */}
+          {[...feedbacks].map((item, i) => (
+            <div
               key={i}
-              className="bg-[#6a5d55] text-white p-6 rounded-xl shadow-lg mouuse-pointer "
+              className="bg-[#6a5d55] text-white p-6 rounded-xl shadow-lg min-w-[320px] md:min-w-auto lg:min-w-[400px] h-[250px]"
             >
-              {/* Top part */}
-              <div className="flex  mb-4">
+              {/* Top Section */}
+              <div className="flex mb-4 items-center">
                 <Image
-                  src={item.image}
+                  src={urlFor(item.image)}
                   alt={item.name}
                   width={50}
                   height={50}
-                  className="rounded-full"
+                  className="rounded-full w-12 h-12 object-cover"
                 />
-                <div className="ml-4 text-left">
-                  <h3 className="poppins-heading">{item.name}</h3>
+                <div className="ml-4 text-left flex-1">
+                  <div className="flex justify-between items-center">
+                    <h3 className="poppins-heading mt-1">{item.name}</h3>
+                    <div className="flex">
+                      {Array.from({ length: item.rating || 5 }).map((_, idx) => (
+                        <span key={idx} className="text-yellow-400 text-xl">
+                          ★
+                        </span>
+                      ))}
+                    </div>
+                  </div>
                   <p className="poppins-heading2 mt-2 opacity-80">{item.position}</p>
                 </div>
               </div>
 
-              {/* Rating */}
-              <div className="flex mb-3">
-                {Array.from({ length: item.rating }).map((_, i) => (
-                  <span key={i} className="text-yellow-400 text-xl">
-                    ★
-                  </span>
-                ))}
-              </div>
-
-              {/* Text */}
+              {/* Feedback Text */}
               <p className="poppins-text text-left leading-relaxed">{item.text}</p>
-            </motion.div>
+            </div>
           ))}
-        </div>
+        </motion.div>
       </div>
- 
+    </div>
   );
 }

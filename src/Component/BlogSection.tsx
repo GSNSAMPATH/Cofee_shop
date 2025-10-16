@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { FaFacebookF, FaYoutube } from "react-icons/fa";
 
 export default function BlogSection() {
   const blogs = [
@@ -47,35 +48,40 @@ export default function BlogSection() {
           Best Coffee Shops in Bentota – Why AIDA’s Coffee Shop
         </motion.p>
 
-        {/* Blog Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
-          {blogs.map((blog, i) => (
-            <motion.div
-              key={i}
-              className="relative group rounded-lg overflow-hidden shadow-lg"
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: i * 0.2 }}
-              viewport={{ once: true }}
-            >
-              {/* Image */}
-              <Image
-                src={blog.image}
-                alt={blog.title}
-                width={400}
-                height={300}
-                className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
-              />
+    
+     {/* ---------- Blog Grid ---------- */}
+      <div className="container mx-auto px- pb-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+        {blogs.map((blog, index) => (
+          <div
+            key={index}
+            className="bg-[#2b1f1b] rounded-lg overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300 p-5"
+            style={{
+        background: "linear-gradient(180deg, #4B2E2B 43.75%, rgba(0, 0, 0, 0.25) 100%)",
+      }}>
+            <Image
+              src={blog.image}
+              alt={blog.title}
+              width={400}
+              height={250}
+              className="object-cover w-full h-[250px] rounded-lg mb-4"
 
-              {/* Overlay */}
-              <div className="absolute inset-0 bg-black/40 flex flex-col justify-end p-6 transition duration-500 group-hover:bg-black/60">
-                <h3 className="text-white text-xl text-left inria-heading2-bold">{blog.title}</h3>
-                <p className="text-white/80 text-left inria-text-small mt-2">{blog.desc}</p>
+            />
+            <div className="p-6 text-center">
+              <h3 className="text-xl text-white font-bold mb-3">{blog.title}</h3>
+              <p className="text-gray-300 mb-5">{blog.desc}</p>
+              <div className="flex items-center gap-4 justify-center">
+                <button className="border border-red-500 text-white px-4 py-1 rounded-md hover:bg-red-600 transition">
+                  See More
+                </button>
+                <FaFacebookF className="text-xl text-white hover:text-blue-500 cursor-pointer" />
+                <FaYoutube className="text-xl text-white hover:text-red-600 cursor-pointer" />
               </div>
-            </motion.div>
-          ))}
-        </div>
+            </div>
+          </div>
+        ))}
       </div>
-
+    </div>
   );
 }
+
+    
