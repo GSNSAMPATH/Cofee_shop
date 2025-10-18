@@ -13,7 +13,7 @@ export default function Navbar() {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <nav className="bg-transparent relative  w-full z-50">
+    <nav className=" bg-black md:bg-transparent relative  w-full z-50">
       <div className=" mx-auto md:px-30 px-10 py-4 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="text-2xl font-bold text-gray-800">
