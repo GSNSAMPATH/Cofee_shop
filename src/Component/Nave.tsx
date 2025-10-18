@@ -17,7 +17,7 @@ export default function Navbar() {
       <div className=" mx-auto md:px-30 px-10 py-4 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="text-2xl font-bold text-gray-800">
-          <Image src="/Logo2.png" alt="Logo" width={80} height={60} className="rounded-3xl"/>
+          <Image src="https://res.cloudinary.com/diatamf9x/image/upload/v1760692085/newlogo2_yhv2oy.jpg" alt="Logo" width={50} height={50} className="rounded-full"/>
         </Link>
 
         {/* Desktop Menu */}
@@ -33,7 +33,7 @@ export default function Navbar() {
         {/* Mobile Menu Button */}
         <button
           onClick={toggleMenu}
-          className="md:hidden text-gray-700 focus:outline-none"
+          className="md:hidden text-gray-100 focus:outline-none"
         >
           {isOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
@@ -42,7 +42,7 @@ export default function Navbar() {
       {/* Mobile Dropdown Menu */}
       {isOpen && (
         <div className="md:hidden absolute top-16 right-0 w-full bg-black shadow-lg ">
-          <div className="flex flex-col space-y-4 px-6 py-4 text-gray-700 font-medium">
+          <div className="flex flex-col space-y-4 px-6 py-4 text-gray-100 font-medium">
             <Link href="/" onClick={toggleMenu} className="hover:text-teal-600">Home</Link>
             <Link href="/about" onClick={toggleMenu} className="hover:text-teal-600">About</Link>
             <Link href="/offer" onClick={toggleMenu} className="hover:text-teal-600">Offer</Link>

@@ -1,4 +1,4 @@
-"use client";
+
 
 import Image from "next/image";
 import { PortableText, PortableTextComponents } from "@portabletext/react";

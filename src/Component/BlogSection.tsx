@@ -8,17 +8,17 @@ export default function BlogSection() {
     {
       title: "OUR BLOG",
       desc: "Our blog brings together stories from coffee culture, travel, and AIDA’s legacy in hospitality",
-      image: "/about (2).jpg", // replace with your real images
+      image: "https://res.cloudinary.com/diatamf9x/image/upload/v1760608885/MKN05685_u3sbe6.webp", // replace with your real images
     },
     {
       title: "OUR BLOG",
       desc: "Best Coffee Shops in Bentota – Why AIDA’s Coffee Shop",
-      image: "/about (2).jpg",
+      image: "https://res.cloudinary.com/diatamf9x/image/upload/v1760608573/MKN05360_lcmqcy.webp",
     },
     {
       title: "OUR BLOG",
       desc: "Discover the art of brewing coffee with AIDA’s experts",
-      image: "/about (2).jpg",
+      image: "https://res.cloudinary.com/diatamf9x/image/upload/v1760607805/MKN05652_xjq9sa.webp",
     },
   ];
 

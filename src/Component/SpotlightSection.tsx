@@ -225,7 +225,7 @@ useEffect(() => {
       </h1>
 
       <div className="relative flex items-center justify-center w-full max-w-7xl lg:max-w-7xl mx-auto mt-20">
-        <button className={`${styles.btn} ${styles.prev}`} onClick={() => scrollTo(-1)}>
+        <button className={`${styles.btn} ${styles.prev} hidden md:block`} onClick={() => scrollTo(-1)}>
           ❮
         </button>
 
@@ -274,7 +274,7 @@ useEffect(() => {
           <div className={styles.spacer} />
         </div>
 
-        <button className={`${styles.btn} ${styles.next}`} onClick={() => scrollTo(1)}>
+        <button className={`${styles.btn} ${styles.next} hidden md:block`} onClick={() => scrollTo(1)}>
           ❯
         </button>
           {/* Line indicators */}

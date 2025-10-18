@@ -176,3 +176,21 @@ body {
   border-radius: 20px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
 }
+
+/* Horizontal Scroll (mobile) */
+.mobile-scroll {
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+.mobile-scroll > * {
+  scroll-snap-align: center;
+}
+.mobile-scroll::-webkit-scrollbar {
+  display: none;
+}
+.mobile-scroll {
+  -ms-overflow-style: none; /* IE/Edge */
+  scrollbar-width: none; /* Firefox */
+}

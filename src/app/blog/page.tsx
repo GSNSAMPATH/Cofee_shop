@@ -1,4 +1,4 @@
-"use client";
+
 
 import Navbar from "@/Component/Nave";
 import Image from "next/image";
@@ -47,16 +47,16 @@ export default async function BlogPage() {
     <div className="bg-black text-white min-h-screen">
     
       {/* ---------- Hero Section ---------- */}
-      <div className="relative w-full h-[60vh] ">
+      <div className="relative w-full h-130 md:h-[87vh] ">
         <Navbar />
         <Image
-          src="/6d3d6aa76335ce8d7cdc10f75534bc4cfb0c5ecb.jpg"
+          src="https://res.cloudinary.com/diatamf9x/image/upload/v1760680453/MKN05798_ov91ma.jpg"
           alt="Blog hero"
           fill
           className="h-100 object-cover opacity-900 w-full"
         />
-        <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
-          <h1 className="text-5xl md:text-7xl font-bold tracking-wide">BLOG</h1>
+        <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
+          <h1 className="text-white text-4xl sm:text-8xl font-bold text-center mb-10 relative inline-block mx-auto">BLOG</h1>
         </div>
       </div>
 
@@ -80,8 +80,8 @@ export default async function BlogPage() {
             />
           </div>
           <div className="lg:w-1/2 p-8 flex flex-col justify-center">
-            <h2 className="text-2xl font-bold mb-4">TEXT HEADING</h2>
-            <p className="text-gray-300 mb-6">
+            <h2 className="text-2xl inria-heading2 font-bold mb-4">TEXT HEADING</h2>
+            <p className="text-gray-300 inria- mb-6">
               We are a company that makes and distributes delicious drinks. Our
               main product is made with a secret recipe and available in stores
               worldwide. We are a company that makes and distributes delicious

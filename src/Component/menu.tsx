@@ -47,7 +47,7 @@ export default function OurMenu() {
       description:
         cards[0]?.paragraph ||
         "Enjoy handcrafted espresso, pour over, and cold brew made with premium beans.",
-      className: "col-span-1 row-span-2 ",
+      className: "md:col-span-1 md:row-span-2 ",
       className2: "  mt-90 text-white mt-0 left-4 ",
     },
 
@@ -82,7 +82,7 @@ export default function OurMenu() {
       description:
         cards[2]?.paragraph ||
         "Refreshing cold brews and fruit drinks made fresh.",
-      className: "col-span-1 row-span-2",
+      className: "md:col-span-1 md:row-span-2",
       className2: "absolute bottom-10 left-4 text-white",
     },
 

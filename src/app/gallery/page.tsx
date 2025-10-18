@@ -22,17 +22,17 @@ export default async function GalleryPage() {
   return (
     <div className="bg-black text-white">
       {/* Hero Section */}
-      <section className="relative h-[70vh] w-full">
+      <section className="relative h-130  md:h-[87vh] w-full">
         <Navebar />
         <Image
-          src="/d158006b8444563d4b5b86a6cfa0508ca05e3e50.jpg"
+          src="https://res.cloudinary.com/diatamf9x/image/upload/v1760680238/MKN05613_hme9sj.webp"
           alt="Gallery Hero"
           fill
           className="object-cover opacity-80"
           priority
         />
         <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
-          <h1 className="text-5xl md:text-6xl font-bold tracking-wide">GALLERY</h1>
+          <h1 className="text-white text-4xl sm:text-8xl font-bold text-center mb-10 relative inline-block mx-auto">GALLERY</h1>
         </div>
       </section>
 

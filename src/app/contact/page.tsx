@@ -6,17 +6,17 @@ import { FaFacebook, FaWhatsapp } from "react-icons/fa";
 export default function ContactPage() {
     return (
         <section className=" h-auto bg-black w-full">
-            <section className="relative h-160 bg-black w-full">
+            <section className="relative h-130 md:h-[87vh] bg-black w-full">
                 <Navbar />
                 <Image
-                    src="/6edc9a0f3e7b0480f6b403ef6035e717736ff4cd.jpg"
+                    src="https://res.cloudinary.com/diatamf9x/image/upload/v1760680901/MKN05360_lnifoz.webp"
                     alt="Coffee Background"
                     fill
                     className=" h-100 object-cover opacity-900 w-full"
                     priority
                     />
                 <div className="w-full  bottom-50 items-center justify-between md:flex md:max-w-7xl mx-auto ">
-                    <div className=" mt-0 md:flex md:justify-between mt-100 md:items-center lg:mx-0 mx-5">
+                    <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
                         <h2 className="text-white text-4xl sm:text-8xl font-bold text-center mb-10 relative inline-block mx-auto">
                         CONTACT US
                             <span className="block w-16 h-[2px] bg-red-600 mt-2 "></span>
@@ -39,10 +39,10 @@ export default function ContactPage() {
                     <div className="w-full h-200 ">
                         <div className="mt-10 p-2 lg:p-10 flex flex-col items-center lg:block lg:flex-row justify-center">
                             <div className="text-center mb-8">
-                            <h3 className="text-lg font-bold text-white text-center tracking-widest mb-8">
+                            <h3 className="text-lg font-bold inria-heading2 text-white text-center tracking-widest mb-8">
                              GET IN TOUCH
                             </h3>
-                            <p className="text-gray-400">
+                            <p className="text-gray-400 inria-text text-center">
                             We are open for any suggestions or just to have a chat. Feel free to reach out to us through the form below.
                             </p>
                                 </div> 
@@ -74,7 +74,7 @@ export default function ContactPage() {
                             </div>
                             </form>
                         </div>
-                        <div className="relative  lg:left-100 xl:left-150 2xl:left-170 mt-20 xl:top-[-15]  lg:top-[-20] md:top-[-20] z-0 bg-[#E3D7C5] p-3 h-15 max-w-sm flex flex-col items-center lg:block lg:flex-row justify-center rounded-4xl shadow-lg ">
+                        <div className="relative  lg:left-100 xl:left-150 2xl:left-170 mt-20 xl:top-[-30]  lg:top-[-20] md:top-[-20] z-0 bg-[#E3D7C5] p-3 h-15 max-w-sm flex flex-col items-center lg:block lg:flex-row justify-center rounded-4xl shadow-lg ">
                             <div className="flex space-x-6 text-4xl 0 text-black justify-center lg:mr-40">
                                 <a href="https://facebook.com" target="_blank" rel="noreferrer" className="hover:text-teal-600 transition">
                                 <FaFacebook />

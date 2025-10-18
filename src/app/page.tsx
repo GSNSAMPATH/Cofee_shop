@@ -39,13 +39,13 @@ export default function Home() {
 
   return (
     <section className="w-full bg-black">
-      <section className="relative h-100 md:h-170 bg-black w-full">
+      <section className="relative h-130 md:h-170 bg-black w-full">
         <Navbar />
         <Image
           src="/Background.png"
           alt="Coffee Background"
           fill
-          className=" h-100 object-cover opacity-900 w-full"
+          className=" h-50 md:h-100 object-cover opacity-900 w-full"
           priority
         />
         <div className="hidden lg:block absolute top-60 mb-50 right-0 w-[380px] h-[280px] z-0 ">
@@ -133,11 +133,11 @@ export default function Home() {
         </div>
       </div>
     </section>
-     <section className="h-auto md:h-220 bg-black w-full">
+     <section className=" md:h-220 bg-black w-full">
 
-      <div className="w-full h-130 md:h-160 items-center justify-between md:flex lg:max-w-7xl mx-auto">
-        <div className="md:mt-20 mt-30 relative w-full h-200 lg:max-w-mx md:mx-2">
-          <div className="mt-40 md:flex md:justify-between md:items-center lg:mx-0 mx-5">
+      <div className="w-full md:h-160 items-center justify-between md:flex lg:max-w-7xl mx-auto">
+        <div className="md:mt-20 mt-30 relative w-full h-160 sm:h-200 lg:max-w-mx md:mx-2">
+          <div className="md:mt-40 md:flex md:justify-between md:items-center lg:mx-0 mx-5">
             <div>
               <motion.h2
                 initial={{ opacity: 0, y: -30 }}
@@ -226,7 +226,7 @@ export default function Home() {
                 viewport={{ once: true }}
                 className="hidden lg:block relative z-10 ml-10 bottom-20">
                 <Image
-                  src="https://res.cloudinary.com/diatamf9x/image/upload/v1760607805/MKN05652_xjq9sa.webp"
+                  src="/about (1).jpg"
                   alt="Coffee & Pastries"
                   width={250}
                   height={300}
@@ -234,7 +234,7 @@ export default function Home() {
                 />
                 {/* Bottom image */}
                 <Image
-                  src="https://res.cloudinary.com/diatamf9x/image/upload/v1760608885/MKN05685_u3sbe6.webp"
+                  src="/about (2).jpg"
                   alt="Coffee Latte"
                   width={250}
                   height={300}
@@ -252,9 +252,9 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className=" py-16 bg-black w-full">
+      <section className=" pb-10 md:py-16 bg-black w-full">
           <div className="w-full items-center justify-between md:flex md:max-w-7xl mx-auto ">
-              <div className="mt-20 md:flex md:justify-between md:items-center lg:mx-0 mx-5">
+              <div className="mt-[-20px] md:mt-20 md:flex md:justify-between md:items-center lg:mx-0 mx-5">
                 <motion.h2
                   initial={{ opacity: 0, y: -30 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -270,31 +270,7 @@ export default function Home() {
           <SpotlightSection/>
       </section>
 
-      {/* <section className="py-10 bg-black w-full">
-        <div className="w-full items-center justify-between md:flex md:max-w-7xl mx-auto">
-            <div className="mt-0 md:justify-between md:items-center lg:mx-0 mx-5">
-              <motion.h2
-                initial={{ opacity: 0, y: -30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6 }}
-                viewport={{ once: true }}
-                className="text-white inria-heading2 text-3xl font-regular text-center mb-1 relative inline-block mx-auto">
-                OUR SERVICES
-                <span className="block w-16 h-[2px] bg-red-600 mt-2"></span>
-              </motion.h2>
-              <motion.p
-                initial={{ opacity: 0, y: -30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.2 }}
-                viewport={{ once: true }}
-              className="inria-text font-regular text-white leading-relaxed">
-                why choose us
-              </motion.p>
-            </div>
-           
-        </div>
-        <Service /> 
-      </section> */}
+
       <section className="bg-gradient-to-r from-black to-[#4E2A20] h-full py-16  sm:mt-80 md:mt-10  w-full">
         <div className="w-full items-center justify-between md:flex  mx-auto">
                 <CustomerFeedback />
