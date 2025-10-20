@@ -68,7 +68,7 @@ export default function OurMenu() {
       src: "/Rectangle 17.png",
       alt: "Cupcake",
       className: "col-span-1 row-span-1",
-      title: "Ivent",
+      title: "Event",
       description:
         "Enjoy handcrafted espresso, pour over, and cold brew made with premium beans.",
       className2: "mt-40  text-center text-white",
