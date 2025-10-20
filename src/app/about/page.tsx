@@ -23,7 +23,7 @@ export default function About() {
                     <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
                         <h1 className="text-white font-sans text-4xl sm:text-8xl font-regular text-center mb-10 relative inline-block mx-auto">
                         ABOUT US
-                            <span className="block w-16 h-[2px] bg-red-600 mt-2 "></span>
+                            {/* <span className="block w-16 h-[2px] bg-red-600 mt-2 "></span> */}
                         </h1>
                     </div>
                 </div>

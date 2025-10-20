@@ -69,7 +69,7 @@ export default async function BlogPage() {
 
       {/* ---------- Featured Blog Card ---------- */}
       <div className="container mx-auto px-6 mb-16 h-auto">
-        <div className="flex flex-col lg:flex-row bg-[#1e1e1e] rounded-xl overflow-hidden shadow-lg border-20 border-[#4125224F] ">
+        <div className="flex flex-col lg:flex-row bg-[#1e1e1e] rounded-xl overflow-hidden shadow-lg md:border-20 border-[#4125224F] ">
           <div className="lg:w-1/2">
             <Image
               src={urlFor(hero.mainImage).url()}

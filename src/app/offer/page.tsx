@@ -122,7 +122,7 @@ export default function OfferPage() {
           className="object-cover"
         />
         <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
-          <h1 className="text-5xl md:text-7xl font-bold tracking-wide">
+          <h1 className="text-white font-sans text-4xl sm:text-8xl font-regular text-center mb-10 relative inline-block mx-auto">
             WHAT WE OFFER
           </h1>
         </div>
@@ -206,6 +206,7 @@ export default function OfferPage() {
                             height={300}
                             className="rounded-lg h-[400px] object-cover shadow-md hover:scale-105 transition-transform duration-300"
                           />
+                          
                         ))}
                       </div>
                     </motion.div>

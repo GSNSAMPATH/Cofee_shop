@@ -87,7 +87,7 @@ export default function Home() {
               className="inline-flex items-center px-6 py-2 border border-red-500 rounded-full text-white font-medium 
                hover:bg-[#5D2E0F] transition duration-300"
             >
-              View Menu →
+              View Offer →
             </a>
           </div>
           <div className="hidden lg:flex relative  w-full h-100 left-0">
