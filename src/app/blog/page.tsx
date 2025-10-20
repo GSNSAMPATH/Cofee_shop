@@ -80,8 +80,8 @@ export default async function BlogPage() {
             />
           </div>
           <div className="lg:w-1/2 p-8 flex flex-col justify-center">
-            <h2 className="text-2xl inria-heading2 font-bold mb-4">{hero.title}</h2>
-            <p className="text-gray-300 inria- mb-6">
+            <h2 className="text-2xl inria-heading2 font-bold mb-4 inria-heading2">{hero.title}</h2>
+            <p className="text-gray-300 inria- mb-6 inria-text-small">
               We are a company that makes and distributes delicious drinks. Our
               main product is made with a secret recipe and available in stores
               worldwide. We are a company that makes and distributes delicious
@@ -118,8 +118,8 @@ export default async function BlogPage() {
 
             />
             <div className="p-6 text-center">
-              <h3 className="text-xl font-bold mb-3">{blog.title}</h3>
-              <p className="text-gray-300 mb-5">{blog.excerpt}</p>
+              <h3 className="text-xl font-bold mb-3 inria-heading3">{blog.title}</h3>
+              <p className="text-gray-300 mb-5 inria-text-small">{blog.excerpt}</p>
               <div className="flex items-center gap-4 justify-center">
                 <Link
                   href={`/blog/${hero.slug.current}`}

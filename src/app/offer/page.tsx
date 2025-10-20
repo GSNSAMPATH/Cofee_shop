@@ -244,8 +244,8 @@ export default function OfferPage() {
 
                 {/* Content */}
                 <div className="md:w-1/2 w-full">
-                  <h2 className="text-3xl font-semibold mb-4">{offer.title}</h2>
-                  <p className="text-gray-300 mb-6 leading-relaxed">
+                  <h2 className="text-3xl font-semibold mb-4 inria-heading2">{offer.title}</h2>
+                  <p className="text-gray-300 mb-6 leading-relaxed inria-text">
                     {offer.desc}
                   </p>
                   <button
@@ -268,7 +268,7 @@ export default function OfferPage() {
                     transition={{ duration: 0.6 }}
                     className="overflow-hidden mt-6 space-y-6 px-6 md:px-20 pb-12"
                   >
-                    <p className="text-gray-300 leading-relaxed text-justify mb-20">
+                    <p className="text-gray-300 text-justify mb-20 inria-text-small">
                       {offer.details}
                     </p>
 

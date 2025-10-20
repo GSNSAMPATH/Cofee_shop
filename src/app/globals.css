@@ -39,15 +39,15 @@ body {
 .inria-text {
   font-family: "Inria Sans";
   font-weight: 400;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 100%;
 }
 
 .inria-text-small {
   font-family: "Inria Sans";
   font-weight: 400;
-  font-size: 16px;
-  line-height: 100%;
+  font-size: 18px;
+  line-height: 130%;
 }
 
 .inria-heading {
@@ -68,6 +68,13 @@ body {
   font-family: "Inria Sans";
   font-weight: 700;
   font-size: 32px;
+  line-height: 100%;
+}
+
+.inria-heading3 {
+  font-family: "Inria Sans";
+  font-weight: 700;
+  font-size: 24px;
   line-height: 100%;
 }
 
