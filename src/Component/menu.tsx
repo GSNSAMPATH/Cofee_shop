@@ -56,7 +56,7 @@ export default function OurMenu() {
       description:
         cards[1]?.paragraph || "Freshly baked buttery croissants every morning.",
       className: "col-span-1 row-span-1",
-      className2: "mt-40 text-center text-white",
+      className2: "mt-40  text-white",
     },
     {
       src: "/Rectangle 17.png",
@@ -93,7 +93,7 @@ export default function OurMenu() {
         cards[3]?.paragraph ||
         "Sweet cupcakes with rich chocolate and vanilla frosting.",
       className: "col-span-1 row-span-1",
-      className2: "mt-40 text-center text-white",
+      className2: "mt-40 text-white",
     },
   ];
 
