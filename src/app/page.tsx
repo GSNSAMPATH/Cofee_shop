@@ -226,7 +226,7 @@ export default function Home() {
                 viewport={{ once: true }}
                 className="hidden lg:block relative z-10 ml-10 bottom-20">
                 <Image
-                  src="/about (1).jpg"
+                  src="https://res.cloudinary.com/diatamf9x/image/upload/v1760680901/MKN05360_lnifoz.webp"
                   alt="Coffee & Pastries"
                   width={250}
                   height={300}
@@ -234,7 +234,7 @@ export default function Home() {
                 />
                 {/* Bottom image */}
                 <Image
-                  src="/about (2).jpg"
+                  src="https://res.cloudinary.com/diatamf9x/image/upload/v1760608885/MKN05685_u3sbe6.webp"
                   alt="Coffee Latte"
                   width={250}
                   height={300}
