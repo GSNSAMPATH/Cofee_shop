@@ -20,8 +20,8 @@ const offers = [
     `,
     extraImages: [
       "https://res.cloudinary.com/diatamf9x/image/upload/v1760608535/MKN05633_ou3v1n.webp",
-      "/6d3d6aa76335ce8d7cdc10f75534bc4cfb0c5ecb.jpg",
-      "/6d3d6aa76335ce8d7cdc10f75534bc4cfb0c5ecb.jpg",
+      "https://res.cloudinary.com/diatamf9x/image/upload/v1760944812/MKN05326_yf8tmi.webp",
+      "https://res.cloudinary.com/diatamf9x/image/upload/v1760944926/MKN05291_oixhcp.webp",
     ],
   },
   {
@@ -204,7 +204,7 @@ export default function OfferPage() {
                             alt={`${offer.title} extra ${i + 1}`}
                             width={400}
                             height={300}
-                            className="rounded-lg h-[300px] object-cover shadow-md hover:scale-105 transition-transform duration-300"
+                            className="rounded-lg h-[400px] object-cover shadow-md hover:scale-105 transition-transform duration-300"
                           />
                         ))}
                       </div>

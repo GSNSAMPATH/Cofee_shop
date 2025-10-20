@@ -2,21 +2,24 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { FaFacebookF, FaYoutube } from "react-icons/fa";
+import { useRouter } from "next/navigation";
+
 
 export default function BlogSection() {
+  const router = useRouter();
   const blogs = [
     {
-      title: "OUR BLOG",
+      title: "AIDA's Coffee Blog",
       desc: "Our blog brings together stories from coffee culture, travel, and AIDA’s legacy in hospitality",
       image: "https://res.cloudinary.com/diatamf9x/image/upload/v1760608885/MKN05685_u3sbe6.webp", // replace with your real images
     },
     {
-      title: "OUR BLOG",
+      title: "Best Coffee Shops in Bentota",
       desc: "Best Coffee Shops in Bentota – Why AIDA’s Coffee Shop",
       image: "https://res.cloudinary.com/diatamf9x/image/upload/v1760608573/MKN05360_lcmqcy.webp",
     },
     {
-      title: "OUR BLOG",
+      title: "Brewing Coffee with AIDA's Experts",
       desc: "Discover the art of brewing coffee with AIDA’s experts",
       image: "https://res.cloudinary.com/diatamf9x/image/upload/v1760607805/MKN05652_xjq9sa.webp",
     },
@@ -70,7 +73,10 @@ export default function BlogSection() {
               <h3 className="text-xl text-white font-bold mb-3">{blog.title}</h3>
               <p className="text-gray-300 mb-5">{blog.desc}</p>
               <div className="flex items-center gap-4 justify-center">
-                <button className="border border-red-500 text-white px-4 py-1 rounded-md hover:bg-red-600 transition">
+                <button
+                  type="button"
+                  onClick={() => router.push("/blog")}  
+                className="border border-red-500 text-white px-4 py-1 rounded-md hover:bg-red-600 transition">
                   See More
                 </button>
                 <FaFacebookF className="text-xl text-white hover:text-blue-500 cursor-pointer" />
