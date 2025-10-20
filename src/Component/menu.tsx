@@ -68,7 +68,7 @@ export default function OurMenu() {
       src: "/Rectangle 17.png",
       alt: "Cupcake",
       className: "col-span-1 row-span-1",
-      title: "Coffee",
+      title: "Ivent",
       description:
         "Enjoy handcrafted espresso, pour over, and cold brew made with premium beans.",
       className2: "mt-40  text-center text-white",
@@ -91,7 +91,7 @@ export default function OurMenu() {
       src: "/Rectangle 17.png",
       alt: "Croissant",
       className: "col-span-1 row-span-1",
-      title: "Coffee",
+      title: "Living Kichen",
       description:
         "Enjoy handcrafted espresso, pour over, and cold brew made with premium beans.",
       className2: "mt-40  text-center text-white",

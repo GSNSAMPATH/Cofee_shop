@@ -166,7 +166,7 @@ export default function About() {
             </section>
             <section className="py-1 bg-black w-full mt-10 sm:mt-0 lg:mt-0">
                 <div className="w-full items-center justify-between md:flex w-full">
-                    <Quality />
+                    <Quality/>
                 </div>
             </section>
             <section className="bg-gradient-to-t from-black to-[#4E2A20] h-full py-16 md:mt-10 mt-40 w-full">

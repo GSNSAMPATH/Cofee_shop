@@ -17,7 +17,7 @@ export default function Service() {
                     className="mt-10">
                         <Image src="/63cfb259def888f57248575810951366a06aeef4.png" alt="Service Icon" width={50} height={50} className="mt-10" />
                         <h2 className="text-white inter-heading mb-1 relative inline-block mx-auto ">AUTHENTIC COFFEE</h2>
-                        <p className="text-white inter-text  leading-relaxed">Enjoy handcrafted espresso, pour over, and cold brew made with premium beans. Each cup highlights the rich, nuanced flavors of Sri Lanka’s highland coffee heritage.</p> 
+                        <p className="text-white inter-text  leading-relaxed text-justify">Enjoy handcrafted espresso, pour over, and cold brew made with premium beans. Each cup highlights the rich, nuanced flavors of Sri Lanka’s highland coffee heritage.</p> 
                     </motion.div>
                     <motion.div
                         initial={{ opacity: 0, y: -30 }}
@@ -28,7 +28,7 @@ export default function Service() {
                     >
                         <Image src="/63cfb259def888f57248575810951366a06aeef4.png" alt="Service Icon" width={50} height={50} className="mt-10" />
                         <h2 className="text-white inter-heading font-regular mb-1 relative inline-block mx-auto ">FRESH PASTRIES, LIGHT SNACKS & HOUSE-MADE DESSERTS</h2>
-                        <p className="text-white inter-text leading-relaxed ">From flaky croissants to local-inspired treats, everything is baked fresh in-house. Perfectly paired with coffee or tea for a relaxing riverside break.</p> 
+                        <p className="text-white inter-text leading-relaxed text-justify">From flaky croissants to local-inspired treats, everything is baked fresh in-house. Perfectly paired with coffee or tea for a relaxing riverside break.</p> 
                     </motion.div>
                 </div>
                 <div className="flex w-full md:h-sm flex-col md:ml-50 xl:ml-90 md:mt-50 mt-20">
@@ -42,7 +42,7 @@ export default function Service() {
                     >
                         <Image src="/63cfb259def888f57248575810951366a06aeef4.png" alt="Service Icon" width={50} height={50} className="sm:mt-10" />
                         <h2 className="text-white  inter-heading mb-1 relative inline-block mx-auto ">RETAIL COFFEE & BREWING ACCESSORIES</h2>
-                        <p className="text-white inter-text leading-relaxed ">Take the café home with our curated selection of roasted beans and handpicked brewing tools. Ideal for coffee lovers looking to recreate the AIDA experience.</p> 
+                        <p className="text-white inter-text leading-relaxed text-justify">Take the café home with our curated selection of roasted beans and handpicked brewing tools. Ideal for coffee lovers looking to recreate the AIDA experience.</p> 
                     </motion.div>
                     <motion.div 
                         initial={{ opacity: 0, y: -30 }}

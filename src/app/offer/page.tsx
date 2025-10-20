@@ -411,7 +411,7 @@ export default function OfferPage() {
         <div className="mx-auto py-20 space-y-24">
           {offers.map((offer, index) => (
             <div
-              key={index}
+              key={index} 
               style={{
                 background:
                   index % 2 === 1
@@ -423,7 +423,7 @@ export default function OfferPage() {
                 ref={(el) => (sectionRefs.current[index] = el)}
                 className={`flex flex-col md:flex-row ${
                   index % 2 === 1 ? "md:flex-row-reverse" : ""
-                } items-center gap-8 py-16 px-6 md:px-20 rounded-lg transition-all duration-500`}
+                } items-center gap-8 py-16 px-6 md:px-20 mx-auto rounded-lg transition-all duration-500`}
               >
                 {/* Image */}
                 <div className="md:w-1/2">

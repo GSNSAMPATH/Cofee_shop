@@ -43,7 +43,7 @@ export default function Quality() {
                 />
                 <div className="ml-4">
                   <h3 className="font-bold poppins-heading2-bold">{item.name}</h3>
-                        <p className="poppins-text">{item.text}</p>
+                        <p className="poppins-text text-justify mt-2">{item.text}</p>
                 </div>
               </div>
 

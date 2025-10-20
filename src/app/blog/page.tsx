@@ -80,7 +80,7 @@ export default async function BlogPage() {
             />
           </div>
           <div className="lg:w-1/2 p-8 flex flex-col justify-center">
-            <h2 className="text-2xl inria-heading2 font-bold mb-4">TEXT HEADING</h2>
+            <h2 className="text-2xl inria-heading2 font-bold mb-4">{hero.title}</h2>
             <p className="text-gray-300 inria- mb-6">
               We are a company that makes and distributes delicious drinks. Our
               main product is made with a secret recipe and available in stores
