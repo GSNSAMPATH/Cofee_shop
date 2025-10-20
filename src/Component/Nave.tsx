@@ -21,7 +21,7 @@ export default function Navbar() {
         {/* Logo */}
         <Link href="/" className="text-2xl font-bold text-gray-800">
           <Image
-            src="https://res.cloudinary.com/diatamf9x/image/upload/v1760692085/newlogo2_yhv2oy.jpg"
+            src="https://res.cloudinary.com/diatamf9x/image/upload/v1760798950/logocofee_pjh43r.png" //https://res.cloudinary.com/diatamf9x/image/upload/v1760692085/newlogo2_yhv2oy.jpg"
             alt="Logo"
             width={50}
             height={50}

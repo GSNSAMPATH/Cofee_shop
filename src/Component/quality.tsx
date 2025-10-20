@@ -5,22 +5,16 @@ import { motion } from "framer-motion";
 export default function Quality() {
   const feedbacks = [
     {
-      name: "Customer",
+      name: "Global Quality, Local Soul",
       text: " We proudly serve Lavazza, one of the world’s finest coffee brands, to ensure every cup meets international standards —while our setting, hospitality, and atmosphere reflect the warm soul of Sri Lanka.",
     },
     {
-      name: "Customer",
-      position: "Position",
-      image: "/9abbe7b302816291cf6ff286092702df2db92c25.jpg",
-      rating: 5,
-      text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum amet, consectetur adipisicing elit.",
+      name: "Tranquility & Wellness",
+      text: "As part of AIDA’s wellness-driven vision, we offer more than just coffee—we offer peace. Our beachside setting, calming interiors, and slow-living ethos invite guests to pause, breathe, and savor the moment",
     },
     {
-      name: "Customer",
-      position: "Position",
-      image: "/9abbe7b302816291cf6ff286092702df2db92c25.jpg",
-      rating: 5,
-      text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum amet, consectetur adipisicing elit.",
+      name: "Connection & Community",
+      text: "We create a welcoming space where travelers, locals, and creatives can gather, recharge, and connect—over conversation, books, or the simple joy of a perfect cup.",
     },
   ];
 
@@ -48,8 +42,8 @@ export default function Quality() {
                   className="rounded-full"
                 />
                 <div className="ml-4">
-                  <h3 className="font-bold">{item.name}</h3>
-                        <p className="poppins-text leading-relaxed">{item.text}</p>
+                  <h3 className="font-bold poppins-heading2-bold">{item.name}</h3>
+                        <p className="poppins-text">{item.text}</p>
                 </div>
               </div>
 

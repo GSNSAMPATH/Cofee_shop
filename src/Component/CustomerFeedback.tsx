@@ -59,7 +59,7 @@ export default function CustomerFeedback() {
           {[...feedbacks].map((item, i) => (
             <div
               key={i}
-              className="bg-[#6a5d55] text-white p-6 rounded-xl shadow-lg w-full md:min-w-auto lg:min-w-[400px] h-[250px]"
+              className="bg-[#6a5d55] text-white p-6 rounded-xl shadow-lg w-full md:min-w-auto 2xl:min-w-[400px] h-[250px]"
             >
               {/* Top Section */}
               <div className="flex mb-4 items-center">

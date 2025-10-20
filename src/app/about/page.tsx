@@ -29,7 +29,7 @@ export default function About() {
                 </div>
             </section>
             <section className=" py-16 bg-black h-320 px-4  lg:max-w-7xl mx-auto">
-                <div className="absolute  xl:left-300 lg:left-200 md:left-100 ml-20 hidden lg:block h-250 top-60 w-36 bg-[#4E2A20] rounded-lg">
+                <div className="absolute 2xl:left-300  xl:left-260 lg:left-200 md:left-100 sm:left-50 ml-20 hidden lg:block h-250 top-60 w-36 bg-[#4E2A20] rounded-lg">
                     <div className="relative h-20 mb-10">
                     <Image 
                         src="https://res.cloudinary.com/diatamf9x/image/upload/v1760608885/MKN05685_u3sbe6.webp"
@@ -82,13 +82,13 @@ export default function About() {
                 <div className="w-full lg:text-left sm:text-center h-50 md:max-w-full ">   
                     <div className="lg:h-200 w-full  lg:items-center lg:justify-between lg:flex  mx-auto xl:w-full ">
                         <div className="lg:h-100 w-full  lg:px-0 ">
-                            <div className="h-50 lg:mt-0 mt-10 sm:mt-100 sm:mt-60 w-full text-justify s:mpx-20 lg:mt-0 w-auto mx-auto">
+                            <div className="h-50 lg:mt-0 mt-10 sm:mt-40 w-full text-justify s:mpx-20 lg:mt-0 w-auto mx-auto">
                                 <motion.h2
                                     initial={{ opacity: 0, y: -30 }}
                                     whileInView={{ opacity: 1, y: 0 }}
                                     transition={{ duration: 0.6 }}
                                     viewport={{ once: true }}
-                                 className=" text-3xl inria-heading2-bold text-white font-inriasans font-regular mb-6 ">
+                                 className=" text-3xl md:mt-80 lg:mt-0 inria-heading2-bold text-white font-inriasans font-regular mb-6 ">
                                     OUR VISION
                                 </motion.h2>
                                 <motion.p
@@ -100,7 +100,7 @@ export default function About() {
                                 To cultivate a boutique café experience that honors Sri Lanka’s rich coffee-growing heritage while creating a serene and stylish space where guests can unwind, reconnect, and savor the present moment. The Coffee Shop by AIDA envisions becoming a destination for both quality coffee and peaceful hospitality in the southern coastal region. Authentic high quality food and beverages
                                 </motion.p>
                             </div>
-                            <div className="md:hidden w-full lg:mt-140 xl:mt-200 mt-10 w-full text-justify sm:px-20 lg:mt-0 w-auto mx-auto">
+                            <div className="lg:hidden w-full lg:mt-140 xl:mt-200 mt-10 w-full text-justify  lg:mt-0 w-auto mx-auto">
                             <motion.h2
                              initial={{ opacity: 0, y: -30 }}
                             whileInView={{ opacity: 1, y: 0 }}
@@ -114,18 +114,18 @@ export default function About() {
                                 whileInView={{ opacity: 1 }}
                                 transition={{ duration: 0.8, delay: 0.2 }}
                                 viewport={{ once: true }}
-                             className="lg:text-paragraph inria-text mb-6 line-clamp-10 text-white">
+                             className="lg:text-paragraph inria-text mb-6 line-clamp-10  text-white">
                             To cultivate a boutique café experience that honors Sri Lanka’s rich coffee-growing heritage while creating a serene and stylish space where guests can unwind, reconnect, and savor the present moment. The Coffee Shop by AIDA envisions becoming a destination for both quality coffee and peaceful hospitality in the southern coastal region. Authentic high quality food and beverages
                             </motion.a>
                         </div>
 
-                            <div className="mt-30 sm:mt-10  xl:mx-20 h-100 lg:mt-45 xl:mt-20 w-auto w-full flex lg:block items-center justify-center ">
+                            <div className="mt-30 sm:mt-10 xl:mt-40  xl:mx-20 h-100 lg:mt-45 xl:mt-20 w-auto w-full flex xl:block items-center justify-center ">
                                 <Image
                                 src="/10caa26122896ca5dd4c53868248e23729604929.png"
                                 alt="about"
                                 width={400}
                                 height={400}
-                                className="max-w-[300px] sm:max-w-[300px] lg:max-w-[400px] h-auto object-cover opacity-90 lg:block"
+                                className="max-w-[300px] sm:w-[200px] md:w-[200px] lg:w-[400px] h-auto object-cover md:mx-auto lg:mx-0 opacity-90 lg:block"
                                 priority
                                 />
 

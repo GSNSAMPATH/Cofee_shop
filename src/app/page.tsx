@@ -26,7 +26,7 @@ export default function Home() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCoffeeIndex((prev) => (prev + 1) % coffees.length);
-    }, 3000);
+    }, 3000000);
     return () => clearInterval(interval);
   }, []);
 
@@ -67,7 +67,7 @@ export default function Home() {
           </div>
         </div>
         <div className="w-full h-200 items-center justify-between md:flex md:max-w-7xl mx-auto ">
-          <div className="md:mt-80 mt-30 relative md:w-full h-200 md:justify-between md:items-center lg:mx-0 mx-5">
+          <div className="md:mt-80 mt-30 relative md:w-full h-200 md:justify-between md:items-center lg:mx-12 sm:mx-12 mx-5">
             <motion.h1
               initial={{ opacity: 0, y: -30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -136,8 +136,8 @@ export default function Home() {
      <section className=" md:h-220 bg-black w-full">
 
       <div className="w-full md:h-160 items-center justify-between md:flex lg:max-w-7xl mx-auto">
-        <div className="md:mt-20 mt-30 relative w-full h-160 sm:h-200 lg:max-w-mx md:mx-2">
-          <div className="md:mt-40 md:flex md:justify-between md:items-center lg:mx-0 mx-5">
+        <div className="md:mt-20 mt-30 relative  md:w-full h-160 sm:h-200 lg:max-w-mx sm:mx-12 ">
+          <div className="md:mt-40 md:flex md:justify-between md:items-center sm:mx-0 mx-5 ">
             <div>
               <motion.h2
                 initial={{ opacity: 0, y: -30 }}

@@ -71,7 +71,7 @@ export default function OurMenu() {
       title: "Coffee",
       description:
         "Enjoy handcrafted espresso, pour over, and cold brew made with premium beans.",
-      className2: "absolute bottom-10 left-4 text-white",
+      className2: "absolute bottom-10 left-4 text-black",
     },
 
     // 4️⃣ Dynamic from Sanity
@@ -83,7 +83,7 @@ export default function OurMenu() {
         cards[2]?.paragraph ||
         "Refreshing cold brews and fruit drinks made fresh.",
       className: "md:col-span-1 md:row-span-2",
-      className2: "absolute bottom-10 left-4 text-white",
+      className2: " mt-90 text-white mt-0 left-4",
     },
 
     // 5️⃣ Static (Don’t change)
@@ -94,7 +94,7 @@ export default function OurMenu() {
       title: "Coffee",
       description:
         "Enjoy handcrafted espresso, pour over, and cold brew made with premium beans.",
-      className2: "absolute bottom-10 left-4 text-white",
+      className2: "absolute bottom-10 left-4 text-center text-white",
     },
 
     // 6️⃣ Dynamic from Sanity
@@ -106,7 +106,7 @@ export default function OurMenu() {
         cards[3]?.paragraph ||
         "Sweet cupcakes with rich chocolate and vanilla frosting.",
       className: "col-span-1 row-span-1",
-      className2: "absolute text-center bottom-20 text-white",
+      className2: "absolute text-center bottom-[-10px] text-white",
     },
   ];
 
