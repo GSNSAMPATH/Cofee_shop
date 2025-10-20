@@ -260,8 +260,8 @@ export default function Home() {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6 }}
                   viewport={{ once: true }}
-                  className="text-white inria-heading2 text-center mb-10 relative inline-block mx-auto">
-                  OUR MENU
+                  className="text-white inria-heading2 text-center mb-10 relative inline-block px-12">
+                  We Are Offer
                   <span className="block w-16 h-[2px] bg-red-600 mt-2 "></span>
                 </motion.h2>
               </div>
