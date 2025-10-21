@@ -95,18 +95,7 @@ const offers = [
       We believe in the power of events to bring people together and create memories that last a lifetime.
     `,
     extraImages: [
-      {
-        src: "https://res.cloudinary.com/diatamf9x/image/upload/v1760944812/MKN05326_yf8tmi.webp",
-        caption: "Live music and laughter that fill the night.",
-      },
-      {
-        src: "https://res.cloudinary.com/diatamf9x/image/upload/v1760944926/MKN05291_oixhcp.webp",
-        caption: "Community gatherings filled with energy and joy.",
-      },
-      {
-        src: "https://res.cloudinary.com/diatamf9x/image/upload/v1760608535/MKN05633_ou3v1n.webp",
-        caption: "Celebrating creativity and connections.",
-      },
+
     ],
   },
   {

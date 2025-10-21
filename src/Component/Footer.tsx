@@ -70,8 +70,11 @@ export default function Footer() {
       </div>
 
       {/* Bottom copyright */}
-      <div className="mt-12 border-t border-gray-600 pt-4 text-center text-gray-400">
-        <p>Copyright ©2025 All rights reserved</p>
+      <div className="border-t border-gray-600 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center text-gray-400 text-sm ">
+        <p>Copyright © {new Date().getFullYear()} AIDA’s Coffee</p>
+        <p className="mt-2 md:mt-0">
+          Built with <span className="text-white"><a href="http://www.thedigitalescapes.com">Digital Escapes</a></span> and <span className="text-white"><a href="https://www.facebook.com/share/1MSV8Ut5B9/">Novrith Technology</a></span> in Sri Lanka
+        </p>
       </div>
     </footer>
   );
