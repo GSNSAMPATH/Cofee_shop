@@ -109,7 +109,7 @@ const offers = [
     `,
     extraImages: [
       {
-        src: "https://res.cloudinary.com/diatamf9x/image/upload/v1761018250/MKN05605_bdvhqa.webp",
+        src: "https://res.cloudinary.com/diatamf9x/image/upload/v1760971727/MKN05972_t731ty.webp",
         caption: "Live music and laughter that fill the night.",
       },
       {

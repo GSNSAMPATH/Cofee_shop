@@ -122,7 +122,7 @@ export default async function BlogPage() {
               <p className="text-gray-300 mb-5 inria-text-small line-clamp-5 ">{blog.excerpt}</p>
               <div className="flex items-center gap-4 justify-center">
                 <Link
-                  href={`/blog/${hero.slug.current}`}
+                  href={`/blog/${blog.slug.current}`}
                   className="border border-red-500 text-white px-4 py-1 rounded-md hover:bg-red-600 transition">
                   See More
                 </Link>
