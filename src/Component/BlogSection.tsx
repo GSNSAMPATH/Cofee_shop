@@ -14,8 +14,8 @@ export default function BlogSection() {
       image: "https://res.cloudinary.com/diatamf9x/image/upload/v1760608885/MKN05685_u3sbe6.webp", // replace with your real images
     },
     {
-      title: "Best Coffee Shops in Bentota",
-      desc: "Best Coffee Shops in Bentota – Why AIDA’s Coffee Shop",
+      title: "Best Coffee Shops in Induruwa ",
+      desc: "Best Coffee Shops in Induruwa  – Why AIDA’s Coffee Shop",
       image: "https://res.cloudinary.com/diatamf9x/image/upload/v1760608573/MKN05360_lcmqcy.webp",
     },
     {
@@ -48,7 +48,7 @@ export default function BlogSection() {
           viewport={{ once: true }}
         >
           Our blog brings together stories from coffee culture, travel, and AIDA’s legacy in hospitality
-          Best Coffee Shops in Bentota – Why AIDA’s Coffee Shop
+          Best Coffee Shops in Induruwa – Why AIDA’s Coffee Shop
         </motion.p>
 
     

@@ -73,14 +73,14 @@ export default function Home() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
-              className="inria-heading text-white md:mt-10 mb-6 ">Bentota’s Newest Coffee</motion.h1>
+              className="inria-heading text-white md:mt-10 mb-6 ">Induruwa Newest Coffee</motion.h1>
             <motion.p
               initial={{ opacity: 0, y: -30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
               viewport={{ once: true }}
              className="inria-text text-lg text-white leading-relaxed mb-8 ">
-              Bentota’s Newest Coffee Experience – Lavazza Coffee, Fresh Pastries & More
+              Induruwa - Newest Coffee Experience – Lavazza Coffee, Fresh Pastries & More
             </motion.p>
             <a
               href="/offer"
@@ -155,7 +155,7 @@ export default function Home() {
               transition={{ duration: 0.8, delay: 0.2 }}
               viewport={{ once: true }}
               className="inria-text mb-6 text-justify leading-relaxed text-gray-200 md:max-w-280 max-w-full sm:max-w-full ">
-              Welcome to The Coffee Shop by AIDA Group, the newest and trendiest coffee shop in Bentota, Sri Lanka. 
+              Welcome to The Coffee Shop by AIDA Group, the newest and trendiest coffee shop in Induruwa, Sri Lanka. 
               We serve authentic Lavazza coffee, brewed to perfection on our professional LaCimbali espresso machine, 
               paired with a wide selection of freshly baked pastries, signature cakes, fresh juices, and smoothies.
             </motion.p>
@@ -168,7 +168,7 @@ export default function Home() {
             >
               Our café is designed as a work-friendly, relaxing, and aesthetic space, perfect for travelers, locals, and 
               digital nomads looking for a cozy spot with WiFi. As part of the trusted AIDA Group, known for over 50 years 
-              in hospitality, we bring you not just coffee—but a full lifestyle experience in the heart of Bentota.
+              in hospitality, we bring you not just coffee—but a full lifestyle experience in the heart of Induruwa.
             </motion.p>
             </div>
           </div>

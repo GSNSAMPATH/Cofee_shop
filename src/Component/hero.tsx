@@ -33,7 +33,7 @@ export default function Hero() {
         <div className="max-w-lg text-left mt-32 md:mt-0">
           <h1 className="text-5xl font-bold mb-6">Welcome to The Coffee Shop</h1>
           <p className="text-lg leading-relaxed mb-8">
-            by AIDA Group, the newest and trendiest coffee shop in Bentota, Sri Lanka.  
+            by AIDA Group, the newest and trendiest coffee shop in Induruwa, Sri Lanka.  
             We serve authentic Lavazza coffee brewed to perfection, paired with pastries,  
             cakes, juices, and smoothies.
           </p>

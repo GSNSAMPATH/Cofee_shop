@@ -77,7 +77,7 @@ export default function About() {
                         transition={{ duration: 0.8, delay: 0.2 }}
                         viewport={{ once: true }}
                     className="md:absolute text-justify sm:text-center inria-text mb-6  text-white max-w-7xl leading-loose z-20 ">
-                    For nearly five decades, the AIDA Group has been a symbol of authenticity, quality, and Sri Lankan hospitality. From AIDA Gems to AIDA Ayurveda Resort, AIDA Seafood Restaurant, and AIDA Textiles, our legacy is built on trust, craftsmanship, and unforgettable experiences. The Coffee Shop is the latest addition to this family – a space that combines Italian coffee excellence with Sri Lankan warmth. Every cup we brew with Lavazza beans and every pastry baked in our kitchen reflects our mission to create the best café experience in Bentota.
+                    For nearly five decades, the AIDA Group has been a symbol of authenticity, quality, and Sri Lankan hospitality. From AIDA Gems to AIDA Ayurveda Resort, AIDA Seafood Restaurant, and AIDA Textiles, our legacy is built on trust, craftsmanship, and unforgettable experiences. The Coffee Shop is the latest addition to this family – a space that combines Italian coffee excellence with Sri Lankan warmth. Every cup we brew with Lavazza beans and every pastry baked in our kitchen reflects our mission to create the best café experience in Induruwa .
                     </motion.p>
                 <div className="w-full lg:text-left sm:text-center h-50 md:max-w-full ">   
                     <div className="lg:h-200 w-full  lg:items-center lg:justify-between lg:flex  mx-auto xl:w-full ">

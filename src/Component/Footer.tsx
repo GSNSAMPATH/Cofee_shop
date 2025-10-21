@@ -53,10 +53,10 @@ export default function Footer() {
 
           {/* Social Icons */}
           <div className="flex space-x-6 text-2xl justify-end">
-            <a href="https://facebook.com" target="_blank" rel="noreferrer">
+            <a href="https://www.facebook.com/share/17eNyYuR5h/" target="_blank" rel="noreferrer">
               <FaFacebook />
             </a>
-            <a href="https://wa.me/123456789" target="_blank" rel="noreferrer">
+            <a href="https://wa.me/+94704871510" target="_blank" rel="noreferrer">
               <FaWhatsapp />
             </a>
             <a href="https://instagram.com" target="_blank" rel="noreferrer">

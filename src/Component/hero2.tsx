@@ -18,9 +18,9 @@ export default function Home() {
       
         <div className="relative z-10 flex md:items-center justify-between h-full px-10 md:px-20 ">
       <div className="max-w-md mt-40 block md:hidden ">
-  <h1 className="text-5xl text-white font-bold mb-6">Bentota’s Newest Coffee</h1>
+  <h1 className="text-5xl text-white font-bold mb-6">Induruwa’s Newest Coffee</h1>
   <p className="text-lg text-white leading-relaxed mb-8">
-    Bentota’s Newest Coffee Experience – Lavazza Coffee, Fresh Pastries & More..
+    Induruwa’s Newest Coffee Experience – Lavazza Coffee, Fresh Pastries & More..
   </p>
   <a
     href="/menu"
@@ -41,9 +41,9 @@ export default function Home() {
 
       <section className="absolute  z-10 w-full top-40 h-150  hidden md:block">
         <div className="max-w-md  md:mt-30 md:mx-29 mt-40">
-          <h1 className="text-5xl md:mt-10 text-white font-bold mb-6">Bentota’s Newest Coffee</h1>
+          <h1 className="text-5xl md:mt-10 text-white font-bold mb-6">Induruwa’s Newest Coffee</h1>
           <p className="text-lg text-white leading-relaxed mb-8">
-            Bentota’s Newest Coffee Experience – Lavazza Coffee, Fresh Pastries & More..
+            Induruwa’s Newest Coffee Experience – Lavazza Coffee, Fresh Pastries & More..
           </p>
           <a
           href="/menu"
@@ -107,14 +107,14 @@ export default function Home() {
             About <span className="text-[#8B4513]">Us</span>
           </h2>
           <p className="mb-6 leading-relaxed text-gray-200">
-            Welcome to The Coffee Shop by AIDA Group, the newest and trendiest coffee shop in Bentota, Sri Lanka. 
+            Welcome to The Coffee Shop by AIDA Group, the newest and trendiest coffee shop in Induruwa, Sri Lanka. 
             We serve authentic Lavazza coffee, brewed to perfection on our professional LaCimbali espresso machine, 
             paired with a wide selection of freshly baked pastries, signature cakes, fresh juices, and smoothies.
           </p>
           <p className="leading-relaxed text-gray-300">
             Our café is designed as a work-friendly, relaxing, and aesthetic space, perfect for travelers, locals, and 
             digital nomads looking for a cozy spot with WiFi. As part of the trusted AIDA Group, known for over 50 years 
-            in hospitality, we bring you not just coffee—but a full lifestyle experience in the heart of Bentota.
+            in hospitality, we bring you not just coffee—but a full lifestyle experience in the heart of Induruwa.
           </p>
         </div>
 

@@ -33,7 +33,7 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: "AIDA Coffee",
-  description: "Experience the best coffee in Bentota",
+  description: "Experience the best coffee in Induruwa ",
   icons: {
     icon: "/favicon.ico",
   },
