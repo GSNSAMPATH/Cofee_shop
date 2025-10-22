@@ -266,8 +266,6 @@ useEffect(() => {
                     playsInline
                   />
                 </div>
-                <h2 className="mt-4 font-semibold text-lg">{member.name}</h2>
-                <p className="text-sm text-gray-500">{member.role}</p>
               </div>
             );
           })}

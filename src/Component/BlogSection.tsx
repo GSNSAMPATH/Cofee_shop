@@ -70,8 +70,8 @@ export default function BlogSection() {
 
             />
             <div className="p-6 text-center">
-              <h3 className="text-xl text-white font-bold mb-3">{blog.title}</h3>
-              <p className="text-gray-300 mb-5">{blog.desc}</p>
+              <h3 className="text-xl text-white font-bold mb-3 md:line-clamp-1 lg:line-clamp-1 xl:line-clamp-2">{blog.title}</h3>
+              <p className="text-gray-300 mb-5 sm:line-clamp-2">{blog.desc}</p>
               <div className="flex items-center gap-4 justify-center">
                 <button
                   type="button"

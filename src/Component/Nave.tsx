@@ -51,7 +51,7 @@ export default function Navbar() {
             About
           </Link>
           <Link href="/offer" className={getLinkClass("/offer")}>
-            Offer
+           We Offer
           </Link>
           <Link href="/blog" className={getLinkClass("/blog")}>
             Blog
@@ -84,7 +84,7 @@ export default function Navbar() {
               About
             </Link>
             <Link href="/offer" onClick={toggleMenu} className={pathname === "/offer" ? "text-red-500 font-semibold" : "hover:text-red-500"}>
-              Offer
+              We are Offer
             </Link>
             <Link href="/gallery" onClick={toggleMenu} className={pathname === "/gallery" ? "text-red-500 font-semibold" : "hover:text-red-500"}>
               Gallery

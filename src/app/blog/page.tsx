@@ -119,7 +119,7 @@ export default async function BlogPage() {
             />
             <div className="p-6 text-center">
               <h3 className="text-xl font-bold mb-3 inria-heading3 lg:line-clamp-1 line-clamp-3 sm:line-clamp-2">{blog.title}</h3>
-              <p className="text-gray-300 mb-5 inria-text-small line-clamp-5 ">{blog.excerpt}</p>
+              <p className="text-gray-300 mb-5 inria-text-small line-clamp-4 ">{blog.excerpt}</p>
               <div className="flex items-center gap-4 justify-center">
                 <Link
                   href={`/blog/${blog.slug.current}`}

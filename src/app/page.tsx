@@ -45,7 +45,7 @@ export default function Home() {
           src="/Background.png"
           alt="Coffee Background"
           fill
-          className=" h-50 md:h-100 object-cover opacity-900 w-full"
+          className=" h-10 md:h-100 object-cover opacity-900 w-full object-top-left "
           priority
         />
         <div className="hidden lg:block absolute top-60 mb-50 right-0 w-[380px] h-[280px] z-0 ">
@@ -73,7 +73,7 @@ export default function Home() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
-              className="inria-heading text-white md:mt-10 mb-6 ">Induruwa Newest Coffee</motion.h1>
+              className="inria-heading text-white md:mt-10 mb-6 ">Induruwa's Newest Coffee</motion.h1>
             <motion.p
               initial={{ opacity: 0, y: -30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -172,33 +172,33 @@ export default function Home() {
             </motion.p>
             </div>
           </div>
-          <div className="relative justify-center md:flex sm:mr-20 mx-10 mt-10 ">
+          <div className="relative justify-center md:flex sm:mr-20 mx-10 mt-10 md:mt-20 ">
 <div className="grid grid-cols-2 w-fit mx-auto text-center text-white ">
   <div className="p-5 border-r border-b">
-    <h3 className="text-4xl font-bold text-[22px] md:text-4xl">
+    <h3 className="text-4xl font-bold text-[22px] md:text-3xl">
       10<span className="align-super md:text-lg">+</span>
     </h3>
-    <p className="uppercase tracking-wide text-[14px] md:text-[22px]">Experience</p>
+    <p className="uppercase tracking-wide text-[14px] md:text-[18px]">Years <br /> Experience</p>
   </div>
 
   <div className="p-5 border-l border-b">
-    <h3 className="text-4xl font-bold text-[22px] md:text-4xl">
+    <h3 className="text-4xl font-bold text-[22px] md:text-3xl">
       10<span className="align-super text-lg">+</span>
     </h3>
-    <p className="uppercase tracking-wide text-[14px] md:text-[22px]">Experience</p>
+    <p className="uppercase tracking-wide text-[14px] md:text-[18px]">Happy <br /> Customers</p>
   </div>
 
   <div className="p-5 border-r border-t">
-    <h3 className="text-4xl font-bold text-[22px] md:text-4xl">
+    <h3 className="text-4xl font-bold text-[22px] md:text-3xl">
       10<span className="align-super text-lg">+</span>
     </h3>
-    <p className="uppercase tracking-wide text-[14px] md:text-[22px]">Experience</p>
+    <p className="uppercase tracking-wide text-[14px] md:text-[18px]">Coffee <br /> Varieties</p>
   </div>
   <div className="p-5 border-l border-t">
-    <h3 className="text-4xl font-bold text-[22px] md:text-4xl">
+    <h3 className="text-4xl font-bold text-[22px] md:text-3xl">
       10<span className="align-super text-lg ">+</span>
     </h3>
-    <p className="uppercase tracking-wide text-[14px] md:text-[22px]">Experience</p>
+    <p className="uppercase tracking-wide text-[14px] md:text-[18px]">Awards <br /> Won</p>
   </div>
 </div>
 
