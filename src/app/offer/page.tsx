@@ -9,7 +9,7 @@ import { title } from "process";
 
 const offers = [
   {
-    title: "DRINK",
+    title: "BEVERAGE",
     image:
       "https://res.cloudinary.com/diatamf9x/image/upload/v1760956844/MKN05548_gqmxxw.webp",
     desc: "We are a company that makes and distributes delicious drinks. Our main product is made with a secret recipe and available in stores worldwide.",
