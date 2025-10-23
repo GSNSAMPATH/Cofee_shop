@@ -27,11 +27,9 @@ export default function Footer() {
             <span className="border-b-2 border-red-600">COFFEE</span>
           </h3>
           <p className="text-gray-300 text-center sm:text-left leading-relaxed">
-            Xtreamdigital is a results-driven digital marketing company focused on
-            transforming ambitious brands into powerhouses. We combine strategic
-            thinking, innovative technology, and creative execution to help startups
-            and SMEs grow faster, build stronger identities, and dominate their
-            markets.
+            Aida Coffee Shop is your go-to place for specialty coffee, artisan pastries, 
+            and a wide range of beverages. Our coffee is carefully roasted and brewed to perfection, creating a cozy atmosphere. 
+            Enjoy rich flavors, friendly service, and the perfect space to relax or connect brewed fresh every day.
           </p>
         </div>
 
@@ -39,17 +37,17 @@ export default function Footer() {
 
         {/* Right - Social Media */}
         <div className="sm:justify-center  sm:align-end  flex flex-col items-center sm:items-end">
-          <h3 className="text-xl font-bold  mb-3 leading-relaxed">SOCIAL MEDIA</h3>
           {/* QR Code */}
           <div className="mb-4 ">
             <Image
-              src="/ad867825910d582545d85fb9f870ecf801eef8ec.png"
+              src="https://res.cloudinary.com/diatamf9x/image/upload/v1760798950/logocofee_pjh43r.png"
               alt="QR Code"
               width={120}
               height={120}
               className="mb-4 mx-auto"
             />
           </div>
+          <h3 className="text-xl font-bold  mb-3 leading-relaxed">SOCIAL MEDIA</h3>
 
           {/* Social Icons */}
           <div className="flex space-x-6 text-2xl justify-end">
@@ -59,7 +57,7 @@ export default function Footer() {
             <a href="https://wa.me/+94704871510" target="_blank" rel="noreferrer">
               <FaWhatsapp />
             </a>
-            <a href="https://instagram.com" target="_blank" rel="noreferrer">
+            <a href="https://www.instagram.com/thecoffeeshopbyaida" target="_blank" rel="noreferrer">
               <FaInstagram/>
             </a>
             <a href="https://linkedin.com" target="_blank" rel="noreferrer">
@@ -73,7 +71,7 @@ export default function Footer() {
       <div className="border-t border-gray-600 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center text-gray-400 text-sm ">
         <p>Copyright © {new Date().getFullYear()} AIDA’s Coffee</p>
         <p className="mt-2 md:mt-0">
-          Built with <span className="text-white"><a href="http://www.thedigitalescapes.com">Digital Escapes</a></span> and <span className="text-white"><a href="https://www.facebook.com/share/1MSV8Ut5B9/">Novrith Technology</a></span> in Sri Lanka
+          Built with <span className="text-white"><a href="https://www.xtreamdigital.com">Xtream Digital</a></span> and <span className="text-white"><a href="https://www.facebook.com/share/1MSV8Ut5B9/">Novrith Technology</a></span> in Sri Lanka
         </p>
       </div>
     </footer>

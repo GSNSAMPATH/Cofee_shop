@@ -133,7 +133,7 @@ export default function Home() {
         </div>
       </div>
     </section>
-     <section className=" md:h-220 bg-black w-full">
+     <section className="mb-30 sm:mb-0 md:h-220 bg-black w-full">
 
       <div className="w-full md:h-160 items-center justify-between md:flex lg:px-23 mx-auto">
         <div className="md:mt-20 mt-30 relative  md:w-full h-160 sm:h-200 lg:max-w-mx sm:mx-12 ">
@@ -172,7 +172,7 @@ export default function Home() {
             </motion.p>
             </div>
           </div>
-          <div className="relative justify-center md:flex sm:mr-20 mx-10 mt-10 md:mt-20 ">
+          <div className="relative justify-center md:flex sm:mr-20 mx-10 mt-10 md:mt-20">
 <div className="grid grid-cols-2 w-fit mx-auto text-center text-white ">
   <div className="p-5 border-r border-b">
     <h3 className="text-4xl font-bold text-[22px] md:text-3xl">
@@ -253,14 +253,14 @@ export default function Home() {
         </div>
       </section>
       <section className=" pb-10 md:py-16 bg-black w-full">
-          <div className="w-full items-center justify-between md:flex md:max-w-7xl mx-auto ">
+          <div className="w-full items-center justify-between md:flex md:max-w-7xl ">
               <div className="mt-[-20px] md:mt-20 md:flex md:justify-between md:items-center lg:mx-0 mx-5">
                 <motion.h2
                   initial={{ opacity: 0, y: -30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6 }}
                   viewport={{ once: true }}
-                  className="text-white inria-heading2 text-center mb-10 relative inline-block md:px-12">
+                  className="text-white inria-heading2 text-center mb-10 relative inline-block sm:px-10 lg:px-35 xl:px-32 2xl:px-35  mx-auto">
                   We Are Offer
                   <span className="block w-16 h-[2px] bg-red-600 mt-2 "></span>
                 </motion.h2>

@@ -59,7 +59,7 @@ export default function ContactPage() {
                     priority
                     />
                 <div className="w-full  bottom-50 items-center justify-between md:flex md:max-w-7xl mx-auto ">
-                    <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
+                    <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
                         <h2 className="text-white text-4xl sm:text-8xl font-bold text-center mb-10 relative inline-block mx-auto">
                         CONTACT US
                             <span className="block w-16 h-[2px] bg-red-600 mt-2 "></span>

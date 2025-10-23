@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Inria_Sans, Inter, Poppins } from "next/font/google";
 import "./globals.css";
 import Footer from "@/Component/Footer";
+import WhatsAppButton from "@/Component/WhatsAppButton";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -47,6 +48,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head />
+      <WhatsAppButton/> 
     
      <body
         className={`${geistSans.variable} ${geistMono.variable} ${inriaSans.variable} ${inter.variable} antialiased`}

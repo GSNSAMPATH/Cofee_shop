@@ -276,7 +276,7 @@ useEffect(() => {
           ❯
         </button>
           {/* Line indicators */}
-          <div className="absolute bottom-[-10px] left-1/2 transform -translate-x-1/2 flex gap-2 max-w-[100px] md:max-w-[400px] ">
+          <div className="absolute bottom-[-30px] left-1/2 transform -translate-x-1/2 flex gap-2 max-w-[100px] md:max-w-[400px] ">
             {team.map((_, i) => (
               <button
                 key={i}

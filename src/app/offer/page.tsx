@@ -23,15 +23,15 @@ const offers = [
     extraImages: [
       {
         src: "https://res.cloudinary.com/diatamf9x/image/upload/v1760957207/MKN05270_xoamfd.webp",
-        caption: "Refreshing tropical fruit blend made daily.",
+        caption: "Refreshing and energizing iced teas for a vibrant start to your day.",
       },
       {
         src: "https://res.cloudinary.com/diatamf9x/image/upload/v1760944812/MKN05326_yf8tmi.webp",
-        caption: "Bottled with love and served chilled for pure refreshment.",
+        caption: "Delicious and indulgent chocolate blends that comfort your soul.",
       },
       {
         src: "https://res.cloudinary.com/diatamf9x/image/upload/v1760944926/MKN05291_oixhcp.webp",
-        caption: "Natural ingredients carefully chosen for health and taste.",
+        caption: "Premium fruit extracts and aromatic herbs for a perfect balance of flavor.",
       },
     ],
   },
@@ -48,15 +48,15 @@ const offers = [
     extraImages: [
       {
         src: "https://res.cloudinary.com/diatamf9x/image/upload/v1760956545/MKN05888_lffvkp.webp",
-        caption: "Our signature cheeseburger fresh off the grill.",
+        caption: "Juicy and juicy burgers made with fresh ingredients.",
       },
       {
         src: "https://res.cloudinary.com/diatamf9x/image/upload/v1760956545/MKN05641_ewila0.webp",
-        caption: "Loaded veggie burger bursting with color and flavor.",
+        caption: "Deliciously juicy burgers made with fresh ingredients and grilled to perfection.",
       },
       {
         src: "https://res.cloudinary.com/diatamf9x/image/upload/v1760956543/MKN05643_jgkcbo.webp",
-        caption: "Classic beef burger with melted cheese perfection.",
+        caption: "Juicy and juicy burgers made with fresh ingredients.",
       },
     ],
   },
@@ -73,15 +73,15 @@ const offers = [
     extraImages: [
       {
         src: "https://res.cloudinary.com/diatamf9x/image/upload/v1760608535/MKN05633_ou3v1n.webp",
-        caption: "Rich aroma of freshly brewed coffee beans.",
+        caption: "Handcrafted beans sourced from the finest regions of the world.",
       },
       {
         src: "https://res.cloudinary.com/diatamf9x/image/upload/v1760957512/MKN05648_l2xryg.jpg",
-        caption: "Expertly brewed cappuccinos and lattes.",
+        caption: "Each cup is a masterpiece of flavor and aroma.",
       },
       {
         src: "https://res.cloudinary.com/diatamf9x/image/upload/v1760607805/MKN05652_xjq9sa.webp",
-        caption: "Natural beans carefully chosen for quality and taste.",
+        caption: "Handcrafted beans sourced from the finest regions of the world.",
       },
     ],
   },
@@ -110,15 +110,15 @@ const offers = [
     extraImages: [
       {
         src: "https://res.cloudinary.com/diatamf9x/image/upload/v1760971727/MKN05972_t731ty.webp",
-        caption: "Live music and laughter that fill the night.",
-      },
-      {
-        src: "https://res.cloudinary.com/diatamf9x/image/upload/v1760972009/MKN05995_fx22l6.jpg",
         caption: "Community gatherings filled with energy and joy.",
       },
       {
-        src: "https://res.cloudinary.com/diatamf9x/image/upload/v1760971880/MKN06182_wfaac3.webp",
+        src: "https://res.cloudinary.com/diatamf9x/image/upload/v1760972009/MKN05995_fx22l6.jpg",
         caption: "Celebrating creativity and connections.",
+      },
+      {
+        src: "https://res.cloudinary.com/diatamf9x/image/upload/v1760971880/MKN06182_wfaac3.webp",
+        caption: "Community gatherings filled with energy and joy.",
       },
     ],
   },
