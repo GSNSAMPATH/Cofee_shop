@@ -72,7 +72,7 @@ export default function Footer() {
       {/* Bottom copyright */}
       <div className="border-t border-gray-600 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center text-gray-400 text-sm ">
         <p>Copyright © {new Date().getFullYear()} AIDA’s Coffee</p>
-        <p className="mt-2 md:mt-0">
+        <p className="mt-2 md:mt-0 text-center mx-auto md:text-right">
           Built with <span className="text-white"><a href="https://www.xtreamdigital.com">Xtream Digital</a></span> and <span className="text-white"><a href="https://www.facebook.com/share/1MSV8Ut5B9/">Novrith Technology</a></span> in Sri Lanka
         </p>
       </div>
