@@ -44,7 +44,7 @@ export default async function GalleryPage() {
       </section>
 
       {/* Gallery Grid */}
- <section className="py-1 md:px-4 lg:px-20 w-full flex justify-center md:h-650 mb-10 md:mb-0 sm:px-8 md:px-8  lg:px-30">
+ <section className="py-1 md:px-4 lg:px-20 w-full flex justify-center md:h-950 mb-10 md:mb-0 sm:px-8 md:px-8  lg:px-30">
 
                             {/* Masonry Grid */}
                             <div className="hidden md:grid grid-cols-1">
@@ -172,7 +172,64 @@ export default async function GalleryPage() {
 
                                     </div>
 
-                                                                              <div className="md:col-span-3 relative bottom-93 rounded-2xl overflow-hidden">
+                                    <div className="md:col-span-3 relative bottom-93 rounded-2xl overflow-hidden">
+                                            <Image
+                                                src={urlFor(galleryImages[15].image).url() ?? ""}
+                                                alt="spot"
+                                                width={1200}
+                                                height={400}
+                                                loading='lazy'
+                                                className="h-[300px] md:h-[350px] w-full object-cover"
+                                            />
+                                        </div>  
+
+                                        <div className="md:col-span-2 relative rounded-2xl bottom-93 overflow-hidden bg-white h-[250px] md:h-[300px] group">
+                                        <Image
+                                            src={urlFor(galleryImages[11].image).url() ?? ""}
+                                            alt="spot"
+                                            width={800}
+                                            height={500}
+                                            loading='lazy'
+                                            className="h-[250px] md:h-[300px] w-full object-cover"
+                                        />
+
+                                    </div>
+                                
+                                    <div className=" rounded-2xl bottom-93 relative overflow-hidden">
+                                        <Image
+                                            src={urlFor(galleryImages[12].image).url() ?? ""}
+                                            alt="spot"
+                                            width={400}
+                                            height={700}
+                                            loading='lazy'
+                                            className="h-[700px] md:h-[675px] w-full object-cover"
+                                        />
+                                    </div>
+                                
+                                    {/* Row 2 */}
+                                     <div className="rounded-2xl bottom-186 relative overflow-hidden bg-white ">
+                                              <Image
+                                                src={urlFor(galleryImages[13].image).url() ?? ""}
+                                                alt="spot"
+                                                width={400}
+                                                height={300}
+                                                loading='lazy'
+                                                className="h-[250px] md:h-[350px] w-full object-cover"
+                                              />
+                                            </div>
+                                            <div className="rounded-2xl bottom-186 relative overflow-hidden">
+                                              <Image
+                                                src={urlFor(galleryImages[14].image).url() ?? ""}
+                                                alt="spot"
+                                                width={400}
+                                                height={300}
+                                                loading='lazy'
+                                                className="h-[250px] md:h-[350px] w-full object-cover"
+                                              />
+                                            </div>
+                                            <div />
+
+                                            <div className="md:col-span-3 relative bottom-186 rounded-2xl overflow-hidden">
                                             <Image
                                                 src={urlFor(galleryImages[9].image).url() ?? ""}
                                                 alt="spot"
@@ -181,7 +238,8 @@ export default async function GalleryPage() {
                                                 loading='lazy'
                                                 className="h-[300px] md:h-[350px] w-full object-cover"
                                             />
-                                        </div>  
+                                            </div>
+
                                         
                                 </div>
                             </div>
@@ -340,6 +398,8 @@ export default async function GalleryPage() {
                                         />
 
                                       </div>
+
+                                      
                                     </div>
                                   </div>
                         </section>

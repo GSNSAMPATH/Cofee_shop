@@ -39,6 +39,7 @@ export default function Footer() {
         <div className="sm:justify-center  sm:align-end  flex flex-col items-center sm:items-end">
           {/* QR Code */}
           <div className="mb-4 ">
+            <Link href="/" target="_blank" rel="noreferrer">
             <Image
               src="https://res.cloudinary.com/diatamf9x/image/upload/v1760798950/logocofee_pjh43r.png"
               alt="QR Code"
@@ -46,6 +47,7 @@ export default function Footer() {
               height={120}
               className="mb-4 mx-auto"
             />
+            </Link>
           </div>
           <h3 className="text-xl font-bold  mb-3 leading-relaxed">SOCIAL MEDIA</h3>
 

@@ -221,7 +221,12 @@ export default function OfferPage() {
                 } items-center gap-8 py-16 px-6 md:px-20 mx-auto rounded-lg transition-all duration-500`}
               >
                 {/* Image */}
-                <div className="md:w-1/2">
+                <motion.div 
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6, delay: index * 0.2 }}
+                    viewport={{ once: true }}
+                    className="md:w-1/2">
                   <Image
                     src={offer.image}
                     alt={offer.title}
@@ -229,14 +234,24 @@ export default function OfferPage() {
                     height={400}
                     className="rounded-lg shadow-lg h-[400px] md:w-full object-cover"
                   />
-                </div>
+                </motion.div>
 
                 {/* Content */}
                 <div className="md:w-1/2 w-full">
-                  <h2 className="text-3xl font-semibold mb-4 inria-heading2">{offer.title}</h2>
-                  <p className="text-gray-300 mb-6 leading-relaxed inria-text">
+                  <motion.h2 
+                  initial={{ opacity: 0, y: -30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6 }}
+                  viewport={{ once: true }}
+                  className="text-3xl font-semibold mb-4 inria-heading2">{offer.title}</motion.h2>
+                  <motion.p 
+                  initial={{ opacity: 0, y: -30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6 }}  
+                  viewport={{ once: true }}
+                  className="text-gray-300 mb-6 leading-relaxed inria-text">
                     {offer.desc}
-                  </p>
+                  </motion.p>
                   <button
                     onClick={() => handleOfferClick(index)}
                     className="px-5 py-2 border border-red-500 text-red-500 hover:bg-red-500 hover:text-white rounded transition-all duration-300"

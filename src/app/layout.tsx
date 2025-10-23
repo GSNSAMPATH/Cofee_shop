@@ -48,7 +48,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head />
-      <WhatsAppButton/> 
+      {/* <WhatsAppButton/>  */}
     
      <body
         className={`${geistSans.variable} ${geistMono.variable} ${inriaSans.variable} ${inter.variable} antialiased`}

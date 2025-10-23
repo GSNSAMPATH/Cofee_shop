@@ -70,7 +70,7 @@ export default function ContactPage() {
             <section >
                 <div className="hidden lg:block absolute items-center  mt-100 right-20 xl:right-60 h-10 justify-center mt-10 lg:flex md:max-w-7xl mx-auto ">
                     <Image
-                        src="/922cac9acc60b4f35e848097721de57891a22b00.png"
+                        src="/imagecontacto1.png"
                         alt="Coffee Background"
                         width={700}
                         height={200}
