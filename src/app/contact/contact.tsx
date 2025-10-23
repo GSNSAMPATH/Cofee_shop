@@ -70,7 +70,7 @@ export default function ContactPage() {
             <section >
                 <div className="hidden lg:block absolute items-center  mt-100 right-20 xl:right-60 h-10 justify-center mt-10 lg:flex md:max-w-7xl mx-auto ">
                     <Image
-                        src="/imagecontacto1.png"
+                        src="/contactinfo1.png"
                         alt="Coffee Background"
                         width={700}
                         height={200}
@@ -135,30 +135,57 @@ export default function ContactPage() {
                         <div className="lg:p-10 flex flex-col items-center  lg:flex-row justify-center mx-auto">
                         <div className="relative mt-15 md:mt-5 z-0 bg-[#E3D7C5] p-3 h-15 max-w-auto flex flex-col items-center lg:block lg:flex-row justify-center rounded-4xl shadow-lg md:w-[220px]">
                             <div className="flex space-x-5 md:space-x-10 text-4xl 0 text-black justify-center md:w-[200px]">
-                        <a
-                            href="https://www.facebook.com/share/17eNyYuR5h/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="hover:text-blue-600 cursor-pointer transition"
-                        >
-                            <FaFacebook />
-                        </a>
+                                <a
+                                    href="https://www.facebook.com/share/17eNyYuR5h/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="hover:text-blue-600 cursor-pointer transition"
+                                >
+                                    <FaFacebook />
+                                </a>
 
-                        {/* WhatsApp link */}
-                        <a
-                            href="https://wa.me/+94704871510"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="hover:text-green-600 cursor-pointer transition"
-                        >
-                            <FaWhatsapp />
-                        </a>
+                                {/* WhatsApp link */}
+                                <a
+                                    href="https://wa.me/+94704871510"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="hover:text-green-600 cursor-pointer transition"
+                                >
+                                    <FaWhatsapp />
+                                </a>
                             </div>
                         </div> 
                     </div>
                     </div>
                     </div>
-                    <div className="hidden lg:block w-3/5 h-200 bottom-50 bg-[#4B2E2B] z-0">    
+                    <div className="hidden lg:block w-3/5 h-200 bottom-50 bg-[#4B2E2B] z-0">
+                            {/* <div className="hidden lg:block absolute mt-100 mb-50 top-80  right-20 w-[480px] h-[380px] z-0 ">
+                              <Image
+                                src="/bg_cofeenut.png"
+                                alt="Coffee Background2"
+                                fill
+                                className=" top-10 left-30 h-10 w-10 opacity-80 object-cover object-top-left"
+                                priority
+                              /> 
+                            </div>
+                                    <div className="hidden lg:block absolute mt-100 mb-50 top-120  right-10 w-[480px] h-[380px] z-0 ">
+                                      <Image
+                                        src="/bg_cofeenut.png"
+                                        alt="Coffee Background2"
+                                        fill
+                                        className=" top-10 left-30 h-10 w-10 opacity-80 object-cover object-top-left"
+                                        priority
+                                      /> 
+                                    </div>
+                                            <div className="hidden lg:block absolute mt-100 mb-50  right-20 w-[480px] h-[380px] z-0 ">
+                                              <Image
+                                                src="/bg_cofeenut.png"
+                                                alt="Coffee Background2"
+                                                fill
+                                                className=" top-30 left-30 h-10 w-10 opacity-80 object-cover object-top-left"
+                                                priority
+                                              /> 
+                                            </div>     */}
                     </div>
                 </div>
             </section>
