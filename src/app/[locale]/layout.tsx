@@ -5,11 +5,11 @@ import { NextIntlClientProvider } from "next-intl";
 import Navbar from "@/app/[locale]/Component/Nave";
 import Footer from "@/app/[locale]/Component/Footer";
 import "../globals.css";
+import WhatsAppButton from "./Component/WhatsAppButton";
 
 // ✅ Font imports
 import { Geist, Geist_Mono } from "next/font/google";
 import { Inria_Sans, Inter, Poppins } from "next/font/google";
-import WhatsAppButton from "./Component/WhatsAppButton";
 
 // ✅ Font setup
 const geistSans = Geist({
@@ -49,29 +49,39 @@ export const metadata = {
   },
 };
 
+// ✅ FIXED VERSION
 export default function LocaleLayout({
   children,
   params,
 }: {
   children: ReactNode;
-  params: { locale: string }; // ✅ plain object, not Promise
+  params: { locale: string }; // ❌ not Promise — must be plain object
 }) {
   const { locale } = params;
 
-  // Load translations synchronously
+  // ✅ Load messages safely
   const messagesPath = path.join(process.cwd(), "src/messages", `${locale}.json`);
-  if (!fs.existsSync(messagesPath)) {
-    console.error(`❌ Missing translations for locale: ${locale}`);
-    return <div>Missing translations for locale: {locale}</div>;
+  let messages = {};
+
+  try {
+    if (fs.existsSync(messagesPath)) {
+      messages = JSON.parse(fs.readFileSync(messagesPath, "utf-8"));
+    } else {
+      console.warn(`⚠️ Missing translations for locale: ${locale}`);
+    }
+  } catch (error) {
+    console.error("Error loading translations:", error);
   }
 
-  const messages = JSON.parse(fs.readFileSync(messagesPath, "utf-8"));
-
   return (
-    <html lang={locale}>
-      <body>
+    <html
+      lang={locale}
+      className={`${geistSans.variable} ${geistMono.variable} ${inriaSans.variable} ${inter.variable} ${poppins.variable}`}
+    >
+      <body className="bg-black text-white font-[var(--font-poppins)]">
         <NextIntlClientProvider messages={messages}>
           <Navbar />
+          <WhatsAppButton />
           {children}
           <Footer />
         </NextIntlClientProvider>
