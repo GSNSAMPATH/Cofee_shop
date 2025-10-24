@@ -53,8 +53,8 @@ export default function LocaleLayout({
   children,
   params,
 }: {
-  children: React.ReactNode;
-  params: { locale: string }; // <-- plain object, NOT Promise
+  children: ReactNode;
+  params: { locale: string }; // ✅ plain object
 }) {
   const { locale } = params;
 
