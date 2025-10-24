@@ -1,11 +1,14 @@
+// src/app/[locale]/layout.tsx
 import fs from "fs";
 import path from "path";
 import { ReactNode } from "react";
 import { NextIntlClientProvider } from "next-intl";
+
 import Navbar from "@/app/[locale]/Component/Nave";
 import Footer from "@/app/[locale]/Component/Footer";
+import WhatsAppButton from "@/app/[locale]/Component/WhatsAppButton";
+
 import "../globals.css";
-import WhatsAppButton from "./Component/WhatsAppButton";
 
 import { Geist, Geist_Mono } from "next/font/google";
 import { Inria_Sans, Inter, Poppins } from "next/font/google";
@@ -13,7 +16,11 @@ import { Inria_Sans, Inter, Poppins } from "next/font/google";
 // Fonts
 const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
-const inriaSans = Inria_Sans({ variable: "--font-inria-sans", subsets: ["latin"], weight: ["400", "700"] });
+const inriaSans = Inria_Sans({
+  variable: "--font-inria-sans",
+  subsets: ["latin"],
+  weight: ["400", "700"],
+});
 const inter = Inter({ variable: "--font-inter", subsets: ["latin"], weight: ["400", "700"] });
 const poppins = Poppins({ variable: "--font-poppins", subsets: ["latin"], weight: ["400", "700"] });
 
@@ -24,20 +31,19 @@ export const metadata = {
   icons: { icon: "/favicon.ico" },
 };
 
-// ✅ FINAL FIXED VERSION
+// ✅ Server Component (no "use client")
 export default async function LocaleLayout({
   children,
   params,
 }: {
   children: ReactNode;
-  params: Promise<{ locale: string }>; // 👈 Next.js expects this in v15+
+  params: { locale: string };
 }) {
-  // ✅ Explicitly await params to get locale
-  const { locale } = await params;
+  const { locale } = params;
 
-  // Load translation messages
-  const messagesPath = path.join(process.cwd(), "src/messages", `${locale}.json`);
-  let messages = {};
+  // Load translation messages (server-side)
+  const messagesPath = path.join(process.cwd(), "src/app/messages", `${locale}.json`);
+  let messages: Record<string, any> = {};
 
   try {
     if (fs.existsSync(messagesPath)) {

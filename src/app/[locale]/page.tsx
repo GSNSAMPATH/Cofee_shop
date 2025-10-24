@@ -15,7 +15,7 @@ import { useTranslations } from "next-intl";
 
 export default function Home() {
     const t = useTranslations("home");
-    const t2 = useTranslations("home.coffees");
+    const t2 = useTranslations("coffees");
 
       const coffees = [
     { name: t2("americano"), src: "/cofeecup.png" },

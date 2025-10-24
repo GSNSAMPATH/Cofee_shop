@@ -11,15 +11,15 @@
     "statsVarieties": "Coffee Varieties",
     "statsAwards": "Awards",
     "statswon": "Won",
-    "offerTitle": "We Are Offer",
+    "offerTitle": "We Are Offer"
+  },
     "coffees": {
       "americano": "Americano",
       "icedLatte": "Iced Latte",
       "affogato": "Affogato",
       "cappuccino": "Cappuccino",
       "espresso": "Espresso"
-    }
-  },
+    },
   "about": {
     "aboutTitle": "About Us",
     "ourStoryTitle": "Our Story",
