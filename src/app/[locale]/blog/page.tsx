@@ -1,9 +1,9 @@
 import Navbar from "@/app/[locale]/Component/Nave";
 import Image from "next/image";
 import Link from "next/link";
+import { client } from "../lib/sanity.config";
 import imageUrlBuilder from "@sanity/image-url";
 import { FaFacebookF, FaYoutube } from "react-icons/fa";
-import { client } from "@/app/[locale]/lib/sanity.config"; // adjust path
 
 const builder = imageUrlBuilder(client);
 function urlFor(source: any) {
@@ -16,11 +16,25 @@ interface Blog {
   title: string;
   excerpt: string;
   date: string;
-  mainImage?: string;
+  mainImage?: any;
 }
 
-export default async function BlogPage({ params }: { params: { locale: string } }) {
-  const locale = params.locale || "en";
+/*************  ✨ Windsurf Command ⭐  *************/
+/**
+ * BlogPage component
+ *
+ * This component renders a page with a blog hero section, a featured blog card, and a grid of recent blog posts.
+ *
+ * The hero section contains a background image, a title, and a subtitle.
+ * The featured blog card contains an image, a title, an excerpt, and links to social media.
+ * The recent blog posts grid contains cards with an image, a title, an excerpt, and links to social media.
+ *
+ * @param {Object} params - An object containing the locale parameter.
+ * @returns {React.ReactElement} - A React element representing the blog page.
+ */
+/*******  4d44cf28-8486-40df-8ce9-d6ced5c53742  *******/export default async function BlogPage(props: { params: Promise<{ locale: string }> }) {
+  // ✅ Await the params before using
+  const { locale } = await props.params;
 
   const blogs: Blog[] = await client.fetch(`
     *[_type == "blog" && defined(slug.current)] | order(date desc){
@@ -43,7 +57,7 @@ export default async function BlogPage({ params }: { params: { locale: string } 
   return (
     <div className="bg-black text-white min-h-screen">
       {/* ---------- Hero Section ---------- */}
-      <div className="relative w-full h-130 md:h-[87vh] ">
+      <div className="relative w-full h-130 md:h-[87vh]">
         <Navbar />
         <Image
           src="https://res.cloudinary.com/diatamf9x/image/upload/v1760680453/MKN05798_ov91ma.jpg"
@@ -52,7 +66,9 @@ export default async function BlogPage({ params }: { params: { locale: string } 
           className="h-100 object-cover opacity-900 w-full"
         />
         <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
-          <h1 className="text-white text-4xl sm:text-8xl font-bold text-center mb-10 relative inline-block mx-auto">BLOG</h1>
+          <h1 className="text-white text-4xl sm:text-8xl font-bold text-center mb-10 relative inline-block mx-auto">
+            BLOG
+          </h1>
         </div>
       </div>
 
@@ -65,7 +81,7 @@ export default async function BlogPage({ params }: { params: { locale: string } 
 
       {/* ---------- Featured Blog Card ---------- */}
       <div className="container mx-auto px-6 mb-16 h-auto">
-        <div className="flex flex-col lg:flex-row bg-[#1e1e1e] rounded-xl overflow-hidden shadow-lg md:border-20 border-[#4125224F] ">
+        <div className="flex flex-col lg:flex-row bg-[#1e1e1e] rounded-xl overflow-hidden shadow-lg md:border-20 border-[#4125224F]">
           <div className="lg:w-1/2">
             <Image
               src={urlFor(hero.mainImage).url()}
@@ -77,7 +93,7 @@ export default async function BlogPage({ params }: { params: { locale: string } 
           </div>
           <div className="lg:w-1/2 p-8 flex flex-col justify-center">
             <h2 className="text-2xl inria-heading2 font-bold mb-4">{hero.title}</h2>
-            <p className="text-gray-300 inria-text-small mb-6">
+            <p className="text-gray-300 mb-6 inria-text-small line-clamp-4">
               {hero.excerpt}
             </p>
             <div className="flex items-center gap-4">
@@ -112,8 +128,8 @@ export default async function BlogPage({ params }: { params: { locale: string } 
               className="object-cover w-full h-[250px] rounded-lg mb-4"
             />
             <div className="p-6 text-center">
-              <h3 className="text-xl font-bold mb-3 inria-heading3 line-clamp-3">{blog.title}</h3>
-              <p className="text-gray-300 mb-5 inria-text-small line-clamp-4">{blog.excerpt}</p>
+              <h3 className="text-xl font-bold mb-3 line-clamp-3">{blog.title}</h3>
+              <p className="text-gray-300 mb-5 line-clamp-4">{blog.excerpt}</p>
               <div className="flex items-center gap-4 justify-center">
                 <Link
                   href={`/${locale}/blog/${blog.slug.current}`}
