@@ -11,15 +11,15 @@
     "statsVarieties": "Виды кофе",
     "statsAwards": "Полученные",
     "statswon": "награды",
-    "offerTitle": "Наши предложения",
+    "offerTitle": "Наши предложения"
+  },
     "coffees": {
       "americano": "Американо",
       "icedLatte": "Латте",
       "affogato": "Аффогато",
       "cappuccino": "Капучино",
       "espresso": "Эспрессо"
-    }
-  },
+    },
   "about": {
     "aboutTitle": "О нас",
     "ourStoryTitle": "Наша история",

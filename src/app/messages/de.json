@@ -1,0 +1,40 @@
+{
+  "home": {
+    "heroTitle": "Induruwas neuestes Café",
+    "heroSubtitle": "Induruwa – das neueste Kaffeeerlebnis – Lavazza-Kaffee, frisches Gebäck & mehr..",
+    "viewOffer": "Angebot ansehen →",
+    "aboutTitle": "Über uns",
+    "aboutPara1": "Willkommen im The Coffee Shop der AIDA Group – dem neuesten und trendigsten Café in Induruwa, Sri Lanka. Wir servieren echten Lavazza-Kaffee, perfekt zubereitet auf unserer professionellen LaCimbali-Espressomaschine, begleitet von einer großen Auswahl an frisch gebackenem Gebäck, hausgemachten Kuchen, frischen Säften und Smoothies.",
+    "aboutPara2": "Unser Café ist als arbeitsfreundlicher, entspannender und ästhetischer Ort gestaltet – ideal für Reisende, Einheimische und digitale Nomaden, die einen gemütlichen Platz mit WLAN suchen. Als Teil der renommierten AIDA Group, die seit über 50 Jahren in der Hotellerie tätig ist, bieten wir Ihnen nicht nur Kaffee – sondern ein ganzheitliches Lifestyle-Erlebnis im Herzen von Induruwa.",
+    "statsYears": "Jahre Erfahrung",
+    "statsCustomers": "Zufriedene Kunden",
+    "statsVarieties": "Kaffeesorten",
+    "statsAwards": "Auszeichnungen",
+    "statswon": "Gewonnen",
+    "offerTitle": "Unsere Angebote"
+  },
+  "coffees": {
+    "americano": "Americano",
+    "icedLatte": "Eiskaffee Latte",
+    "affogato": "Affogato",
+    "cappuccino": "Cappuccino",
+    "espresso": "Espresso"
+  },
+  "about": {
+    "aboutTitle": "Über uns",
+    "ourStoryTitle": "Unsere Geschichte",
+    "ourStoryText": "...",
+    "ourVisionTitle": "Unsere Vision",
+    "ourVisionText": "...",
+    "ourMissionTitle": "Unsere Mission",
+    "ourMissionText": "..."
+  },
+  "navbar": {
+    "home": "Startseite",
+    "about": "Über uns",
+    "offer": "Angebote",
+    "blog": "Blog",
+    "gallery": "Galerie",
+    "contact": "Kontakt"
+  }
+}
