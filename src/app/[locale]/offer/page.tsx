@@ -214,12 +214,15 @@ export default function OfferPage() {
                     : "#0d0d0d",
               }}
             >
-              <div
-                ref={(el) => (sectionRefs.current[index] = el)}
-                className={`flex flex-col md:flex-row ${
-                  index % 2 === 1 ? "md:flex-row-reverse" : ""
-                } items-center gap-8 py-16 px-6 md:px-20 mx-auto rounded-lg transition-all duration-500`}
-              >
+            <div
+              ref={(el) => {
+                sectionRefs.current[index] = el;
+              }}
+              className={`flex flex-col md:flex-row ${
+                index % 2 === 1 ? "md:flex-row-reverse" : ""
+              } items-center gap-8 py-16 px-6 md:px-20 mx-auto rounded-lg transition-all duration-500`}
+            >
+
                 {/* Image */}
                 <motion.div 
                     initial={{ opacity: 0, y: 50 }}
