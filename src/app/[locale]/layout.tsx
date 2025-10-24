@@ -49,22 +49,20 @@ export const metadata = {
   },
 };
 
-export default async function LocaleLayout({
+export default function LocaleLayout({
   children,
   params,
 }: {
-  children: ReactNode;
-  params: Promise<{ locale: string }>;
+  children: React.ReactNode;
+  params: { locale: string }; // <-- not Promise
 }) {
-  // ✅ Await async params
-  const { locale } = await params;
+  const { locale } = params;
 
   const messagesPath = path.join(process.cwd(), "src/messages", `${locale}.json`);
 
-  // ✅ Ensure translation file exists
   if (!fs.existsSync(messagesPath)) {
     console.error(`❌ Missing translations file for locale: ${locale}`);
-    return null;
+    return <div>Missing translations for locale: {locale}</div>; // better than null
   }
 
   const messages = JSON.parse(fs.readFileSync(messagesPath, "utf-8"));
