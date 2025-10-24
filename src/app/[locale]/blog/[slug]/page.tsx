@@ -89,8 +89,11 @@ const portableTextComponents: PortableTextComponents = {
 export default async function BlogPost({
   params,
 }: {
-  params: { slug: string };
+  params: { locale: string; slug: string }; // include locale here
 }) {
+  const { slug, locale } = params;
+
+  // Fetch blog content
   const blog: Blog | null = await client.fetch(
     `*[_type == "blog" && slug.current == $slug][0] {
       title,
@@ -98,7 +101,7 @@ export default async function BlogPost({
       mainImage,
       content
     }`,
-    { slug: params.slug }
+    { slug } // you can also pass locale if needed for translations
   );
 
   if (!blog) {
@@ -110,13 +113,13 @@ export default async function BlogPost({
   }
 
   return (
-    <main className="min-h-screen bg-black text-gray-200 px-4 sm:px-6 md:px-4">
-      <section className="sm:px-6 md:px-8 lg:px-30 py-4 pb-14 md:py-16">
-        <h1 className="font-[poppins] text-[24px] md:text-[40px] font-semibold mb-3  text-white">
+    <main className="min-h-screen bg-black text-gray-200 px-4 sm:px-6 md:px-4 ">
+      <section className="sm:px-6 md:px-8 lg:px-30 py-4 pb-14 md:py-16 py-20">
+        <h1 className="font-[poppins] text-[24px] md:text-[40px] font-semibold mb-3  text-white mt-20">
           {blog.title}
         </h1>
         <p className="text-gray-100 mb-6">
-          {new Date(blog.date).toLocaleDateString("en-GB", {
+          {new Date(blog.date).toLocaleDateString(locale, {  // use locale here
             day: "2-digit",
             month: "short",
             year: "numeric",

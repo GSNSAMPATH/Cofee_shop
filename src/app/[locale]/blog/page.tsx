@@ -1,12 +1,9 @@
-
-
 import Navbar from "@/app/[locale]/Component/Nave";
 import Image from "next/image";
 import Link from "next/link";
 import imageUrlBuilder from "@sanity/image-url";
 import { FaFacebookF, FaYoutube } from "react-icons/fa";
-import { client } from "../lib/sanity.config";
-
+import { client } from "@/app/[locale]/lib/sanity.config"; // adjust path
 
 const builder = imageUrlBuilder(client);
 function urlFor(source: any) {
@@ -22,7 +19,9 @@ interface Blog {
   mainImage?: any;
 }
 
-export default async function BlogPage() {
+export default async function BlogPage({ params }: { params: { locale: string } }) {
+  const locale = params.locale || "en";
+
   const blogs: Blog[] = await client.fetch(`
     *[_type == "blog" && defined(slug.current)] | order(date desc){
       _id,
@@ -41,11 +40,8 @@ export default async function BlogPage() {
   const hero = blogs[0];
   const recentPosts = blogs.slice(1, 7);
 
-
-
   return (
     <div className="bg-black text-white min-h-screen">
-    
       {/* ---------- Hero Section ---------- */}
       <div className="relative w-full h-130 md:h-[87vh] ">
         <Navbar />
@@ -80,17 +76,15 @@ export default async function BlogPage() {
             />
           </div>
           <div className="lg:w-1/2 p-8 flex flex-col justify-center">
-            <h2 className="text-2xl inria-heading2 font-bold mb-4 inria-heading2">{hero.title}</h2>
-            <p className="text-gray-300 inria- mb-6 inria-text-small">
-              We are a company that makes and distributes delicious drinks. Our
-              main product is made with a secret recipe and available in stores
-              worldwide. We are a company that makes and distributes delicious
-              drinks. Our main product is made with a secret recipe and
-              available in stores worldwide.
+            <h2 className="text-2xl inria-heading2 font-bold mb-4">{hero.title}</h2>
+            <p className="text-gray-300 inria-text-small mb-6">
+              {hero.excerpt}
             </p>
             <div className="flex items-center gap-4">
-              <Link href={`/blog/${hero.slug.current}`}
-               className="border border-red-500 text-white px-5 py-2 rounded-md hover:bg-red-600 transition">
+              <Link
+                href={`/${locale}/blog/${hero.slug.current}`}
+                className="border border-red-500 text-white px-5 py-2 rounded-md hover:bg-red-600 transition"
+              >
                 See More
               </Link>
               <FaFacebookF className="text-2xl hover:text-blue-500 cursor-pointer" />
@@ -107,23 +101,24 @@ export default async function BlogPage() {
             key={index}
             className="bg-[#2b1f1b] rounded-lg overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300 p-5"
             style={{
-        background: "linear-gradient(180deg, #4B2E2B 43.75%, rgba(0, 0, 0, 0.25) 100%)",
-      }}>
+              background: "linear-gradient(180deg, #4B2E2B 43.75%, rgba(0, 0, 0, 0.25) 100%)",
+            }}
+          >
             <Image
               src={urlFor(blog.mainImage).url()}
               alt={blog.title}
               width={400}
               height={250}
               className="object-cover w-full h-[250px] rounded-lg mb-4"
-
             />
             <div className="p-6 text-center">
-              <h3 className="text-xl font-bold mb-3 inria-heading3 lg:line-clamp-1 line-clamp-3 sm:line-clamp-2">{blog.title}</h3>
-              <p className="text-gray-300 mb-5 inria-text-small line-clamp-4 ">{blog.excerpt}</p>
+              <h3 className="text-xl font-bold mb-3 inria-heading3 line-clamp-3">{blog.title}</h3>
+              <p className="text-gray-300 mb-5 inria-text-small line-clamp-4">{blog.excerpt}</p>
               <div className="flex items-center gap-4 justify-center">
                 <Link
-                  href={`/blog/${blog.slug.current}`}
-                  className="border border-red-500 text-white px-4 py-1 rounded-md hover:bg-red-600 transition">
+                  href={`/${locale}/blog/${blog.slug.current}`}
+                  className="border border-red-500 text-white px-4 py-1 rounded-md hover:bg-red-600 transition"
+                >
                   See More
                 </Link>
                 <FaFacebookF className="text-xl hover:text-blue-500 cursor-pointer" />
