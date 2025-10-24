@@ -3,8 +3,8 @@
 import Image from "next/image";
 import { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import Navbar from "@/Component/Nave";
-import Carousel from "@/Component/SpotlightSection";
+import Navbar from "@/app/[locale]/Component/Nave";
+import Carousel from "@/app/[locale]/Component/SpotlightSection";
 import { title } from "process";
 
 const offers = [

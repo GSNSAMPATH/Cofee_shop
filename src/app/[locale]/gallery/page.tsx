@@ -1,6 +1,6 @@
 
 import Image from "next/image";
-import Navebar from "@/Component/Nave";
+import Navebar from "@/app/[locale]/Component/Nave";
 import { client, urlFor } from "../lib/sanity.config";
 
 

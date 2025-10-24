@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { PortableText, PortableTextComponents } from "@portabletext/react";
-import { client } from "@/app/lib/sanity.config";
+import { client } from "@/app/[locale]/lib/sanity.config";
 import imageUrlBuilder from "@sanity/image-url";
 
 interface Blog {

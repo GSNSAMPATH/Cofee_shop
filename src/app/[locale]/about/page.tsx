@@ -1,7 +1,7 @@
 "use client";
-import BlogSection from "@/Component/BlogSection";
-import Navbar from "@/Component/Nave";
-import Quality from "@/Component/quality";
+import BlogSection from "@/app/[locale]/Component/BlogSection";
+import Navbar from "@/app/[locale]/Component/Nave";
+import Quality from "@/app/[locale]/Component/quality";
 import { motion } from "framer-motion";
 import Image from "next/image";
 

@@ -1,6 +1,6 @@
 
 
-import Navbar from "@/Component/Nave";
+import Navbar from "@/app/[locale]/Component/Nave";
 import Image from "next/image";
 import Link from "next/link";
 import imageUrlBuilder from "@sanity/image-url";

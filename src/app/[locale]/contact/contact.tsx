@@ -1,6 +1,6 @@
 
-import LocationMap from "@/Component/map";
-import Navbar from "@/Component/Nave";
+import LocationMap from "@/app/[locale]/Component/map";
+import Navbar from "@/app/[locale]/Component/Nave";
 import Image from "next/image";
 import { useState } from "react";
 import { FaFacebook, FaWhatsapp } from "react-icons/fa";
