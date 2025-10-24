@@ -7,59 +7,35 @@ import Footer from "@/app/[locale]/Component/Footer";
 import "../globals.css";
 import WhatsAppButton from "./Component/WhatsAppButton";
 
-// ✅ Font imports
 import { Geist, Geist_Mono } from "next/font/google";
 import { Inria_Sans, Inter, Poppins } from "next/font/google";
 
-// ✅ Font setup
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+// Fonts
+const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
+const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
+const inriaSans = Inria_Sans({ variable: "--font-inria-sans", subsets: ["latin"], weight: ["400", "700"] });
+const inter = Inter({ variable: "--font-inter", subsets: ["latin"], weight: ["400", "700"] });
+const poppins = Poppins({ variable: "--font-poppins", subsets: ["latin"], weight: ["400", "700"] });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
-const inriaSans = Inria_Sans({
-  variable: "--font-inria-sans",
-  subsets: ["latin"],
-  weight: ["400", "700"],
-});
-
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-  weight: ["400", "700"],
-});
-
-const poppins = Poppins({
-  subsets: ["latin"],
-  variable: "--font-poppins",
-  weight: ["400", "700"],
-});
-
-// ✅ Metadata
+// Metadata
 export const metadata = {
   title: "AIDA Coffee",
   description: "Experience the best coffee in Induruwa",
-  icons: {
-    icon: "/favicon.ico",
-  },
+  icons: { icon: "/favicon.ico" },
 };
 
-// ✅ FIXED VERSION
-export default function LocaleLayout({
+// ✅ FINAL FIXED VERSION
+export default async function LocaleLayout({
   children,
   params,
 }: {
   children: ReactNode;
-  params: { locale: string }; // ❌ not Promise — must be plain object
+  params: Promise<{ locale: string }>; // 👈 Next.js expects this in v15+
 }) {
-  const { locale } = params;
+  // ✅ Explicitly await params to get locale
+  const { locale } = await params;
 
-  // ✅ Load messages safely
+  // Load translation messages
   const messagesPath = path.join(process.cwd(), "src/messages", `${locale}.json`);
   let messages = {};
 
