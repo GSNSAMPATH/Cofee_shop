@@ -9,6 +9,7 @@ import "../globals.css";
 // ✅ Font imports
 import { Geist, Geist_Mono } from "next/font/google";
 import { Inria_Sans, Inter, Poppins } from "next/font/google";
+import WhatsAppButton from "./Component/WhatsAppButton";
 
 // ✅ Font setup
 const geistSans = Geist({
@@ -76,6 +77,7 @@ export default async function LocaleLayout({
       <body className="bg-black text-white font-[var(--font-poppins)]">
         <NextIntlClientProvider messages={messages}>
           <Navbar />
+          <WhatsAppButton />
           {children}
           <Footer />
         </NextIntlClientProvider>
