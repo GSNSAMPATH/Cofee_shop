@@ -54,28 +54,24 @@ export default function LocaleLayout({
   params,
 }: {
   children: ReactNode;
-  params: { locale: string }; // ✅ plain object
+  params: { locale: string }; // ✅ plain object, not Promise
 }) {
   const { locale } = params;
 
+  // Load translations synchronously
   const messagesPath = path.join(process.cwd(), "src/messages", `${locale}.json`);
-
   if (!fs.existsSync(messagesPath)) {
-    console.error(`❌ Missing translations file for locale: ${locale}`);
-    return <div>Missing translations for locale: {locale}</div>; // better than null
+    console.error(`❌ Missing translations for locale: ${locale}`);
+    return <div>Missing translations for locale: {locale}</div>;
   }
 
   const messages = JSON.parse(fs.readFileSync(messagesPath, "utf-8"));
 
   return (
-    <html
-      lang={locale}
-      className={`${geistSans.variable} ${geistMono.variable} ${inriaSans.variable} ${inter.variable} ${poppins.variable}`}
-    >
-      <body className="bg-black text-white font-[var(--font-poppins)]">
+    <html lang={locale}>
+      <body>
         <NextIntlClientProvider messages={messages}>
           <Navbar />
-          <WhatsAppButton />
           {children}
           <Footer />
         </NextIntlClientProvider>
