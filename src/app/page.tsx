@@ -1,6 +1,3 @@
-// src/app/page.tsx
-import { redirect } from "next/navigation";
-
-export default function HomeRedirect() {
-  redirect("/en");
+export default function Home() {
+  return <h1 className="text-white">Hello World</h1>;
 }
