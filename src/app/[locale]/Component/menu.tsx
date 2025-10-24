@@ -40,7 +40,7 @@ export default function OurMenu() {
 
   const menuItems = [
     {
-      src: getImage(cards[0]?.image, "/Rectangle2.png"),
+      src: getImage(cards[0]?.image, "/Rectangle17.png"),
       alt: cards[0]?.title || "Coffee",
       title: cards[0]?.title || "Drink",
       description:
@@ -59,7 +59,7 @@ export default function OurMenu() {
       className2: "mt-40  text-white",
     },
     {
-      src: "/Rectangle 17.png",
+      src: "/Rectangle17.png",
       alt: "Event",
       title: "Event",
       description:
@@ -78,7 +78,7 @@ export default function OurMenu() {
       className2: "mt-40 md:mt-90 text-white mt-0 left-4",
     },
     {
-      src: "/Rectangle 17.png",
+      src: "/Rectangle17.png",
       alt: "Live Kitchen",
       title: "Live Kitchen",
       description: "Experience our chefs cook your meal right before your eyes.",
