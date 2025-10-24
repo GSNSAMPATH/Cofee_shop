@@ -16,7 +16,7 @@ interface Blog {
   title: string;
   excerpt: string;
   date: string;
-  mainImage?: any;
+  mainImage?: string;
 }
 
 export default async function BlogPage({ params }: { params: { locale: string } }) {

@@ -9,7 +9,7 @@ interface Blog {
   title: string;
   date: string;
   mainImage?: string;
-  content: any[]; // PortableText value
+  content: number[]; // PortableText value
 }
 
 // Sanity image builder
