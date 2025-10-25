@@ -6,6 +6,7 @@ import imageUrlBuilder from "@sanity/image-url";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { client } from "@/app/[locale]/lib/sanity.config";
+import { useTranslations } from "next-intl";
 
 const builder = imageUrlBuilder(client);
 function urlFor(source: any) {
@@ -20,6 +21,7 @@ interface MenuCard {
 }
 
 export default function OurMenu() {
+  const t = useTranslations("menu");
   const [cards, setCards] = useState<MenuCard[]>([]);
   const router = useRouter();
 
@@ -41,57 +43,55 @@ export default function OurMenu() {
   const menuItems = [
     {
       src: getImage(cards[0]?.image, "/Rectangle17.png"),
-      alt: cards[0]?.title || "Coffee",
-      title: cards[0]?.title || "Drink",
+      alt:  "Coffee",
+      title: t("menuTitle1"), 
       description:
-        cards[0]?.paragraph ||
-        "Enjoy handcrafted espresso, pour over, and cold brew made with premium beans.",
+         t("menu1Subtitle"),
       className: "md:col-span-1 md:row-span-2",
       className2: "mt-40 md:mt-90 text-white mt-0 left-4",
     },
     {
       src: getImage(cards[1]?.image, "/Rectangle17.png"),
       alt: cards[1]?.title || "Burger",
-      title: cards[1]?.title || "Burger",
+      title: t("menuTitle2"),
       description:
-        cards[1]?.paragraph || "Freshly baked buttery croissants every morning.",
+        t("menu2Subtitle"),
       className: "col-span-1 row-span-1",
       className2: "mt-40  text-white",
     },
     {
       src: "/Rectangle17.png",
       alt: "Event",
-      title: "Event",
+      title: t("menuTitle5"),
       description:
-        "Join our vibrant events — live music, art shows, and more.",
+        t("menu5Subtitle"),
       className: "col-span-1 row-span-1",
       className2: "mt-40 text-center text-white",
     },
     {
       src: getImage(cards[2]?.image, "/galleryimage1.jpg"),
       alt: cards[2]?.title || "Coffee",
-      title: cards[2]?.title || "Coffee",
+      title: t("menuTitle4"),
       description:
         cards[2]?.paragraph ||
-        "Refreshing cold brews and fruit drinks made fresh.",
+        t("menu4Subtitle"),
       className: "md:col-span-1 md:row-span-2",
       className2: "mt-40 md:mt-90 text-white mt-0 left-4",
     },
     {
       src: "/Rectangle17.png",
       alt: "Live Kitchen",
-      title: "Live Kitchen",
-      description: "Experience our chefs cook your meal right before your eyes.",
+      title: t("menuTitle6"),
+      description: t("menu6Subtitle"),
       className: "col-span-1 row-span-1",
       className2: "mt-40 text-center text-white",
     },
     {
       src: getImage(cards[3]?.image, "/Rectangle17.png"),
       alt: cards[3]?.title || "Cupcake",
-      title: cards[3]?.title || "Cupcake",
+      title: t("menuTitle3"),
       description:
-        cards[3]?.paragraph ||
-        "Sweet cupcakes with rich chocolate and vanilla frosting.",
+        t("menu3Subtitle"),
       className: "col-span-1 row-span-1",
       className2: "mt-40 text-white",
     },

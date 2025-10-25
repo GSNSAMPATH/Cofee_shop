@@ -1,40 +1,67 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
 import { FaFacebook, FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa";
-import { FaL, FaX } from "react-icons/fa6";
+import { usePathname, useRouter } from "next/navigation";
+import { useTranslations } from "next-intl";
 
 export default function Footer() {
+
+    const pathname = usePathname();
+    const router = useRouter();
+    const t = useTranslations("footer");
+  
+    // Extract current locale from URL: "/en/about" → "en"
+    const currentLocale = pathname.split("/")[1] || "en";
+  
+    const getLinkClass = (path: string) => {
+      const baseClass =
+        "transition text-[14px] lg:text-[16px] py-1";
+    
+  
+      return `${baseClass} ${
+        pathname === `/${currentLocale}${path}` 
+      }`;
+    };
+
+  
   return (
     <footer className="bg-gradient-to-r from-[#3e2723] to-[#1c1c1c] text-white pt-16 pb-6 px-6">
       <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-12">
         
         {/* Middle - Services */}
         <div className="justify-center flex flex-col items-center sm:items-start">
-          <h3 className="text-xl font-bold mb-3 leading-relaxed ">SERVICES</h3>
-          <ul className="space-y-2 text-gray-300 leading-relaxed text-center sm:text-start">
-            <li><Link href="/">Home</Link></li>
-            <li><Link href="/about">About Us</Link></li>
-            <li><Link href="/offer">Offer</Link></li>
-            <li><Link href="/blog">Blog</Link></li>
-            <li><Link href="/gallery">Gallery</Link></li>
-            <li><Link href="/contact">Contact</Link></li>
-          </ul>
+          <h3 className="text-xl font-bold mb-3 leading-relaxed ">{t("SERVICES")}</h3>
+          <Link href={`/${currentLocale}/`} className={getLinkClass("/")}>
+            {t("home")}
+          </Link>
+          <Link href={`/${currentLocale}/about`} className={getLinkClass("/about")}>
+            {t("about")}
+          </Link>
+          <Link href={`/${currentLocale}/offer`} className={getLinkClass("/offer")}>
+            {t("offer")}
+          </Link>
+          <Link href={`/${currentLocale}/blog`} className={getLinkClass("/blog")}>
+            {t("blog")}
+          </Link>
+          <Link href={`/${currentLocale}/gallery`} className={getLinkClass("/gallery")}>
+            {t("gallery")}
+          </Link>
+          <Link href={`/${currentLocale}/contact`} className={getLinkClass("/contact")}>
+            {t("contact")}
+          </Link>
         </div>
         
         {/* Left - About */}
         <div>
           <h3 className="text-xl text-center sm:text-left font-bold mb-3">
-            <span className="border-b-2 border-red-600">COFFEE</span>
+            <span className="border-b-2 border-red-600">{t("Coffee")}</span>
           </h3>
           <p className="text-gray-300 text-center sm:text-left leading-relaxed">
-            Aida Coffee Shop is your go-to place for specialty coffee, artisan pastries, 
-            and a wide range of beverages. Our coffee is carefully roasted and brewed to perfection, creating a cozy atmosphere. 
-            Enjoy rich flavors, friendly service, and the perfect space to relax or connect brewed fresh every day.
+            {t("coffeetext")}
           </p>
         </div>
-
-
-
         {/* Right - Social Media */}
         <div className="sm:justify-center  sm:align-end  flex flex-col items-center sm:items-end">
           {/* QR Code */}
@@ -49,7 +76,7 @@ export default function Footer() {
             />
             </Link>
           </div>
-          <h3 className="text-xl font-bold  mb-3 leading-relaxed">SOCIAL MEDIA</h3>
+          <h3 className="text-xl font-bold  mb-3 leading-relaxed">{t("Social")}</h3>
 
           {/* Social Icons */}
           <div className="flex space-x-6 text-2xl justify-end">
@@ -72,7 +99,7 @@ export default function Footer() {
       {/* Bottom copyright */}
       <div className="border-t border-gray-600 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center text-gray-400 text-sm ">
         <p>Copyright © {new Date().getFullYear()} AIDA’s Coffee</p>
-        <p className="mt-2 md:mt-0 text-center mx-auto md:text-right">
+        <p className="mt-2 md:mt-0 text-center mx-auto sm:mx-0 sm:text-right">
           Built with <span className="text-white"><a href="https://www.xtreamdigital.com">Xtream Digital</a></span> and <span className="text-white"><a href="https://www.facebook.com/share/1MSV8Ut5B9/">Novrith Technology</a></span> in Sri Lanka
         </p>
       </div>

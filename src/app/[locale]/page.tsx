@@ -172,34 +172,34 @@ export default function Home() {
             </div>
           </div>
           <div className="relative justify-center md:flex sm:mr-20 mx-10 mt-10 ">
-<div className="grid grid-cols-2 w-fit mx-auto text-center text-white ">
-  <div className="p-5 border-r border-b">
-    <h3 className="text-4xl font-bold text-[22px] md:text-4xl">
-      10<span className="align-super md:text-lg">+</span>
-    </h3>
-    <p className="uppercase tracking-wide text-[14px] md:text-[22px]">{t("statsYears")}</p>
-  </div>
+              <div className="grid grid-cols-2 w-fit mx-auto text-center text-white ">
+                <div className="p-5 border-r border-b">
+                  <h3 className="text-4xl font-bold text-[22px] md:text-4xl">
+                    10<span className="align-super md:text-lg">+</span>
+                  </h3>
+                  <p className="uppercase tracking-wide text-[12px] xl:text-[22px] sm:text-[14px]">{t("statsYears")}</p>
+                </div>
 
-  <div className="p-5 border-l border-b">
-    <h3 className="text-4xl font-bold text-[22px] md:text-4xl">
-      10<span className="align-super text-lg">+</span>
-    </h3>
-    <p className="uppercase tracking-wide text-[14px] md:text-[22px]">{t("statsCustomers")}</p>
-  </div>
+                <div className="p-5 border-l border-b">
+                  <h3 className="text-4xl font-bold text-[22px] md:text-4xl">
+                    10<span className="align-super text-lg">+</span>
+                  </h3>
+                  <p className="uppercase tracking-wide text-[14px] xl:text-[22px]">{t("statsCustomers")}</p>
+                </div>
 
-  <div className="p-5 border-r border-t">
-    <h3 className="text-4xl font-bold text-[22px] md:text-4xl">
-      10<span className="align-super text-lg">+</span>
-    </h3>
-    <p className="uppercase tracking-wide text-[14px] md:text-[22px]">{t("statsVarieties")}</p>
-  </div>
-  <div className="p-5 border-l border-t">
-    <h3 className="text-4xl font-bold text-[22px] md:text-4xl">
-      10<span className="align-super text-lg ">+</span>
-    </h3>
-    <p className="uppercase tracking-wide text-[14px] md:text-[22px]">{t("statsAwards")} <br /> {t("statswon")}</p>
-  </div>
-</div>
+                <div className="p-5 border-r border-t">
+                  <h3 className="text-4xl font-bold text-[22px] md:text-4xl">
+                    10<span className="align-super text-lg">+</span>
+                  </h3>
+                  <p className="uppercase tracking-wide text-[12px] sm:text-[14px] xl:text-[22px]">{t("statsVarieties")}</p>
+                </div>
+                <div className="p-5 border-l border-t">
+                <h3 className="text-4xl font-bold text-[22px] md:text-4xl">
+                  10<span className="align-super text-lg ">+</span>
+                </h3>
+                <p className="uppercase tracking-wide text-[12px] sm:text-[14px] xl:text-[22px]">{t("statsAwards")} <br /> {t("statswon")}</p>
+              </div>
+            </div>
 
           </div>
         </div>

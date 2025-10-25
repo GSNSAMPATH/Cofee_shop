@@ -13,12 +13,38 @@
     "statswon": "Won",
     "offerTitle": "We Are Offer"
   },
+  "teamCarousel": {
+    "Team Carousel (Video)": "Team Carousel (Video)"
+  },
+  "menu": {
+    "menuTitle1": "Beverage",
+    "menu1Subtitle": "Freshly brewed, aromatic coffee crafted from the finest beans — the heart of every great conversation.",
+    "menuTitle2": "Burgers",
+    "menu2Subtitle": "Juicy, flavorful burgers made to pair perfectly with your favorite coffee or drink — comfort on a plate.",
+    "menuTitle3": "Community",
+    "menu3Subtitle": "More than a café — a warm space where friends, locals, and travelers connect and share moments together.",
+    "menuTitle4": "Coffee",
+    "menu4Subtitle": "Freshly brewed, aromatic coffee crafted from the finest beans — the heart of every great conversation.",
+    "menuTitle5": "Events",
+    "menu5Subtitle": "Join our vibrant events — live music, art shows, and more.",
+    "menuTitle6": "Live in Kitchen",
+    "menu6Subtitle": "Experience our chefs cook your meal right before your eyes"
+  },
     "coffees": {
       "americano": "Americano",
       "icedLatte": "Iced Latte",
       "affogato": "Affogato",
       "cappuccino": "Cappuccino",
       "espresso": "Espresso"
+    },
+
+    "feedback": {
+      "feedbackTitle": "Customer Feedback"
+    },
+
+    "blog": {
+      "title": "OUR BLOG",
+      "text" : "Our blog brings together stories from coffee culture, travel, and AIDA’s legacy in hospitality. Best Coffee Shops in Induruwa – Why AIDA’s Coffee Shop"
     },
   "about": {
     "aboutTitle": "About Us",
@@ -37,5 +63,18 @@
     "blog": "Blog",
     "gallery": "Gallery",
     "contact": "Contact"
+  },
+
+  "footer": {
+    "SERVICES": "SERVICES",
+    "home": "Home",
+    "about": "About",
+    "offer": "Offer",
+    "blog": "Blog",
+    "gallery": "Gallery",
+    "contact": "Contact",
+    "Coffee": "COFFEE",
+    "coffeetext" : "Aida Coffee Shop is your go-to place for specialty coffee, artisan pastries, and a wide range of beverages. Our coffee is carefully roasted and brewed to perfection, creating a cozy atmosphere. Enjoy rich flavors, friendly service, and the perfect space to relax or connect brewed fresh every day.",
+    "Social": "SOCIAL MEDIA"
   }
 }

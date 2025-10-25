@@ -4,6 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { client } from "@/app/[locale]/lib/sanity.config";
 import imageUrlBuilder from "@sanity/image-url";
+import { useTranslations } from "next-intl";
 
 const builder = imageUrlBuilder(client);
 function urlFor(source: any) {
@@ -11,6 +12,7 @@ function urlFor(source: any) {
 }
 
 export default function CustomerFeedback() {
+  const t = useTranslations("feedback");
   const [feedbacks, setFeedbacks] = useState<any[]>([]);
   const [scrollWidth, setScrollWidth] = useState(0);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -44,7 +46,7 @@ export default function CustomerFeedback() {
         viewport={{ once: true }}
         className="text-center inria-heading2-bold text-white text-3xl font-bold mb-12"
       >
-        OUR CUSTOMERS FEEDBACK
+        {t("feedbackTitle")}
         <span className="block w-16 h-[2px] bg-red-600 mx-auto mt-2"></span>
       </motion.h2>
 

@@ -137,6 +137,7 @@
 'use client';
 import { useRef, useEffect, useState } from 'react';
 import styles from './Carousel.module.css';
+import { useTranslations } from 'next-intl';
 
 interface Member {
   name: string;
@@ -153,6 +154,7 @@ const team: Member[] = [
 ];
 
 export default function Carousel() {
+      const t = useTranslations("teamCarousel");
 const ref = useRef<HTMLDivElement | null>(null);
 const [active, setActive] = useState<number>(2); // default center video (3rd item)
 
@@ -221,7 +223,7 @@ useEffect(() => {
         background: "linear-gradient(90deg, #4B2E2B 3.75%, rgba(0, 0, 0, 0.25) 70%)",
       }}>
       <h1 className="inria-heading2 font-bold text-white text-2xl md:text-3xl text-center mb-14">
-        Team Carousel (Video)
+        {t("Team Carousel (Video)")}
       </h1>
 
       <div className="relative flex items-center justify-center w-full max-w-7xl lg:max-w-7xl mx-auto mt-20">

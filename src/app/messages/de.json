@@ -13,6 +13,35 @@
     "statswon": "Gewonnen",
     "offerTitle": "Unsere Angebote"
   },
+  "teamCarousel": {
+    "Team Carousel (Video)": "Team-Karussell (Video)"
+  },
+
+  "menu": {
+    "menuTitle1": "Getränke",
+    "menu1Subtitle": "Frisch gebrühter, aromatischer Kaffee aus den besten Bohnen – das Herz jedes großartigen Gesprächs.",
+    "menuTitle2": "Burger",
+    "menu2Subtitle": "Saftige, geschmackvolle Burger, perfekt abgestimmt auf Ihren Lieblingskaffee oder Ihr Getränk – Komfort auf dem Teller.",
+    "menuTitle3": "Gemeinschaft",
+    "menu3Subtitle": "Mehr als ein Café – ein warmer Ort, an dem Freunde, Einheimische und Reisende zusammenkommen und gemeinsame Momente teilen.",
+    "menuTitle4": "Kaffee",
+    "menu4Subtitle": "Frisch gebrühter, aromatischer Kaffee aus den besten Bohnen – das Herz jedes großartigen Gesprächs.",
+    "menuTitle5": "Veranstaltungen",
+    "menu5Subtitle": "Nehmen Sie an unseren lebhaften Veranstaltungen teil – Live-Musik, Kunstausstellungen und mehr.",
+    "menuTitle6": "Live-Küche",
+    "menu6Subtitle": "Erleben Sie, wie unsere Köche Ihre Mahlzeit direkt vor Ihren Augen zubereiten."
+  },
+
+  "feedback": {
+    "feedbackTitle": "Kundenfeedback"
+  },
+
+  "blog": {
+    "title": "UNSER BLOG",
+    "text": "Unser Blog vereint Geschichten aus der Kaffeekultur, dem Reisen und AIDAs Vermächtnis in der Gastfreundschaft. Die besten Coffeeshops in Induruwa – warum AIDAs Coffee Shop besonders ist."
+  },
+
+
   "coffees": {
     "americano": "Americano",
     "icedLatte": "Eiskaffee Latte",
@@ -36,5 +65,17 @@
     "blog": "Blog",
     "gallery": "Galerie",
     "contact": "Kontakt"
+  },
+  "footer": {
+    "SERVICES": "DIENSTLEISTUNGEN",
+    "home": "Startseite",
+    "about": "Über uns",
+    "offer": "Angebote",
+    "blog": "Blog",
+    "gallery": "Galerie",
+    "contact": "Kontakt",
+    "Coffee": "KAFFEE",
+    "coffeetext": "Aida Coffee Shop ist Ihr Lieblingsort für Spezialitätenkaffee, handgemachtes Gebäck und eine große Auswahl an Getränken. Unser Kaffee wird sorgfältig geröstet und perfekt gebrüht, um eine gemütliche Atmosphäre zu schaffen. Genießen Sie reiche Aromen, freundlichen Service und den idealen Ort zum Entspannen oder Austauschen – frisch gebrüht jeden Tag.",
+    "Social": "SOZIALE MEDIEN"
   }
 }

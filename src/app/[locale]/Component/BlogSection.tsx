@@ -3,9 +3,11 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { FaFacebookF, FaYoutube } from "react-icons/fa";
 import { useRouter } from "next/navigation";
+import { useTranslations } from "next-intl";
 
 
 export default function BlogSection() {
+  const t = useTranslations("blog");
   const router = useRouter();
   const blogs = [
     {
@@ -35,7 +37,7 @@ export default function BlogSection() {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          OUR BLOG
+          {t("title")}
         <span className="block w-16 h-[2px] bg-red-600 mx-auto mt-2"></span>
         </motion.h2>
 
@@ -47,8 +49,7 @@ export default function BlogSection() {
           transition={{ duration: 0.8, delay: 0.2 }}
           viewport={{ once: true }}
         >
-          Our blog brings together stories from coffee culture, travel, and AIDA’s legacy in hospitality
-          Best Coffee Shops in Induruwa – Why AIDA’s Coffee Shop
+          {t("text")}
         </motion.p>
 
     
