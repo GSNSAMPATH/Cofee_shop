@@ -138,7 +138,7 @@ export default function Home() {
     </section>
      <section className=" md:h-220 bg-black w-full">
 
-      <div className="w-full h-170 md:h-160 items-center justify-between md:flex lg:px-23 mx-auto">
+      <div className="w-full h-190 md:h-160 items-center justify-between md:flex lg:px-23 mx-auto">
         <div className="md:mt-20 mt-30 relative  md:w-full h-160 sm:h-200 lg:max-w-mx sm:mx-12 ">
           <div className="md:mt-40 md:flex md:justify-between md:items-center sm:mx-0 mx-5 ">
             <div>
