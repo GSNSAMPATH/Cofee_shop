@@ -1,12 +1,14 @@
 
 import LocationMap from "@/app/[locale]/Component/map";
 import Navbar from "@/app/[locale]/Component/Nave";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { useState } from "react";
 import { FaFacebook, FaWhatsapp } from "react-icons/fa";
 
 export default function ContactPage() {
 
+  const t = useTranslations("contact");
       const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -61,7 +63,7 @@ export default function ContactPage() {
                 <div className="w-full  bottom-50 items-center justify-between md:flex md:max-w-7xl mx-auto ">
                     <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
                         <h2 className="text-white text-4xl sm:text-8xl font-bold text-center mb-10 relative inline-block mx-auto">
-                        CONTACT US
+                            {t("contactTitle")}
                             <span className="block w-16 h-[2px] bg-red-600 mt-2 "></span>
                         </h2>
                     </div>
@@ -83,10 +85,10 @@ export default function ContactPage() {
                         <div className="mt-10 p-2 lg:p-10 flex flex-col items-center lg:block lg:flex-row justify-center">
                             <div className="text-center mb-8">
                             <h3 className="text-lg font-bold inria-heading2 text-white text-center tracking-widest mb-8">
-                             GET IN TOUCH
+                                {t("contactSubtitle")}
                             </h3>
                             <p className="text-gray-400 inria-text text-center">
-                            We are open for any suggestions or just to have a chat. Feel free to reach out to us through the form below.
+                                {t("contactText")}
                             </p>
                                 </div> 
                             <div className=" mt-0 md:flex md:justify-between mt-10 md:items-center lg:mx-0 mx-5">
@@ -96,7 +98,7 @@ export default function ContactPage() {
                             <input
                                 type="text"
                                 name="name"
-                                placeholder="Name"
+                                placeholder={t("name")}
                                 value={formData.name}
                                 onChange={handleChange}
                                 required
@@ -105,14 +107,14 @@ export default function ContactPage() {
                             <input
                                 type="email"
                                 name="email"
-                                placeholder="Mail"
+                                placeholder={t("email")}
                                 value={formData.email}
                                 onChange={handleChange}
                                 required
                                 className="text-white text-xl w-full bg-transparent border-b border-gray-600 py-6 outline-none focus:border-white"
                                 />
                             <textarea
-                                placeholder="Message"
+                                placeholder={t("message")}
                                 name="message"
                                 rows={3}
                                 value={formData.message}
@@ -123,11 +125,11 @@ export default function ContactPage() {
                             </textarea>
                             <div className="flex">
                                 <button
-                                type="submit"
+                                type={"submit"}
                                 disabled={isSubmitting}
                                 className="px-8 py-2 border border-red-600 text-red-600 rounded-full hover:bg-red-600 hover:text-white transition"
                                 >
-                                {isSubmitting ? "Sending..." : "Send"}
+                                {isSubmitting ? t("sending") : t("send")}
                                 </button>
                             </div>
                             </form>

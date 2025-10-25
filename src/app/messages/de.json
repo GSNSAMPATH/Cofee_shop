@@ -52,12 +52,38 @@
   "about": {
     "aboutTitle": "Über uns",
     "ourStoryTitle": "Unsere Geschichte",
-    "ourStoryText": "...",
+    "ourStoryText": "Seit fast fünf Jahrzehnten steht die AIDA Group für Authentizität, Qualität und sri-lankische Gastfreundschaft. Von AIDA Gems über AIDA Ayurveda Resort, AIDA Seafood Restaurant bis hin zu AIDA Textiles basiert unser Erbe auf Vertrauen, Handwerkskunst und unvergesslichen Erlebnissen. The Coffee Shop ist die neueste Ergänzung dieser Familie – ein Ort, der italienische Kaffeekunst mit der Herzlichkeit Sri Lankas verbindet. Jede mit Lavazza-Bohnen gebrühte Tasse und jedes in unserer Küche gebackene Gebäck spiegeln unsere Mission wider, das beste Café-Erlebnis in Induruwa zu schaffen.",
     "ourVisionTitle": "Unsere Vision",
-    "ourVisionText": "...",
+    "ourVisionText": "Ein Boutique-Café-Erlebnis zu schaffen, das Sri Lankas reiches Kaffeeerbe ehrt und zugleich einen ruhigen, stilvollen Ort bietet, an dem Gäste entspannen, neue Energie tanken und den Moment genießen können. The Coffee Shop by AIDA möchte zu einem Ziel für hochwertigen Kaffee und friedliche Gastfreundschaft an der Südküste werden. Authentische Speisen und Getränke von höchster Qualität.",
     "ourMissionTitle": "Unsere Mission",
-    "ourMissionText": "..."
+    "ourMissionText": "Ein Boutique-Café-Erlebnis zu schaffen, das Sri Lankas reiches Kaffeeerbe ehrt und zugleich einen ruhigen, stilvollen Ort bietet, an dem Gäste entspannen, neue Energie tanken und den Moment genießen können. The Coffee Shop by AIDA möchte zu einem Ziel für hochwertigen Kaffee und friedliche Gastfreundschaft an der Südküste werden. Authentische Speisen und Getränke von höchster Qualität."
   },
+
+  "Quality": {
+  "Quality1": "Weltweite Qualität, lokale Seele",
+  "Quality1text": "Wir servieren mit Stolz Lavazza – eine der besten Kaffeemarken der Welt –, um sicherzustellen, dass jede Tasse internationalen Standards entspricht, während unsere Umgebung, Gastfreundschaft und Atmosphäre die warme Seele Sri Lankas widerspiegeln.",
+  "Quality2": "Ruhe und Wohlbefinden",
+  "Quality2text": "Als Teil von AIDAs wellnessorientierter Vision bieten wir mehr als nur Kaffee – wir bieten Frieden. Unsere Lage am Meer, beruhigende Innenräume und die Philosophie des entschleunigten Lebens laden Gäste ein, innezuhalten, tief durchzuatmen und den Moment zu genießen.",
+  "Quality3": "Verbindung und Gemeinschaft",
+  "Quality3text": "Wir schaffen einen einladenden Raum, in dem Reisende, Einheimische und Kreative zusammenkommen, auftanken und sich verbinden können – bei Gesprächen, Büchern oder dem einfachen Genuss einer perfekten Tasse Kaffee."
+  },
+
+  "gallery": {
+  "galleryTitle": "Галерея",
+  "galleryText": "Галерея наших прошлых и настоящих моментов, историй и впечатлений из кофейни AIDA."
+},
+
+"contact": {
+  "contactTitle": "Kontaktieren Sie uns",
+  "contactSubtitle": "KONTAKT AUFNEHMEN",
+  "contactText": "Wir sind offen für Anregungen oder einfach ein freundliches Gespräch. Zögern Sie nicht, uns über das untenstehende Formular zu kontaktieren.",
+  "name": "Name",
+  "email": "E-Mail",
+  "message": "Nachricht",
+  "send": "Senden",
+  "sending": "Wird gesendet..."
+},
+
   "navbar": {
     "home": "Startseite",
     "about": "Über uns",

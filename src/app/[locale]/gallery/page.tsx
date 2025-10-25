@@ -1,23 +1,26 @@
-
+"use client";
 import Image from "next/image";
 import Navebar from "@/app/[locale]/Component/Nave";
 import { client, urlFor } from "../lib/sanity.config";
+import { useTranslations } from "next-intl";
+import { useState, useEffect } from "react";
 
+export default function GalleryPage() {
+  const t = useTranslations("gallery");
+  const [galleryImages, setGalleryImages] = useState<any[]>([]);
 
-async function getGalleryImages() {
-  const query = `*[_type == "galleryImage"] | order(order asc) {
-    title,
-    image
-  }`
-  return await client.fetch(query)
-}
+  useEffect(() => {
+    const getGalleryImages = async () => {
+      const query = `*[_type == "galleryImage"] | order(order asc) { title, image }`;
+      const data = await client.fetch(query);
+      setGalleryImages(data);
+    };
+    getGalleryImages();
+  }, []);
 
-
-
-export default async function GalleryPage() {
-
-      const galleryImages = await getGalleryImages()
-
+  if (galleryImages.length === 0) {
+    return <div className="text-white text-center py-20">Loading...</div>;
+  }
 
   return (
     <div className="bg-black text-white">
@@ -32,14 +35,14 @@ export default async function GalleryPage() {
           priority
         />
         <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
-          <h1 className="text-white text-4xl sm:text-8xl font-bold text-center mb-10 relative inline-block mx-auto">GALLERY</h1>
+          <h1 className="text-white text-4xl sm:text-8xl font-bold text-center mb-10 relative inline-block mx-auto">{t("galleryTitle")}</h1>
         </div>
       </section>
 
       {/* Intro Section */}
       <section className="text-center py-12 px-6 bg-black">
         <p className="text-gray-300 text-lg md:text-xl max-w-3xl mx-auto">
-          Get the latest updates and deeper coffee experience from IMAJI Coffee
+          {t("galleryText")}
         </p>
       </section>
 

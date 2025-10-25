@@ -49,11 +49,20 @@
   "about": {
     "aboutTitle": "About Us",
     "ourStoryTitle": "Our Story",
-    "ourStoryText": "...",
+    "ourStoryText": "For nearly five decades, the AIDA Group has been a symbol of authenticity, quality, and Sri Lankan hospitality. From AIDA Gems to AIDA Ayurveda Resort, AIDA Seafood Restaurant, and AIDA Textiles, our legacy is built on trust, craftsmanship, and unforgettable experiences. The Coffee Shop is the latest addition to this family – a space that combines Italian coffee excellence with Sri Lankan warmth. Every cup we brew with Lavazza beans and every pastry baked in our kitchen reflects our mission to create the best café experience in Induruwa .",
     "ourVisionTitle": "Our Vision",
-    "ourVisionText": "...",
+    "ourVisionText": "To cultivate a boutique café experience that honors Sri Lanka’s rich coffee-growing heritage while creating a serene and stylish space where guests can unwind, reconnect, and savor the present moment. The Coffee Shop by AIDA envisions becoming a destination for both quality coffee and peaceful hospitality in the southern coastal region. Authentic high quality food and beverages",
     "ourMissionTitle": "Our Mission",
-    "ourMissionText": "..."
+    "ourMissionText": "To cultivate a boutique café experience that honors Sri Lanka’s rich coffee-growing heritage while creating a serene and stylish space where guests can unwind, reconnect, and savor the present moment. The Coffee Shop by AIDA envisions becoming a destination for both quality coffee and peaceful hospitality in the southern coastal region. Authentic high quality food and beverages"
+  },
+
+  "Quality": {
+    "Quality1": "Global Quality, Local Soul",
+    "Quality1text": "We proudly serve Lavazza, one of the world’s finest coffee brands, to ensure every cup meets international standards —while our setting, hospitality, and atmosphere reflect the warm soul of Sri Lanka.",
+    "Quality2": "Tranquility & Wellness",
+    "Quality2text": "As part of AIDA’s wellness-driven vision, we offer more than just coffee—we offer peace. Our beachside setting, calming interiors, and slow-living ethos invite guests to pause, breathe, and savor the moment",
+    "Quality3": "Connection & Community",
+    "Quality3text": "We create a welcoming space where travelers, locals, and creatives can gather, recharge, and connect—over conversation, books, or the simple joy of a perfect cup."
   },
 
   "navbar": {
@@ -63,6 +72,22 @@
     "blog": "Blog",
     "gallery": "Gallery",
     "contact": "Contact"
+  },
+
+  "gallery": {
+    "galleryTitle": "Gallery",
+    "galleryText": "A gallery of our past and present moments, stories, and experiences from AIDA’s Coffee Shop."
+  },
+
+  "contact": {
+    "contactTitle": "Contact Us",
+    "contactSubtitle": "GET IN TOUCH",
+    "contactText": "We are open for any suggestions or just to have a chat. Feel free to reach out to us through the form below.",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send",
+    "sending": "Sending..."
   },
 
   "footer": {

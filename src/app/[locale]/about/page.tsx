@@ -3,10 +3,12 @@ import BlogSection from "@/app/[locale]/Component/BlogSection";
 import Navbar from "@/app/[locale]/Component/Nave";
 import Quality from "@/app/[locale]/Component/quality";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 
 
 export default function About() {
+    const t = useTranslations("about");
     return (
         <section className=" h-auto bg-black w-full">
             <section className="relative h-130 md:h-[87vh] bg-black w-full">
@@ -22,7 +24,7 @@ export default function About() {
                 <div className="w-full bottom-50 items-center justify-between md:flex md:max-w-7xl mx-auto ">
                     <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
                         <h1 className="text-white font-sans text-4xl sm:text-8xl font-regular text-center mb-10 relative inline-block mx-auto">
-                        ABOUT US
+                            {t("aboutTitle")}
                             {/* <span className="block w-16 h-[2px] bg-red-600 mt-2 "></span> */}
                         </h1>
                     </div>
@@ -68,7 +70,7 @@ export default function About() {
                         transition={{ duration: 0.6 }}
                         viewport={{ once: true }}
                      className="text-white inria-heading2-bold text-3xl font-regular sm:text-center mb-10 relative mx-auto ">
-                        OUR STORY
+                        {t("ourStoryTitle")}
                         <span className="block sm:mx-auto w-16 h-[2px] bg-red-600 mt-2 mb-10"></span>
                     </motion.h2>
                     <motion.p 
@@ -77,12 +79,8 @@ export default function About() {
                         transition={{ duration: 0.8, delay: 0.2 }}
                         viewport={{ once: true }}
                     className="md:absolute text-justify sm:text-center inria-text mb-6  text-white max-w-7xl leading-loose z-20 ">
-                    For nearly five decades, the AIDA Group has been a symbol of authenticity,
-                    quality, and Sri Lankan hospitality. From AIDA Gems to AIDA Ayurveda Resort, 
-                    AIDA Seafood Restaurant, and AIDA Textiles, our legacy is built on trust, craftsmanship, and unforgettable experiences. 
-                    The Coffee Shop is the latest addition to this family – a space that combines Italian coffee excellence with Sri Lankan warmth. 
-                    Every cup we brew with Lavazza beans and every pastry baked in our kitchen reflects our mission to create the best café experience in Induruwa .
-                    </motion.p>
+                        {t("ourStoryText")}                    
+                        </motion.p>
                 <div className="w-full lg:text-left sm:text-center h-50 md:max-w-full ">   
                     <div className="lg:h-200 w-full  lg:items-center lg:justify-between lg:flex  mx-auto xl:w-full ">
                         <div className="lg:h-100 w-full  lg:px-0 ">
@@ -93,7 +91,7 @@ export default function About() {
                                     transition={{ duration: 0.6 }}
                                     viewport={{ once: true }}
                                  className=" text-3xl md:mt-80 lg:mt-0 inria-heading2-bold text-white font-inriasans font-regular mb-6 ">
-                                    OUR VISION
+                                    {t("ourVisionTitle")}
                                 </motion.h2>
                                 <motion.p
                                     initial={{ opacity: 0 }}
@@ -101,7 +99,7 @@ export default function About() {
                                     transition={{ duration: 0.8, delay: 0.2 }}
                                     viewport={{ once: true }}
                                  className="lg:text-paragraph inria-text mb-6 leading-relaxed text-white ">
-                                To cultivate a boutique café experience that honors Sri Lanka’s rich coffee-growing heritage while creating a serene and stylish space where guests can unwind, reconnect, and savor the present moment. The Coffee Shop by AIDA envisions becoming a destination for both quality coffee and peaceful hospitality in the southern coastal region. Authentic high quality food and beverages
+                                    {t("ourVisionText")}                                
                                 </motion.p>
                             </div>
                             <div className="lg:hidden w-full lg:mt-140 xl:mt-200 mt-10 w-full text-justify  lg:mt-0 w-auto mx-auto">
@@ -111,7 +109,7 @@ export default function About() {
                             transition={{ duration: 0.6 }}
                             viewport={{ once: true }}
                             className=" text-3xl inria-heading2-bold text-white  font-regular mb-6 lg:ml-0 ">
-                            OUR MISSION
+                                {t("ourMissionTitle")}
                             </motion.h2>
                             <motion.a
                                 initial={{ opacity: 0 }}
@@ -119,7 +117,7 @@ export default function About() {
                                 transition={{ duration: 0.8, delay: 0.2 }}
                                 viewport={{ once: true }}
                              className="lg:text-paragraph inria-text mb-6 line-clamp-10  text-white">
-                            To cultivate a boutique café experience that honors Sri Lanka’s rich coffee-growing heritage while creating a serene and stylish space where guests can unwind, reconnect, and savor the present moment. The Coffee Shop by AIDA envisions becoming a destination for both quality coffee and peaceful hospitality in the southern coastal region. Authentic high quality food and beverages
+                                {t("ourMissionText")}
                             </motion.a>
                         </div>
 
@@ -153,7 +151,7 @@ export default function About() {
                             transition={{ duration: 0.6 }}
                             viewport={{ once: true }}
                             className=" text-3xl inria-heading2-bold text-white  font-regular mb-6 lg:ml-0 ">
-                            OUR MISSION
+                                {t("ourMissionTitle")}
                             </motion.h2>
                             <motion.a
                                 initial={{ opacity: 0 }}
@@ -161,7 +159,7 @@ export default function About() {
                                 transition={{ duration: 0.8, delay: 0.2 }}
                                 viewport={{ once: true }}
                              className="text-paragraph inria-text mb-6 leading-relaxed text-white ">
-                            To cultivate a boutique café experience that honors Sri Lanka’s rich coffee-growing heritage while creating a serene and stylish space where guests can unwind, reconnect, and savor the present moment. The Coffee Shop by AIDA envisions becoming a destination for both quality coffee and peaceful hospitality in the southern coastal region. Authentic high quality food and beverages
+                            {t("ourMissionText")}
                             </motion.a>
                         </div>
                         </div>

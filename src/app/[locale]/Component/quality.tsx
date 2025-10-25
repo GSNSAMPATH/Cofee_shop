@@ -1,20 +1,22 @@
 "use client";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 export default function Quality() {
+  const t = useTranslations("Quality");
   const feedbacks = [
     {
-      name: "Global Quality, Local Soul",
-      text: " We proudly serve Lavazza, one of the world’s finest coffee brands, to ensure every cup meets international standards —while our setting, hospitality, and atmosphere reflect the warm soul of Sri Lanka.",
+      name: t("Quality1"),
+      text: t("Quality1text"),
     },
     {
-      name: "Tranquility & Wellness",
-      text: "As part of AIDA’s wellness-driven vision, we offer more than just coffee—we offer peace. Our beachside setting, calming interiors, and slow-living ethos invite guests to pause, breathe, and savor the moment",
+      name: t("Quality2"),
+      text: t("Quality2text"),
     },
     {
-      name: "Connection & Community",
-      text: "We create a welcoming space where travelers, locals, and creatives can gather, recharge, and connect—over conversation, books, or the simple joy of a perfect cup.",
+      name: t("Quality3"),
+      text: t("Quality3text"),
     },
   ];
 
