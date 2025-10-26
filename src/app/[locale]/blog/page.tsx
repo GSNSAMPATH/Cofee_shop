@@ -25,21 +25,17 @@ interface Blog {
 
 export default function BlogPage({ params }: { params: { locale: string } }) {
   const { locale } = params;
+  const t = useTranslations("blog2");
+
   const [blogs, setBlogs] = useState<Blog[]>([]);
   const [loading, setLoading] = useState(true);
-  const t = useTranslations("blog2");
 
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
         const data = await client.fetch(`
           *[_type == "blog" && defined(slug.current)] | order(date desc){
-            _id,
-            title,
-            excerpt,
-            date,
-            slug,
-            mainImage
+            _id, title, excerpt, date, slug, mainImage
           }
         `);
         setBlogs(data);
@@ -52,28 +48,22 @@ export default function BlogPage({ params }: { params: { locale: string } }) {
     fetchBlogs();
   }, []);
 
-  if (loading) {
+  if (loading)
     return (
       <div className="flex justify-center items-center h-screen bg-black text-white text-xl">
         Loading blogs...
       </div>
     );
-  }
 
-  if (!blogs.length) {
+  if (!blogs.length)
     return (
       <div className="text-center py-20 text-gray-500">
         No blogs found.
       </div>
     );
-  }
 
   const hero = blogs[0];
   const recentPosts = blogs.slice(1, 7);
-
-  const handleScrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
 
   return (
     <div className="bg-black text-white min-h-screen">
@@ -87,7 +77,7 @@ export default function BlogPage({ params }: { params: { locale: string } }) {
           className="h-100 object-cover opacity-900 w-full"
         />
         <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
-          <h1 className="text-white text-4xl sm:text-8xl font-bold text-center mb-10 relative inline-block mx-auto">
+          <h1 className="text-white text-4xl sm:text-8xl font-bold text-center mb-10">
             {t("title")}
           </h1>
         </div>
@@ -95,14 +85,12 @@ export default function BlogPage({ params }: { params: { locale: string } }) {
 
       {/* ---------- Subtitle ---------- */}
       <div className="text-center py-10 px-6 max-w-6xl mx-auto">
-        <p className="text-gray-300 text-lg">
-          {t("text")}
-        </p>
+        <p className="text-gray-300 text-lg">{t("text")}</p>
       </div>
 
-      {/* ---------- Featured Blog Card ---------- */}
+      {/* ---------- Featured Blog ---------- */}
       <div className="container mx-auto px-6 mb-16 h-auto">
-        <div className="flex flex-col lg:flex-row bg-[#1e1e1e] rounded-xl overflow-hidden shadow-lg md:border-20 border-[#4125224F]">
+        <div className="flex flex-col lg:flex-row bg-[#1e1e1e] rounded-xl overflow-hidden shadow-lg border border-[#4125224F]">
           <div className="lg:w-1/2">
             <Image
               src={urlFor(hero.mainImage).url()}
@@ -113,10 +101,8 @@ export default function BlogPage({ params }: { params: { locale: string } }) {
             />
           </div>
           <div className="lg:w-1/2 p-8 flex flex-col justify-center">
-            <h2 className="text-2xl inria-heading2 font-bold mb-4">{hero.title}</h2>
-            <p className="text-gray-300 mb-6 inria-text-small line-clamp-4">
-              {hero.excerpt}
-            </p>
+            <h2 className="text-2xl font-bold mb-4">{hero.title}</h2>
+            <p className="text-gray-300 mb-6 line-clamp-4">{hero.excerpt}</p>
             <div className="flex items-center gap-4">
               <Link
                 href={`/${locale}/blog/${hero.slug.current}`}
@@ -133,12 +119,13 @@ export default function BlogPage({ params }: { params: { locale: string } }) {
 
       {/* ---------- Blog Grid ---------- */}
       <div className="container mx-auto px-6 pb-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-        {recentPosts.map((blog, index) => (
+        {recentPosts.map((blog) => (
           <div
-            key={index}
+            key={blog._id}
             className="bg-[#2b1f1b] rounded-lg overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300 p-5"
             style={{
-              background: "linear-gradient(180deg, #4B2E2B 43.75%, rgba(0, 0, 0, 0.25) 100%)",
+              background:
+                "linear-gradient(180deg, #4B2E2B 43.75%, rgba(0, 0, 0, 0.25) 100%)",
             }}
           >
             <Image
