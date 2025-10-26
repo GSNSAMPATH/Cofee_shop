@@ -6,7 +6,7 @@ import { FaFacebookF, FaYoutube } from "react-icons/fa";
 import { useTranslations } from "next-intl";
 import Navbar from "@/app/[locale]/Component/Nave";
 import imageUrlBuilder from "@sanity/image-url";
-import { client } from "@/app/[locale]/lib/sanity.config";
+import { client } from "@/lib/sanity.config";
 
 const builder = imageUrlBuilder(client);
 

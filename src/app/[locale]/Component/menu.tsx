@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import imageUrlBuilder from "@sanity/image-url";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
-import { client } from "@/app/[locale]/lib/sanity.config";
+import { client } from "@/lib/sanity.config";
 import { useTranslations } from "next-intl";
 
 const builder = imageUrlBuilder(client);

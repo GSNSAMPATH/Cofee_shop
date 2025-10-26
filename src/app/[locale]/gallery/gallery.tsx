@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Navebar from "@/app/[locale]/Component/Nave";
-import { client, urlFor } from "../lib/sanity.config";
+import { client, urlFor } from "../../../lib/sanity.config";
 import { useTranslations } from "next-intl";
 import { useState, useEffect } from "react";
 

@@ -1,4 +1,4 @@
-import { client } from "@/app/[locale]/lib/sanity.config";
+import { client } from "@/lib/sanity.config";
 import BlogPageClient from "./BlogPageClient";
 import { Metadata } from "next";
 
