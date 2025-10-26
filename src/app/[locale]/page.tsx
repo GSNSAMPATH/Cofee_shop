@@ -133,19 +133,7 @@ export default function Home() {
                 <div className="absolute top-18 -right-1 mr-20 w-20 h-[2px] bg-white rotate-60"></div>
               </div>
             </div>
-
         </div>
-              {/* Medium Cup */}
-              <div className="absolute bottom-[-100px] md:hidden right-10 w-[120px] h-[400px] z-20 mouuse-pointer">
-                <Image
-                  src={cups[1].src}
-                  alt={cups[1].name}
-                  fill
-                  className="object-contain drop-shadow-lg rotate-[-10deg]"
-                />
-                <div className="absolute top-42 -right-0 mr-19 w-10 h-[1px] bg-white"><text className="absolute text-white bottom-1 right-1 text-[8px]">{cups[1].name}</text></div>
-                <div className="absolute top-46 -right-0 mr-12 w-10 h-[1px] bg-white rotate-60"></div>
-              </div>
       </div>
     </section>
      <section className=" md:h-220 bg-black w-full">
@@ -284,7 +272,7 @@ export default function Home() {
 
       <section className="bg-gradient-to-r from-black to-[#4E2A20] h-full py-16  sm:mt-80 md:mt-10  w-full">
         <div className="w-full items-center justify-between md:flex  mx-auto">
-          <CustomerFeedback />
+                <CustomerFeedback />
         </div>
       </section>
       <section className="bg-gradient-to-t from-black to-[#4E2A20] h-full py-16 md:mt-10 mt-30 w-full">
