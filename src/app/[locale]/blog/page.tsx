@@ -8,7 +8,6 @@ export default async function BlogPage({
 }) {
   const { locale } = params;
 
-  // Fetch blog data from Sanity
   const blogs = await client.fetch(`
     *[_type == "blog"] | order(_createdAt desc) {
       _id,
