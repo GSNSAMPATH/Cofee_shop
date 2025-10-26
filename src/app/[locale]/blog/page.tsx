@@ -1,19 +1,19 @@
-import BlogPageClient from "./BlogPageClient";
 import { client } from "@/app/[locale]/lib/sanity.config";
+import BlogPageClient from "./BlogPageClient";
 
-export default async function BlogPage({
+export default async function Page({
   params,
 }: {
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }) {
-  const { locale } = params;
+  // ✅ Await params — Next 15 expects this
+  const { locale } = await params;
 
   const blogs = await client.fetch(`
     *[_type == "blog"] | order(_createdAt desc) {
-      _id,
       title,
-      excerpt,
       slug,
+      excerpt,
       mainImage
     }
   `);
