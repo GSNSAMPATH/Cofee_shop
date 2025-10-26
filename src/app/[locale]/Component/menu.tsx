@@ -98,9 +98,7 @@ export default function OurMenu() {
   ];
 
   // Navigate to /offer with selected section
-  const handleClick = (title: string) => {
-    router.push(`/offer?section=${encodeURIComponent(title)}`);
-  };
+
 
   return (
     <section className="bg-black py-16">
@@ -112,7 +110,6 @@ export default function OurMenu() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: i * 0.2 }}
             viewport={{ once: true }}
-            onClick={() => handleClick(item.title)}
             className={`relative overflow-hidden rounded-lg shadow-lg group cursor-pointer ${item.className}`}
           >
             {/* Image */}

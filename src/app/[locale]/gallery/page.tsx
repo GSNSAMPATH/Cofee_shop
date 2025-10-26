@@ -404,6 +404,59 @@ export default function GalleryPage() {
 
                                       
                                     </div>
+
+                                     <div className="relative rounded-lg overflow-hidden">
+                                      <Image
+                                        src={urlFor(galleryImages[15].image).url() ?? ""}
+                                        alt="Tangalle"
+                                        width={600}
+                                        height={300}
+                                        loading='lazy'
+                                        className="object-cover w-full h-[150px]"
+                                      />
+
+                                    </div>
+                            
+                                    {/* Row 3 */}
+                                    <div className="grid grid-cols-2 gap-3">
+                                      <div className="relative rounded-lg overflow-hidden gap-3 flex flex-col">
+                                        <div className="relative rounded-lg overflow-hidden">
+                                          <Image
+                                            src={urlFor(galleryImages[12].image).url() ?? ""}
+                                            alt="Tangalle"
+                                            width={400}
+                                            height={300}
+                                            loading='lazy'
+                                            className="object-cover w-full h-[150px] rounded-lg"
+                                          />
+
+                                        </div>
+                                        <div className="relative rounded-lg overflow-hidden">
+                                          <Image
+                                            src={urlFor(galleryImages[13].image).url() ?? ""}
+                                            alt="Tangalle"
+                                            width={400}
+                                            height={300}
+                                            loading='lazy'
+                                            className="object-cover w-full h-[150px] rounded-lg"
+                                          />
+
+                                        </div>
+                                      </div>
+                                      <div className="relative rounded-lg overflow-hidden">
+                                        <Image
+                                          src={urlFor(galleryImages[14].image).url() ?? ""}
+                                          alt="Tangalle"
+                                          width={400}
+                                          height={300}
+                                          loading='lazy'
+                                          className="object-cover w-full h-[312px]"
+                                        />
+
+                                      </div>
+
+                                      
+                                    </div>
                                   </div>
                         </section>
 

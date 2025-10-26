@@ -2,13 +2,15 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { FaFacebookF, FaYoutube } from "react-icons/fa";
-import { useRouter } from "next/navigation";
+import { useParams, useRouter } from "next/navigation";
 import { useTranslations } from "next-intl";
 
 
 export default function BlogSection() {
   const t = useTranslations("blog");
   const router = useRouter();
+  const { locale } = useParams(); 
+
   const blogs = [
     {
       title: "AIDA's Coffee Blog",
@@ -76,7 +78,7 @@ export default function BlogSection() {
               <div className="flex items-center gap-4 justify-center">
                 <button
                   type="button"
-                  onClick={() => router.push("/blog")}  
+                  onClick={() => router.push(`/${locale}/blog`)}  
                 className="border border-red-500 text-white px-4 py-1 rounded-md hover:bg-red-600 transition">
                   See More
                 </button>
@@ -91,4 +93,4 @@ export default function BlogSection() {
   );
 }
 
-    
+

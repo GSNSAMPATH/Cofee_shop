@@ -1,9 +1,13 @@
+"use client";
+
 import Navbar from "@/app/[locale]/Component/Nave";
 import Image from "next/image";
 import Link from "next/link";
 import { client } from "../lib/sanity.config";
 import imageUrlBuilder from "@sanity/image-url";
 import { FaFacebookF, FaYoutube } from "react-icons/fa";
+import { useTranslations } from "next-intl";
+import { useEffect, useState } from "react";
 
 const builder = imageUrlBuilder(client);
 function urlFor(source: any) {
@@ -19,40 +23,57 @@ interface Blog {
   mainImage?: any;
 }
 
-/*************  ✨ Windsurf Command ⭐  *************/
-/**
- * BlogPage component
- *
- * This component renders a page with a blog hero section, a featured blog card, and a grid of recent blog posts.
- *
- * The hero section contains a background image, a title, and a subtitle.
- * The featured blog card contains an image, a title, an excerpt, and links to social media.
- * The recent blog posts grid contains cards with an image, a title, an excerpt, and links to social media.
- *
- * @param {Object} params - An object containing the locale parameter.
- * @returns {React.ReactElement} - A React element representing the blog page.
- */
-/*******  4d44cf28-8486-40df-8ce9-d6ced5c53742  *******/export default async function BlogPage(props: { params: Promise<{ locale: string }> }) {
-  // ✅ Await the params before using
-  const { locale } = await props.params;
+export default function BlogPage({ params }: { params: { locale: string } }) {
+  const { locale } = params;
+  const [blogs, setBlogs] = useState<Blog[]>([]);
+  const [loading, setLoading] = useState(true);
+  const t = useTranslations("blog2");
 
-  const blogs: Blog[] = await client.fetch(`
-    *[_type == "blog" && defined(slug.current)] | order(date desc){
-      _id,
-      title,
-      excerpt,
-      date,
-      slug,
-      mainImage
-    }
-  `);
+  useEffect(() => {
+    const fetchBlogs = async () => {
+      try {
+        const data = await client.fetch(`
+          *[_type == "blog" && defined(slug.current)] | order(date desc){
+            _id,
+            title,
+            excerpt,
+            date,
+            slug,
+            mainImage
+          }
+        `);
+        setBlogs(data);
+      } catch (error) {
+        console.error("Error fetching blogs:", error);
+      } finally {
+        setLoading(false);
+      }
+    };
+    fetchBlogs();
+  }, []);
+
+  if (loading) {
+    return (
+      <div className="flex justify-center items-center h-screen bg-black text-white text-xl">
+        Loading blogs...
+      </div>
+    );
+  }
 
   if (!blogs.length) {
-    return <div className="text-center py-20 text-gray-500">No blogs found.</div>;
+    return (
+      <div className="text-center py-20 text-gray-500">
+        No blogs found.
+      </div>
+    );
   }
 
   const hero = blogs[0];
   const recentPosts = blogs.slice(1, 7);
+
+  const handleScrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
 
   return (
     <div className="bg-black text-white min-h-screen">
@@ -67,15 +88,15 @@ interface Blog {
         />
         <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
           <h1 className="text-white text-4xl sm:text-8xl font-bold text-center mb-10 relative inline-block mx-auto">
-            BLOG
+            {t("title")}
           </h1>
         </div>
       </div>
 
       {/* ---------- Subtitle ---------- */}
-      <div className="text-center py-10 px-6 max-w-2xl mx-auto">
+      <div className="text-center py-10 px-6 max-w-6xl mx-auto">
         <p className="text-gray-300 text-lg">
-          Get the latest updates and deeper coffee experience from IMAJI Coffee
+          {t("text")}
         </p>
       </div>
 

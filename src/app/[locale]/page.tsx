@@ -133,7 +133,19 @@ export default function Home() {
                 <div className="absolute top-18 -right-1 mr-20 w-20 h-[2px] bg-white rotate-60"></div>
               </div>
             </div>
+
         </div>
+              {/* Medium Cup */}
+              <div className="absolute bottom-[-100px] md:hidden right-10 w-[120px] h-[400px] z-20 mouuse-pointer">
+                <Image
+                  src={cups[1].src}
+                  alt={cups[1].name}
+                  fill
+                  className="object-contain drop-shadow-lg rotate-[-10deg]"
+                />
+                <div className="absolute top-42 -right-0 mr-19 w-10 h-[1px] bg-white"><text className="absolute text-white bottom-1 right-1 text-[8px]">{cups[1].name}</text></div>
+                <div className="absolute top-46 -right-0 mr-12 w-10 h-[1px] bg-white rotate-60"></div>
+              </div>
       </div>
     </section>
      <section className=" md:h-220 bg-black w-full">
@@ -175,29 +187,29 @@ export default function Home() {
               <div className="grid grid-cols-2 w-fit mx-auto text-center text-white ">
                 <div className="p-5 border-r border-b">
                   <h3 className="text-4xl font-bold text-[22px] md:text-4xl">
-                    10<span className="align-super md:text-lg">+</span>
+                    20<span className="align-super md:text-lg">+</span>
                   </h3>
-                  <p className="uppercase tracking-wide text-[12px] xl:text-[22px] sm:text-[14px]">{t("statsYears")}</p>
+                  <p className="uppercase tracking-wide text-[12px] xl:text-[22px] sm:text-[14px]">{t("statsYears")}<br/>{t("statsYears2")}</p>
                 </div>
 
                 <div className="p-5 border-l border-b">
                   <h3 className="text-4xl font-bold text-[22px] md:text-4xl">
                     10<span className="align-super text-lg">+</span>
                   </h3>
-                  <p className="uppercase tracking-wide text-[14px] xl:text-[22px]">{t("statsCustomers")}</p>
+                  <p className="uppercase tracking-wide text-[12px] sm:text-[14px] xl:text-[22px]">{t("statsCustomers")} <br/>{t("statsCustomers2")}</p>
                 </div>
 
                 <div className="p-5 border-r border-t">
                   <h3 className="text-4xl font-bold text-[22px] md:text-4xl">
-                    10<span className="align-super text-lg">+</span>
+                    500<span className="align-super text-lg">+</span>
                   </h3>
-                  <p className="uppercase tracking-wide text-[12px] sm:text-[14px] xl:text-[22px]">{t("statsVarieties")}</p>
+                  <p className="uppercase tracking-wide text-[12px] sm:text-[14px] xl:text-[22px]">{t("statsVarieties")} <br/>{t("statsVarieties2")} </p>
                 </div>
                 <div className="p-5 border-l border-t">
                 <h3 className="text-4xl font-bold text-[22px] md:text-4xl">
-                  10<span className="align-super text-lg ">+</span>
+                  20<span className="align-super text-lg ">+</span>
                 </h3>
-                <p className="uppercase tracking-wide text-[12px] sm:text-[14px] xl:text-[22px]">{t("statsAwards")} <br /> {t("statswon")}</p>
+                <p className="uppercase tracking-wide text-[12px] sm:text-[14px] xl:text-[22px] ">{t("statsAwards")} <br /> {t("statswon")}</p>
               </div>
             </div>
 
@@ -272,7 +284,7 @@ export default function Home() {
 
       <section className="bg-gradient-to-r from-black to-[#4E2A20] h-full py-16  sm:mt-80 md:mt-10  w-full">
         <div className="w-full items-center justify-between md:flex  mx-auto">
-                <CustomerFeedback />
+          <CustomerFeedback />
         </div>
       </section>
       <section className="bg-gradient-to-t from-black to-[#4E2A20] h-full py-16 md:mt-10 mt-30 w-full">

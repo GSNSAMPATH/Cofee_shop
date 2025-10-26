@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
+import { FaLanguage, FaSignLanguage } from 'react-icons/fa';
 
 const languages = [
   { code: 'en', label: '🇬🇧 EN' },
@@ -26,7 +27,7 @@ export default function LanguageSwitcher() {
         onClick={() => setIsOpen(!isOpen)}
         className="flex items-center gap-2 px-3 py-2 rounded-md text-sm hover:bg-red-500 transition"
       >
-        🌐 Language
+        <FaLanguage className='text-[30px]' />
         <svg
           className={`w-4 h-4 transition-transform ${isOpen ? 'rotate-180' : ''}`}
           xmlns="http://www.w3.org/2000/svg"

@@ -1,4 +1,13 @@
 {
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "offer": "We Offer",
+    "blog": "Blog",
+    "gallery": "Gallery",
+    "contact": "Contact"
+  },
+
   "home": {
     "heroTitle": "Induruwa's Newest Coffee",
     "heroSubtitle": "Induruwa - Newest Coffee Experience – Lavazza Coffee, Fresh Pastries & More..",
@@ -6,11 +15,14 @@
     "aboutTitle": "About Us",
     "aboutPara1": "Welcome to The Coffee Shop by AIDA Group, the newest and trendiest coffee shop in Induruwa, Sri Lanka. We serve authentic Lavazza coffee, brewed to perfection on our professional LaCimbali espresso machine, paired with a wide selection of freshly baked pastries, signature cakes, fresh juices, and smoothies.",
     "aboutPara2": "Our café is designed as a work-friendly, relaxing, and aesthetic space, perfect for travelers, locals, and digital nomads looking for a cozy spot with WiFi. As part of the trusted AIDA Group, known for over 50 yearsin hospitality, we bring you not just coffee—but a full lifestyle experience in the heart of Induruwa.",
-    "statsYears": "Years Experience",
-    "statsCustomers": "Happy Customers",
-    "statsVarieties": "Coffee Varieties",
-    "statsAwards": "Awards",
-    "statswon": "Won",
+    "statsYears": "Pastry",
+    "statsYears2": "Veritys",
+    "statsCustomers": "Cake",
+    "statsCustomers2": "Veritys",
+    "statsVarieties": "Happy",
+    "statsVarieties2": "Customer",
+    "statsAwards": "Drink",
+    "statswon": "Veritys",
     "offerTitle": "We Are Offer"
   },
   "teamCarousel": {
@@ -51,9 +63,9 @@
     "ourStoryTitle": "Our Story",
     "ourStoryText": "For nearly five decades, the AIDA Group has been a symbol of authenticity, quality, and Sri Lankan hospitality. From AIDA Gems to AIDA Ayurveda Resort, AIDA Seafood Restaurant, and AIDA Textiles, our legacy is built on trust, craftsmanship, and unforgettable experiences. The Coffee Shop is the latest addition to this family – a space that combines Italian coffee excellence with Sri Lankan warmth. Every cup we brew with Lavazza beans and every pastry baked in our kitchen reflects our mission to create the best café experience in Induruwa .",
     "ourVisionTitle": "Our Vision",
-    "ourVisionText": "To cultivate a boutique café experience that honors Sri Lanka’s rich coffee-growing heritage while creating a serene and stylish space where guests can unwind, reconnect, and savor the present moment. The Coffee Shop by AIDA envisions becoming a destination for both quality coffee and peaceful hospitality in the southern coastal region. Authentic high quality food and beverages",
+    "ourVisionText": "Our vision is to celebrate the depth and character of Sri Lankan coffee culture through intentionally crafted beverages, locally inspired recipes, and a nurturing seaside atmosphere. We are committed to ethical sourcing, supporting local farmers and artisans, and delivering a consistently personalized experience to every guest. By blending the art of coffee with the spirit of sustainable hospitality, we aspire to create a peaceful retreat where simplicity, sustainability, and soulful service come together in harmony.",
     "ourMissionTitle": "Our Mission",
-    "ourMissionText": "To cultivate a boutique café experience that honors Sri Lanka’s rich coffee-growing heritage while creating a serene and stylish space where guests can unwind, reconnect, and savor the present moment. The Coffee Shop by AIDA envisions becoming a destination for both quality coffee and peaceful hospitality in the southern coastal region. Authentic high quality food and beverages"
+    "ourMissionText": "At AIDA Coffee Shop, our mission is to cultivate a boutique café experience that celebrates the authentic taste and aroma of Sri Lankan coffee. We aim to provide high-quality food and beverages, prepared with passion and served with warmth. Every cup we brew reflects our dedication to quality, comfort, and community—a perfect place to relax and experience true island hospitality. The Coffee Shop by AIDA envisions becoming a destination for both quality coffee and peaceful hospitality in the southern coastal region."
   },
 
   "Quality": {
@@ -65,14 +77,50 @@
     "Quality3text": "We create a welcoming space where travelers, locals, and creatives can gather, recharge, and connect—over conversation, books, or the simple joy of a perfect cup."
   },
 
-  "navbar": {
-    "home": "Home",
-    "about": "About",
-    "offer": "Offer",
-    "blog": "Blog",
-    "gallery": "Gallery",
-    "contact": "Contact"
+  "offer": {
+    "offerTitle": "We Are Offer",
+    "offer1Title": "BEVERAGE",
+    "offer1desc": "We are a company that makes and distributes delicious drinks. Our main product is made with a secret recipe and available in stores worldwide.",
+    "offer1details": "Our drinks are more than just beverages — they’re experiences in every sip. Each creation is a perfect balance of flavor, crafted with premium fruit extracts, aromatic herbs, and natural sweeteners to awaken your senses. Whether you’re jumpstarting your morning, taking a refreshing midday break, or unwinding after a long day, our diverse range of drinks has something to match every mood. From zesty lemon iced teas that energize you to indulgent chocolate blends that comfort your soul, every bottle reflects our dedication to taste, freshness, and well-being. At the heart of what we do lies sustainability — we proudly use recyclable materials and locally sourced ingredients to support our community and reduce our carbon footprint.",
+    "offer1image1": "Refreshing and energizing iced teas for a vibrant start to your day.",
+    "offer1image2": "Delicious and indulgent chocolate blends that comfort your soul.",
+    "offer1image3": "Premium fruit extracts and aromatic herbs for a perfect balance of flavor.",
+    "offer2Title": "BURGER",
+    "offer2desc": "Deliciously juicy burgers made with fresh ingredients and grilled to perfection.",
+    "offer2details": "Our burgers are built with passion — each bite is a harmony of textures and flavors. We use freshly baked brioche buns, locally sourced vegetables, and 100% pure meat or plant-based patties. Add our signature sauce — a mix of herbs, caramelized onions, and special spices — and you get a burger that speaks for itself.",
+    "offer2image1": "Juicy and juicy burgers made with fresh ingredients.",
+    "offer2image2": "Deliciously juicy burgers made with fresh ingredients and grilled to perfection.",
+    "offer2image3": "Juicy and juicy burgers made with fresh ingredients.",
+    "offer3Title": "COFFEES",
+    "offer3desc": "Experience the finest roasted beans, carefully brewed for perfection.",
+    "offer3details": "Our coffee is a harmonious blend of handcrafted beans sourced from the finest regions of the world. We roast each batch to perfection, ensuring that every cup is a masterpiece of flavor and aroma. Our commitment to quality extends to the beans themselves, which are carefully selected and roasted to perfection.",
+    "offer3image1": "Handcrafted beans sourced from the finest regions of the world.",
+    "offer3image2": "Each cup is a masterpiece of flavor and aroma.",
+    "offer3image3": "Handcrafted beans sourced from the finest regions of the world.",
+    "offer4Title": "EVENTS",
+    "offer4desc": "Experience the magic of our events, where we bring together people, food, and music to create unforgettable moments.",
+    "offer4details": "Our events are more than just a gathering — they're a celebration of culture, creativity, and community. We believe in the power of events to bring people together and create memories that last a lifetime.",
+    "offer5Title": "Community",
+    "offer5desc": "Experience the magic of our events, where we bring together people, food, and music to create unforgettable moments.",
+    "offer5details": "Our events are more than just a gathering — they're a celebration of culture, creativity, and community. We believe in the power of events to bring people together and create memories that last a lifetime.",
+    "offer5image1": "Community gatherings filled with energy and joy.",
+    "offer5image2": "Celebrating creativity and connections.",
+    "offer5image3": "Community gatherings filled with energy and joy.",
+    "offer6Title": "LIVE KITCHEN",
+    "offer6desc": "Experience food prepared live before your eyes — where freshness meets flair.",
+    "offer6details":"Our live kitchen is an experience that brings cooking and creativity together. Watch our chefs transform fresh ingredients into mouthwatering dishes right in front of you. Every plate tells a story — from sizzling pastas to smoky grilled meals, each one prepared with passion and precision. The sound, the aroma, and the final presentation make dining here truly unforgettable. It’s not just food, it’s a performance of flavor and skill.",
+    "offer6image1": "Chefs in action — every dish crafted live.",
+    "offer6image2": "Fresh ingredients sizzling to perfection.",
+    "offer6image3": "The energy of the kitchen — live and authentic."
   },
+
+
+  "blog2": {
+    "title": "OUR BLOG",
+    "text" : "Our blog brings together stories from coffee culture, travel, and AIDA’s legacy in hospitality. Best Coffee Shops in Induruwa – Why AIDA’s Coffee Shop"
+  },
+
+
 
   "gallery": {
     "galleryTitle": "Gallery",

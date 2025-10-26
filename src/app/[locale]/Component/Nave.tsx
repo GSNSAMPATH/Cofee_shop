@@ -21,7 +21,7 @@ export default function Navbar() {
 
   const getLinkClass = (path: string) => {
     const baseClass =
-      "transition text-[14px] lg:text-[16px] px-4 lg:px-6 lg:py-1 border border-red-500 rounded-full";
+      "transition text-[14px] lg:text-[16px] px-4 lg:px-6 lg:py-1 border border-red-500 rounded-full whitespace-nowrap";
     const activeClass = "bg-red-600 text-white font-semibold shadow-md";
     const hoverClass = "hover:text-red-600";
 
@@ -49,7 +49,7 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex space-x-4 lg:space-x-8 items-center text-white font-medium">
+        <div className="hidden md:flex space-x-4 lg:space-x-6 items-center text-white font-medium">
           <Link href={`/${currentLocale}/`} className={getLinkClass("/")}>
             {t("home")}
           </Link>

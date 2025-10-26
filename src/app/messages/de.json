@@ -6,11 +6,14 @@
     "aboutTitle": "Über uns",
     "aboutPara1": "Willkommen im The Coffee Shop der AIDA Group – dem neuesten und trendigsten Café in Induruwa, Sri Lanka. Wir servieren echten Lavazza-Kaffee, perfekt zubereitet auf unserer professionellen LaCimbali-Espressomaschine, begleitet von einer großen Auswahl an frisch gebackenem Gebäck, hausgemachten Kuchen, frischen Säften und Smoothies.",
     "aboutPara2": "Unser Café ist als arbeitsfreundlicher, entspannender und ästhetischer Ort gestaltet – ideal für Reisende, Einheimische und digitale Nomaden, die einen gemütlichen Platz mit WLAN suchen. Als Teil der renommierten AIDA Group, die seit über 50 Jahren in der Hotellerie tätig ist, bieten wir Ihnen nicht nur Kaffee – sondern ein ganzheitliches Lifestyle-Erlebnis im Herzen von Induruwa.",
-    "statsYears": "Jahre Erfahrung",
-    "statsCustomers": "Zufriedene Kunden",
-    "statsVarieties": "Kaffeesorten",
-    "statsAwards": "Auszeichnungen",
-    "statswon": "Gewonnen",
+    "statsYears": "Gebäck",
+    "statsYears2": "Sorten",
+    "statsCustomers": "Kuchen",
+    "statsCustomers2": "Sorten",
+    "statsVarieties": "Glückliche",
+    "statsVarieties2": "Kunden",
+    "statsAwards": "Getränke",
+    "statswon": "Sorten",
     "offerTitle": "Unsere Angebote"
   },
   "teamCarousel": {
@@ -49,15 +52,17 @@
     "cappuccino": "Cappuccino",
     "espresso": "Espresso"
   },
+
   "about": {
     "aboutTitle": "Über uns",
     "ourStoryTitle": "Unsere Geschichte",
-    "ourStoryText": "Seit fast fünf Jahrzehnten steht die AIDA Group für Authentizität, Qualität und sri-lankische Gastfreundschaft. Von AIDA Gems über AIDA Ayurveda Resort, AIDA Seafood Restaurant bis hin zu AIDA Textiles basiert unser Erbe auf Vertrauen, Handwerkskunst und unvergesslichen Erlebnissen. The Coffee Shop ist die neueste Ergänzung dieser Familie – ein Ort, der italienische Kaffeekunst mit der Herzlichkeit Sri Lankas verbindet. Jede mit Lavazza-Bohnen gebrühte Tasse und jedes in unserer Küche gebackene Gebäck spiegeln unsere Mission wider, das beste Café-Erlebnis in Induruwa zu schaffen.",
+    "ourStoryText": "Seit fast fünf Jahrzehnten steht die AIDA-Gruppe für Authentizität, Qualität und sri-lankische Gastfreundschaft. Von AIDA Gems über das AIDA Ayurveda Resort, das AIDA Seafood Restaurant bis hin zu AIDA Textiles basiert unser Erbe auf Vertrauen, Handwerkskunst und unvergesslichen Erlebnissen. The Coffee Shop ist die neueste Ergänzung dieser Familie – ein Ort, an dem italienische Kaffeekultur auf die Wärme Sri Lankas trifft. Jede Tasse, die wir mit Lavazza-Bohnen brühen, und jedes Gebäck aus unserer Küche spiegeln unsere Mission wider, das beste Café in Induruwa zu schaffen.",
     "ourVisionTitle": "Unsere Vision",
-    "ourVisionText": "Ein Boutique-Café-Erlebnis zu schaffen, das Sri Lankas reiches Kaffeeerbe ehrt und zugleich einen ruhigen, stilvollen Ort bietet, an dem Gäste entspannen, neue Energie tanken und den Moment genießen können. The Coffee Shop by AIDA möchte zu einem Ziel für hochwertigen Kaffee und friedliche Gastfreundschaft an der Südküste werden. Authentische Speisen und Getränke von höchster Qualität.",
+    "ourVisionText": "Unsere Vision ist es, die Tiefe und den Charakter der sri-lankischen Kaffeekultur durch sorgfältig zubereitete Getränke, lokal inspirierte Rezepte und eine beruhigende Atmosphäre am Meer zu feiern. Wir engagieren uns für ethischen Einkauf, die Unterstützung lokaler Bauern und Handwerker sowie ein konsequent persönliches Erlebnis für jeden Gast. Durch die Verbindung der Kunst des Kaffees mit nachhaltiger Gastfreundschaft schaffen wir einen friedlichen Rückzugsort, in dem Einfachheit, Nachhaltigkeit und herzlicher Service in Harmonie zusammenkommen.",
     "ourMissionTitle": "Unsere Mission",
-    "ourMissionText": "Ein Boutique-Café-Erlebnis zu schaffen, das Sri Lankas reiches Kaffeeerbe ehrt und zugleich einen ruhigen, stilvollen Ort bietet, an dem Gäste entspannen, neue Energie tanken und den Moment genießen können. The Coffee Shop by AIDA möchte zu einem Ziel für hochwertigen Kaffee und friedliche Gastfreundschaft an der Südküste werden. Authentische Speisen und Getränke von höchster Qualität."
+    "ourMissionText": "Im AIDA Coffee Shop besteht unsere Mission darin, ein Boutique-Café-Erlebnis zu schaffen, das den authentischen Geschmack und das Aroma des sri-lankischen Kaffees feiert. Wir möchten hochwertige Speisen und Getränke anbieten, die mit Leidenschaft zubereitet und mit Herzlichkeit serviert werden. Jede Tasse Kaffee spiegelt unser Engagement für Qualität, Komfort und Gemeinschaft wider – der perfekte Ort zum Entspannen und um echte Inselgastfreundschaft zu erleben. The Coffee Shop by AIDA möchte zu einem Ziel für hochwertigen Kaffee und friedliche Gastfreundschaft an der Südküste werden."
   },
+
 
   "Quality": {
   "Quality1": "Weltweite Qualität, lokale Seele",
@@ -67,6 +72,52 @@
   "Quality3": "Verbindung und Gemeinschaft",
   "Quality3text": "Wir schaffen einen einladenden Raum, in dem Reisende, Einheimische und Kreative zusammenkommen, auftanken und sich verbinden können – bei Gesprächen, Büchern oder dem einfachen Genuss einer perfekten Tasse Kaffee."
   },
+
+  "offer": {
+  
+  "offerTitle": "Unsere Angebote",
+  "offer1Title": "GETRÄNKE",
+  "offer1desc": "Wir stellen köstliche Getränke her und vertreiben sie weltweit. Unser Hauptprodukt wird nach einem geheimen Rezept hergestellt und ist in Geschäften auf der ganzen Welt erhältlich.",
+  "offer1details": "Unsere Getränke sind mehr als nur Erfrischungen – sie sind Erlebnisse in jedem Schluck. Jede Kreation ist ein perfektes Gleichgewicht aus Geschmack, hergestellt aus hochwertigen Fruchtextrakten, aromatischen Kräutern und natürlichen Süßstoffen. Ob Sie Ihren Tag beginnen, eine Pause einlegen oder entspannen – unser vielfältiges Sortiment hat für jede Stimmung das Richtige. Von spritzigen Zitronen-Eistees bis hin zu verwöhnenden Schokoladenmischungen – jede Flasche steht für unseren Anspruch an Geschmack, Frische und Wohlbefinden. Nachhaltigkeit steht im Mittelpunkt – wir verwenden recycelbare Materialien und beziehen unsere Zutaten lokal, um die Gemeinschaft zu unterstützen und unseren CO₂-Fußabdruck zu reduzieren.",
+  "offer1image1": "Erfrischende Eistees für einen energiegeladenen Start in den Tag.",
+  "offer1image2": "Verwöhnende Schokoladenmischungen, die die Seele wärmen.",
+  "offer1image3": "Hochwertige Fruchtextrakte und aromatische Kräuter für perfekten Geschmack.",
+  "offer2Title": "BURGER",
+  "offer2desc": "Saftige Burger aus frischen Zutaten, perfekt gegrillt.",
+  "offer2details": "Unsere Burger werden mit Leidenschaft zubereitet – jeder Bissen ist ein Zusammenspiel aus Textur und Geschmack. Wir verwenden frisch gebackene Brioche-Brötchen, lokale Zutaten und 100 % reines Fleisch oder pflanzliche Patties. Mit unserer speziellen Sauce aus Kräutern, karamellisierten Zwiebeln und Gewürzen wird jeder Burger zu einem unvergleichlichen Genuss.",
+  "offer2image1": "Saftige Burger aus frischen Zutaten.",
+  "offer2image2": "Perfekt gegrillte Burger mit vollem Geschmack.",
+  "offer2image3": "Frisch zubereitete, saftige Burger mit feinem Aroma.",
+  "offer3Title": "KAFFEE",
+  "offer3desc": "Erleben Sie die besten gerösteten Bohnen, sorgfältig gebrüht bis zur Perfektion.",
+  "offer3details": "Unser Kaffee ist eine harmonische Mischung handverlesener Bohnen aus den besten Regionen der Welt. Jede Charge wird perfekt geröstet, damit jede Tasse ein Meisterwerk aus Geschmack und Aroma ist. Unsere Liebe zum Detail zeigt sich in der sorgfältigen Auswahl, Röstung und Zubereitung jeder Bohne.",
+  "offer3image1": "Handverlesene Bohnen aus den besten Anbaugebieten der Welt.",
+  "offer3image2": "Jede Tasse – ein Meisterwerk aus Geschmack und Duft.",
+  "offer3image3": "Mit Leidenschaft gerösteter, aromatischer Kaffee.",
+  "offer4Title": "EVENTS",
+  "offer4desc": "Erleben Sie die Magie unserer Events – Menschen, Essen und Musik vereint in unvergesslichen Momenten.",
+  "offer4details": "Unsere Veranstaltungen sind mehr als nur Treffen – sie sind ein Fest der Kultur, Kreativität und Gemeinschaft. Wir glauben an die Kraft von Events, Menschen zusammenzubringen und bleibende Erinnerungen zu schaffen.",
+  "offer5Title": "GEMEINSCHAFT",
+  "offer5desc": "Erleben Sie die Magie unserer Gemeinschaft – wo Menschen, Essen und Musik zusammenkommen.",
+  "offer5details": "Unsere Gemeinschaftsveranstaltungen sind ein Fest der Kultur, Kreativität und Verbindung. Wir glauben, dass solche Momente Menschen zusammenbringen und bleibende Erinnerungen schaffen.",
+  "offer5image1": "Gemeinschaftsveranstaltungen voller Energie und Freude.",
+  "offer5image2": "Feiern von Kreativität und Verbindung.",
+  "offer5image3": "Lebendige Treffen in herzlicher Atmosphäre.",
+  "offer6Title": "LIVE-KÜCHE",
+  "offer6desc": "Erleben Sie frisch zubereitete Gerichte – wo Frische auf Show trifft.",
+  "offer6details": "Unsere Live-Küche ist ein Erlebnis, das Kochen und Kreativität vereint. Sehen Sie zu, wie unsere Köche frische Zutaten in köstliche Gerichte verwandeln. Vom Zischen der Pfannen bis zur Präsentation – jedes Gericht erzählt eine Geschichte. Der Duft, der Klang und das Schauspiel machen das Essen zu einem unvergesslichen Erlebnis. Es ist nicht nur Essen – es ist eine Show des Geschmacks und der Kunst.",
+  "offer6image1": "Köche in Aktion – jedes Gericht live zubereitet.",
+  "offer6image2": "Frische Zutaten, perfekt gebraten und serviert.",
+  "offer6image3": "Die Energie der Küche – echt und lebendig."
+},
+
+
+"blog2": {
+  "title": "UNSER BLOG",
+  "text": "Unser Blog vereint Geschichten über Kaffeekultur, Reisen und das AIDA-Erbe in der Gastfreundschaft. Die besten Coffee Shops in Induruwa – warum AIDA’s Coffee Shop etwas Besonderes ist."
+},
+
+
 
   "gallery": {
   "galleryTitle": "Галерея",

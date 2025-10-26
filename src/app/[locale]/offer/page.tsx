@@ -6,152 +6,129 @@ import { motion, AnimatePresence } from "framer-motion";
 import Navbar from "@/app/[locale]/Component/Nave";
 import Carousel from "@/app/[locale]/Component/SpotlightSection";
 import { title } from "process";
+import { useTranslations } from "next-intl";
 
+export default function OfferPage() {
+const t = useTranslations("offer");
 const offers = [
   {
-    title: "BEVERAGE",
+    title: t("offer1Title"),
     image:
       "https://res.cloudinary.com/diatamf9x/image/upload/v1760956844/MKN05548_gqmxxw.webp",
-    desc: "We are a company that makes and distributes delicious drinks. Our main product is made with a secret recipe and available in stores worldwide.",
-    details: `
-      Our drinks are more than just beverages — they’re experiences in every sip. 
-      Each creation is a perfect balance of flavor, crafted with premium fruit extracts, 
-      aromatic herbs, and natural sweeteners to awaken your senses. Whether you’re jumpstarting your morning, 
-      taking a refreshing midday break, or unwinding after a long day, our diverse range of drinks has something to match every mood. 
-      From zesty lemon iced teas that energize you to indulgent chocolate blends that comfort your soul, every bottle reflects our dedication to taste, 
-      freshness, and well-being. At the heart of what we do lies sustainability — we proudly use recyclable materials and locally sourced ingredients to support our community and reduce our carbon footprint.`,
+    desc: t("offer1desc"),
+    details: t("offer1details"),
     extraImages: [
       {
         src: "https://res.cloudinary.com/diatamf9x/image/upload/v1760957207/MKN05270_xoamfd.webp",
-        caption: "Refreshing and energizing iced teas for a vibrant start to your day.",
+        caption: t("offer1image1"),
       },
       {
         src: "https://res.cloudinary.com/diatamf9x/image/upload/v1760944812/MKN05326_yf8tmi.webp",
-        caption: "Delicious and indulgent chocolate blends that comfort your soul.",
+        caption: t("offer1image2"),
       },
       {
         src: "https://res.cloudinary.com/diatamf9x/image/upload/v1760944926/MKN05291_oixhcp.webp",
-        caption: "Premium fruit extracts and aromatic herbs for a perfect balance of flavor.",
+        caption: t("offer1image3"),
       },
     ],
   },
+  // {
+  //   title: t("offer2Title"),
+  //   image:
+  //     "https://res.cloudinary.com/diatamf9x/image/upload/v1760956545/MKN05888_lffvkp.webp",
+  //   desc: t("offer2desc"),
+  //   details: t("offer2details"),
+  //   extraImages: [
+  //     {
+  //       src: "https://res.cloudinary.com/diatamf9x/image/upload/v1760956545/MKN05888_lffvkp.webp",
+  //       caption: t("offer2image1"),
+  //     },
+  //     {
+  //       src: "https://res.cloudinary.com/diatamf9x/image/upload/v1760956545/MKN05641_ewila0.webp",
+  //       caption: t("offer2image2"),
+  //     },
+  //     {
+  //       src: "https://res.cloudinary.com/diatamf9x/image/upload/v1760956543/MKN05643_jgkcbo.webp",
+  //       caption: t("offer2image3"),
+  //     },
+  //   ],
+  // },
   {
-    title: "BURGER",
-    image:
-      "https://res.cloudinary.com/diatamf9x/image/upload/v1760956545/MKN05888_lffvkp.webp",
-    desc: "Deliciously juicy burgers made with fresh ingredients and grilled to perfection.",
-    details: `
-      Our burgers are built with passion — each bite is a harmony of textures and flavors. 
-      We use freshly baked brioche buns, locally sourced vegetables, and 100% pure meat or plant-based patties. 
-      Add our signature sauce — a mix of herbs, caramelized onions, and special spices — and you get a burger that speaks for itself.
-    `,
-    extraImages: [
-      {
-        src: "https://res.cloudinary.com/diatamf9x/image/upload/v1760956545/MKN05888_lffvkp.webp",
-        caption: "Juicy and juicy burgers made with fresh ingredients.",
-      },
-      {
-        src: "https://res.cloudinary.com/diatamf9x/image/upload/v1760956545/MKN05641_ewila0.webp",
-        caption: "Deliciously juicy burgers made with fresh ingredients and grilled to perfection.",
-      },
-      {
-        src: "https://res.cloudinary.com/diatamf9x/image/upload/v1760956543/MKN05643_jgkcbo.webp",
-        caption: "Juicy and juicy burgers made with fresh ingredients.",
-      },
-    ],
-  },
-  {
-    title: "COFFEE",
+    title: t("offer3Title"),
     image:
       "https://res.cloudinary.com/diatamf9x/image/upload/v1760680901/MKN05360_lnifoz.webp",
-    desc: "Experience the finest roasted beans, carefully brewed for perfection.",
-    details: `
-      Our coffee is a harmonious blend of handcrafted beans sourced from the finest regions of the world. 
-      We roast each batch to perfection, ensuring that every cup is a masterpiece of flavor and aroma. 
-      Our commitment to quality extends to the beans themselves, which are carefully selected and roasted to perfection.
-    `,
+    desc: t("offer3desc"),
+    details: t("offer3details"),
     extraImages: [
       {
         src: "https://res.cloudinary.com/diatamf9x/image/upload/v1760608535/MKN05633_ou3v1n.webp",
-        caption: "Handcrafted beans sourced from the finest regions of the world.",
+        caption: t("offer3image1"),
       },
       {
         src: "https://res.cloudinary.com/diatamf9x/image/upload/v1760957512/MKN05648_l2xryg.jpg",
-        caption: "Each cup is a masterpiece of flavor and aroma.",
+        caption: t("offer3image2"),
       },
       {
         src: "https://res.cloudinary.com/diatamf9x/image/upload/v1760607805/MKN05652_xjq9sa.webp",
-        caption: "Handcrafted beans sourced from the finest regions of the world.",
+        caption: t("offer3image3"),
       },
     ],
   },
   {
-    title: "EVENTS",
+    title: t("offer4Title"),
     image:
       "https://res.cloudinary.com/diatamf9x/image/upload/v1760680238/MKN05613_hme9sj.webp",
-    desc: "Experience the magic of our events, where we bring together people, food, and music to create unforgettable moments.",
-    details: `
-      Our events are more than just a gathering — they're a celebration of culture, creativity, and community. 
-      We believe in the power of events to bring people together and create memories that last a lifetime.
-    `,
+    desc: t("offer4desc"),
+    details: t("offer4details"),
     extraImages: [
 
     ],
   },
   {
-    title: "Community",
+    title: t("offer5Title"),
     image:
       "https://res.cloudinary.com/diatamf9x/image/upload/v1760680100/MKN06013_zungn6.webp",
-    desc: "Experience the magic of our events, where we bring together people, food, and music to create unforgettable moments.",
-    details: `
-      Our events are more than just a gathering — they're a celebration of culture, creativity, and community. 
-      We believe in the power of events to bring people together and create memories that last a lifetime.
-    `,
+    desc: t("offer5desc"),
+    details: t("offer1details"),
     extraImages: [
       {
         src: "https://res.cloudinary.com/diatamf9x/image/upload/v1760971727/MKN05972_t731ty.webp",
-        caption: "Community gatherings filled with energy and joy.",
+        caption: t("offer5image1"),
       },
       {
         src: "https://res.cloudinary.com/diatamf9x/image/upload/v1760972009/MKN05995_fx22l6.jpg",
-        caption: "Celebrating creativity and connections.",
+        caption: t("offer5image2"),
       },
       {
         src: "https://res.cloudinary.com/diatamf9x/image/upload/v1760971880/MKN06182_wfaac3.webp",
-        caption: "Community gatherings filled with energy and joy.",
+        caption: t("offer5image3"),
       },
     ],
   },
   {
-    title: "LIVE KITCHEN",
+    title: t("offer6Title"),
     image:
       "https://res.cloudinary.com/diatamf9x/image/upload/v1760936369/MKN05415_xojhj9.webp",
-    desc: "Experience food prepared live before your eyes — where freshness meets flair.",
-    details: `
-      Our live kitchen is an experience that brings cooking and creativity together. 
-      Watch our chefs transform fresh ingredients into mouthwatering dishes right in front of you. 
-      Every plate tells a story — from sizzling pastas to smoky grilled meals, each one prepared with passion and precision. 
-      The sound, the aroma, and the final presentation make dining here truly unforgettable. 
-      It’s not just food, it’s a performance of flavor and skill.
-    `,
+    desc: t("offer6desc"),
+    details: t("offer6details"),
     extraImages: [
       {
         src: "https://res.cloudinary.com/diatamf9x/image/upload/v1760958023/MKN05440_uajo3d.jpg",
-        caption: "Chefs in action — every dish crafted live.",
+        caption: t("offer6image1"),
       },
       {
         src: "https://res.cloudinary.com/diatamf9x/image/upload/v1760958234/MKN05818_sykm2s.webp",
-        caption: "Fresh ingredients sizzling to perfection.",
+        caption: t("offer6image2"),
       },
       {
         src: "https://res.cloudinary.com/diatamf9x/image/upload/v1760958655/MKN06170_deofjp.webp",
-        caption: "The energy of the kitchen — live and authentic.",
+        caption: t("offer6image3"),
       },
     ],
   },
 ];
 
-export default function OfferPage() {
+
   const [activeOffer, setActiveOffer] = useState<number | null>(null);
   const sectionRefs = useRef<(HTMLDivElement | null)[]>([]);
 
@@ -183,7 +160,7 @@ export default function OfferPage() {
   }, []);
 
   return (
-    <section className="bg-black text-white min-h-screen overflow-hidden">
+    <section className="bg-black text-white min-h-screen overflow-hidden pb-20">
       {/* ---------- HERO ---------- */}
       <section className="relative w-full h-130 md:h-[87vh]">
         <Navbar />
@@ -195,7 +172,7 @@ export default function OfferPage() {
         />
         <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
           <h1 className="text-white font-sans text-4xl sm:text-8xl text-center mb-10 relative inline-block mx-auto">
-            WHAT WE OFFER
+            {t("offerTitle")}
           </h1>
         </div>
       </section>
