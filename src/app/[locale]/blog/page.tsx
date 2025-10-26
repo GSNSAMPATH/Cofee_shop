@@ -1,5 +1,11 @@
 import { client } from "@/app/[locale]/lib/sanity.config";
 import BlogPageClient from "./BlogPageClient";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Aida Coffee Shop | Blog",
+  description: "Read the latest coffee articles, tips, and news.",
+};
 
 
 export default async function Page({
