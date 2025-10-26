@@ -1,22 +1,36 @@
-"use client";
+'use client';
 
-import Image from "next/image";
-import Link from "next/link";
-import imageUrlBuilder from "@sanity/image-url";
-import { client } from "@/app/[locale]/lib/sanity.config";
-import { useTranslations } from "next-intl";
-import Navbar from "../Component/Nave";
-import { FaFacebookF, FaYoutube } from "react-icons/fa";
+import Image from 'next/image';
+import Link from 'next/link';
+import { FaFacebookF, FaYoutube } from 'react-icons/fa';
+import { useTranslations } from 'next-intl';
+import Navbar from '../Component/Nave';
+import imageUrlBuilder from '@sanity/image-url';
+import { client } from '@/app/[locale]/lib/sanity.config';
 
 const builder = imageUrlBuilder(client);
 function urlFor(source: any) {
   return builder.image(source);
 }
 
-export default function BlogPageClient({ blogs, locale }: { blogs: any[]; locale: string }) {
-  const t = useTranslations("blog2");
+interface Blog {
+  slug: { current: string };
+  _id: string;
+  title: string;
+  excerpt: string;
+  date: string;
+  mainImage?: any;
+}
 
-  // ✅ Define hero and recentPosts from blogs prop
+export default function BlogPageClient({
+  blogs,
+  locale,
+}: {
+  blogs: Blog[];
+  locale: string;
+}) {
+  const t = useTranslations('blog2');
+
   const hero = blogs[0];
   const recentPosts = blogs.slice(1, 7);
 
@@ -33,14 +47,14 @@ export default function BlogPageClient({ blogs, locale }: { blogs: any[]; locale
         />
         <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
           <h1 className="text-white text-4xl sm:text-8xl font-bold text-center mb-10 relative inline-block mx-auto">
-            {t("title")}
+            {t('title')}
           </h1>
         </div>
       </div>
 
       {/* ---------- Subtitle ---------- */}
       <div className="text-center py-10 px-6 max-w-6xl mx-auto">
-        <p className="text-gray-300 text-lg">{t("text")}</p>
+        <p className="text-gray-300 text-lg">{t('text')}</p>
       </div>
 
       {/* ---------- Featured Blog Card ---------- */}
@@ -49,7 +63,7 @@ export default function BlogPageClient({ blogs, locale }: { blogs: any[]; locale
           <div className="lg:w-1/2">
             <Image
               src={urlFor(hero.mainImage).url()}
-              alt="Featured blog"
+              alt={hero.title}
               width={800}
               height={600}
               className="object-cover w-full h-[300px] lg:h-[400px] rounded-lg"
@@ -57,7 +71,9 @@ export default function BlogPageClient({ blogs, locale }: { blogs: any[]; locale
           </div>
           <div className="lg:w-1/2 p-8 flex flex-col justify-center">
             <h2 className="text-2xl inria-heading2 font-bold mb-4">{hero.title}</h2>
-            <p className="text-gray-300 mb-6 inria-text-small line-clamp-4">{hero.excerpt}</p>
+            <p className="text-gray-300 mb-6 inria-text-small line-clamp-4">
+              {hero.excerpt}
+            </p>
             <div className="flex items-center gap-4">
               <Link
                 href={`/${locale}/blog/${hero.slug.current}`}
@@ -79,7 +95,8 @@ export default function BlogPageClient({ blogs, locale }: { blogs: any[]; locale
             key={index}
             className="bg-[#2b1f1b] rounded-lg overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300 p-5"
             style={{
-              background: "linear-gradient(180deg, #4B2E2B 43.75%, rgba(0, 0, 0, 0.25) 100%)",
+              background:
+                'linear-gradient(180deg, #4B2E2B 43.75%, rgba(0, 0, 0, 0.25) 100%)',
             }}
           >
             <Image
