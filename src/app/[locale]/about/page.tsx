@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Aida Coffee Shop | About Us",
   description: "Learn about Aida Coffee Shop, our story, vision, and mission.",
   openGraph: {
-    title: "Aida Coffee Shop – About Us",
+    title: "Aida Coffee Shop | About Us",
     description: "Learn about Aida Coffee Shop, our story, vision, and mission.",
     url: "https://www.aidacoffeeshop.com/about",
     siteName: "Aida Coffee Shop",
