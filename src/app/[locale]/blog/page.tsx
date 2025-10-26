@@ -1,40 +1,19 @@
-// import BlogPageClient from './BlogPageClient';
-// import { client } from '@/app/[locale]/lib/sanity.config';
+import BlogPageClient from "./BlogPageClient";
+import { client } from "@/app/[locale]/lib/sanity.config";
 
-// // Server Component - async allowed
-// export default async function BlogPage({ params }: { params: { locale: string } }) {
-//   const { locale } = params;
-
-//   // Fetch blogs from Sanity
-//   const blogs = await client.fetch(`
-//     *[_type == "blog" && defined(slug.current)] | order(date desc){
-//       _id,
-//       title,
-//       excerpt,
-//       date,
-//       slug,
-//       mainImage
-//     }
-//   `);
-
-//   return <BlogPageClient blogs={blogs} locale={locale} />;
-// }
-
-
-import BlogPageClient from './BlogPageClient';
-import { client } from '@/app/[locale]/lib/sanity.config';
-
-// Server Component
-export default async function BlogPage({ params }: { params: { locale: string } }) {
+export default async function BlogPage({
+  params,
+}: {
+  params: { locale: string };
+}) {
   const { locale } = params;
 
-  // Fetch blogs from Sanity
+  // Fetch blog data from Sanity
   const blogs = await client.fetch(`
-    *[_type == "blog" && defined(slug.current)] | order(date desc){
+    *[_type == "blog"] | order(_createdAt desc) {
       _id,
       title,
       excerpt,
-      date,
       slug,
       mainImage
     }
@@ -42,4 +21,3 @@ export default async function BlogPage({ params }: { params: { locale: string } 
 
   return <BlogPageClient blogs={blogs} locale={locale} />;
 }
-
