@@ -1,10 +1,13 @@
 import BlogPageClient from './BlogPageClient';
 import { client } from '@/app/[locale]/lib/sanity.config';
 
-export default async function BlogPage({ params }: { params: { locale: string } }) {
+interface PageParams {
+  params: { locale: string };
+}
+
+export default async function BlogPage({ params }: PageParams) {
   const { locale } = params;
 
-  // Fetch blogs from Sanity
   const blogs = await client.fetch(`
     *[_type == "blog" && defined(slug.current)] | order(date desc){
       _id,
@@ -16,6 +19,5 @@ export default async function BlogPage({ params }: { params: { locale: string } 
     }
   `);
 
-  // Pass blogs as props to the client component
   return <BlogPageClient blogs={blogs} locale={locale} />;
 }
