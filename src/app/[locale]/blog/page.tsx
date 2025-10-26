@@ -5,6 +5,12 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Aida Coffee Shop | Blog",
   description: "Read the latest coffee articles, tips, and news.",
+  openGraph: {
+    title: "Aida Coffee Shop | Blog",
+    description: "Read the latest coffee articles, tips, and news.",
+    url: "https://www.aidacoffeeshop.com/blog",
+    siteName: "Aida Coffee Shop",
+  }
 };
 
 

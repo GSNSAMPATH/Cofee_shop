@@ -1,3 +1,4 @@
+"use client";
 
 import LocationMap from "@/app/[locale]/Component/map";
 import Navbar from "@/app/[locale]/Component/Nave";
