@@ -69,8 +69,8 @@ export default function Home() {
             />
           </div>
         </div>
-        <div className="w-full h-200 items-center justify-between md:flex md:px-23  mx-auto ">
-          <div className="md:mt-80 mt-30 relative md:w-full h-200 md:justify-between md:items-center lg:mx-12 sm:mx-12 mx-5">
+        <div className="w-full h-200 items-center justify-between md:flex md:pl-23 xl:pr-15 md:pr-0  mx-auto ">
+          <div className="md:mt-80 mt-30 relative xl:w-full h-200 md:justify-between md:items-center lg:mx-12 sm:mx-12 mx-5">
             <motion.h1
               initial={{ opacity: 0, y: -30 }}
               whileInView={{ opacity: 1, y: 0 }}
