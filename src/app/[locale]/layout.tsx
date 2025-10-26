@@ -96,7 +96,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       card: "summary_large_image",
       title: currentMeta.title,
       description: currentMeta.description,
-      images: [`${baseUrl}/MKN05652.jpg`],
+      images: "https://res.cloudinary.com/diatamf9x/image/upload/v1760680901/MKN05360_lnifoz.webp",
     },
     icons: {
         icon: [{ url: "/favicon.ico", type: "image/x-icon" },
@@ -127,6 +127,42 @@ export default async function LocaleLayout({
       lang={locale}
       className={`${geistSans.variable} ${geistMono.variable} ${inriaSans.variable} ${inter.variable} ${poppins.variable}`}
     >
+       <head>
+        {/* ✅ Structured Data for Google (Organization Schema) */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              name: "Aida Coffee Shop",
+              url: "https://www.aidacoffeeshop.com",
+              logo: "https://www.aidacoffeeshop.com/logo.jpg",
+              image: "https://www.aidacoffeeshop.com/MKN05652.jpg",
+              sameAs: [
+                "https://www.facebook.com/aidacoffeeshop",
+                "https://www.instagram.com/aidacoffeeshop",
+                "https://maps.app.goo.gl/your-location-link",
+              ],
+              contactPoint: {
+                "@type": "ContactPoint",
+                telephone: "+94704871510",
+                contactType: "customer service",
+                areaServed: "LK",
+                availableLanguage: ["English", "Russian", "German"],
+              },
+              address: {
+                "@type": "PostalAddress",
+                streetAddress: "No. 123, Main Street",
+                addressLocality: "Induruwa",
+                addressRegion: "kalutara",
+                postalCode: "12345",
+                addressCountry: "LK",
+              },
+            }),
+          }}
+        />
+      </head>
       <body className="bg-black text-white font-[var(--font-poppins)]">
         <NextIntlClientProvider messages={messages}>
           <Navbar />
