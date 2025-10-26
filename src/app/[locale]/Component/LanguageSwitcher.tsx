@@ -8,7 +8,7 @@ import { FaLanguage, FaSignLanguage } from 'react-icons/fa';
 const languages = [
   { code: 'en', label: '🇬🇧 EN' },
   { code: 'ru', label: '🇷🇺 RU' },
-  { code: 'de', label: '🇩🇪 DE' },
+  { code: 'de', label: '🇩🇪 GE' },
 ];
 
 export default function LanguageSwitcher() {
@@ -40,12 +40,12 @@ export default function LanguageSwitcher() {
       </button>
 
       {isOpen && (
-        <div className="absolute right-0 mt-2 w-28 bg-red border border-gray-200 rounded-lg shadow-lg z-50">
+        <div className="absolute right-0 mt-2 w-28 bg-black border border-gray-200 rounded-lg shadow-lg z-50">
           {languages.map((lang) => (
             <Link
               key={lang.code}
               href={changeLocale(lang.code)}
-              className="block px-4 py-2 text-sm hover:bg-red-500"
+              className="block px-4 py-2 text-sm hover:bg-red-500 rounded-lg"
               onClick={() => setIsOpen(false)}
             >
               {lang.label}

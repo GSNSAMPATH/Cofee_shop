@@ -10,12 +10,16 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import SpotlightSection from "@/app/[locale]/Component/SpotlightSection";
 import { useTranslations } from "next-intl";
+import { usePathname } from "next/navigation";
 
 
 
 export default function Home() {
     const t = useTranslations("home");
     const t2 = useTranslations("coffees");
+
+  const pathname = usePathname();
+  const locale = pathname.split('/')[1] || 'en';
 
       const coffees = [
     { name: t2("americano"), src: "/cofeecup.png" },
@@ -86,7 +90,7 @@ export default function Home() {
               {t("heroSubtitle")}
             </motion.p>
             <a
-              href="/offer"
+              href={`/${locale}/offer`}
               className="inline-flex items-center px-6 py-2 border border-red-500 rounded-full text-white font-medium 
                hover:bg-red-500 transition duration-300"
             >

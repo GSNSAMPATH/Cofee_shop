@@ -102,7 +102,7 @@ export default function About() {
                                     {t("ourVisionText")}                                
                                 </motion.p>
                             </div>
-                            <div className="lg:hidden w-full lg:mt-140 xl:mt-200 mt-10 w-full text-justify  lg:mt-0 w-auto mx-auto">
+                            <div className="lg:hidden w-full lg:mt-140 xl:mt-200 mt-30 w-full text-justify  lg:mt-0 w-auto mx-auto">
                             <motion.h2
                              initial={{ opacity: 0, y: -30 }}
                             whileInView={{ opacity: 1, y: 0 }}
@@ -166,7 +166,7 @@ export default function About() {
                         </div>
                 </div>
             </section>
-            <section className="py-1 bg-black w-full mt-10 sm:mt-0 lg:mt-0">
+            <section className="py-1 bg-black w-full mt-30 sm:mt-0 lg:mt-0">
                 <div className="w-full items-center justify-between md:flex w-full">
                     <Quality/>
                 </div>

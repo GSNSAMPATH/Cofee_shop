@@ -79,7 +79,7 @@ export default function BlogPageClient({ blogs, locale }: BlogPageClientProps) {
             />
           </div>
           <div className="lg:w-1/2 p-8 flex flex-col justify-center">
-            <h2 className="text-2xl inria-heading2 font-bold mb-4">{hero.title}</h2>
+            <h2 className="text-2xl inria-heading2 font-bold mb-4 ">{hero.title}</h2>
             <p className="text-gray-300 mb-6 inria-text-small line-clamp-4">
               {hero.excerpt}
             </p>
@@ -88,7 +88,7 @@ export default function BlogPageClient({ blogs, locale }: BlogPageClientProps) {
                 href={`/${locale}/blog/${hero.slug.current}`}
                 className="border border-red-500 text-white px-5 py-2 rounded-md hover:bg-red-600 transition"
               >
-                See More
+                {t("button")}
               </Link>
               <FaFacebookF className="text-2xl hover:text-blue-500 cursor-pointer" />
               <FaYoutube className="text-2xl hover:text-red-600 cursor-pointer" />
@@ -115,14 +115,14 @@ export default function BlogPageClient({ blogs, locale }: BlogPageClientProps) {
               className="object-cover w-full h-[250px] rounded-lg mb-4"
             />
             <div className="p-6 text-center">
-              <h3 className="text-xl font-bold mb-3 line-clamp-3">{blog.title}</h3>
-              <p className="text-gray-300 mb-5 line-clamp-4">{blog.excerpt}</p>
+              <h3 className="text-xl font-bold mb- sm:line-clamp-2 md:line-clamp-2 lg:line-clamp-2 2xl:line-clamp-1">{blog.title}</h3>
+              <p className="text-gray-300 mb-5 sm:line-clamp-4 md:line-clamp-4 lg:line-clamp-3 xl:line-clamp-3">{blog.excerpt}</p>
               <div className="flex items-center gap-4 justify-center">
                 <Link
                   href={`/${locale}/blog/${blog.slug.current}`}
                   className="border border-red-500 text-white px-4 py-1 rounded-md hover:bg-red-600 transition"
                 >
-                  See More
+                  {t("button")}
                 </Link>
                 <FaFacebookF className="text-xl hover:text-blue-500 cursor-pointer" />
                 <FaYoutube className="text-xl hover:text-red-600 cursor-pointer" />
