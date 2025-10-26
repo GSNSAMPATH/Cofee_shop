@@ -8,6 +8,9 @@ import Carousel from "@/app/[locale]/Component/SpotlightSection";
 import { title } from "process";
 import { useTranslations } from "next-intl";
 
+
+
+
 export default function OfferPage() {
 const t = useTranslations("offer");
 const offers = [

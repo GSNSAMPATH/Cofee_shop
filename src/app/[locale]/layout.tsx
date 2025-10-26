@@ -1,90 +1,4 @@
-// import fs from "fs";
-// import path from "path";
-// import { ReactNode } from "react";
-// import { NextIntlClientProvider } from "next-intl";
-// import Navbar from "@/app/[locale]/Component/Nave";
-// import Footer from "@/app/[locale]/Component/Footer";
-// import "../globals.css";
-
-// // ✅ Font imports
-// import { Geist, Geist_Mono } from "next/font/google";
-// import { Inria_Sans, Inter, Poppins } from "next/font/google";
-// import WhatsAppButton from "./Component/WhatsAppButton";
-
-// // ✅ Font setup
-// const geistSans = Geist({
-//   variable: "--font-geist-sans",
-//   subsets: ["latin"],
-// });
-
-// const geistMono = Geist_Mono({
-//   variable: "--font-geist-mono",
-//   subsets: ["latin"],
-// });
-
-// const inriaSans = Inria_Sans({
-//   variable: "--font-inria-sans",
-//   subsets: ["latin"],
-//   weight: ["400", "700"],
-// });
-
-// const inter = Inter({
-//   subsets: ["latin"],
-//   variable: "--font-inter",
-//   weight: ["400", "700"],
-// });
-
-// const poppins = Poppins({
-//   subsets: ["latin"],
-//   variable: "--font-poppins",
-//   weight: ["400", "700"],
-// });
-
-// // ✅ Metadata
-// export const metadata = {
-//   title: "AIDA Coffee",
-//   description: "Experience the best coffee in Induruwa",
-//   icons: {
-//     icon: "/favicon.ico",
-//   },
-// };
-
-// export default async function LocaleLayout({
-//   children,
-//   params,
-// }: {
-//   children: ReactNode;
-//   params: Promise<{ locale: string }>;
-// }) {
-//   // ✅ Await async params
-//   const { locale } = await params;
-
-//   const messagesPath = path.join(process.cwd(), "src/messages", `${locale}.json`);
-
-//   // ✅ Ensure translation file exists
-//   if (!fs.existsSync(messagesPath)) {
-//     console.error(`❌ Missing translations file for locale: ${locale}`);
-//     return null;
-//   }
-
-//   const messages = JSON.parse(fs.readFileSync(messagesPath, "utf-8"));
-
-//   return (
-//     <html
-//       lang={locale}
-//       className={`${geistSans.variable} ${geistMono.variable} ${inriaSans.variable} ${inter.variable} ${poppins.variable}`}
-//     >
-//       <body className="bg-black text-white font-[var(--font-poppins)]">
-//         <NextIntlClientProvider messages={messages}>
-//           <Navbar />
-//           <WhatsAppButton />
-//           {children}
-//           <Footer />
-//         </NextIntlClientProvider>
-//       </body>
-//     </html>
-//   );
-// }
+// ✅ Server Component
 
 import { ReactNode } from "react";
 import { NextIntlClientProvider } from "next-intl";
@@ -113,6 +27,87 @@ const messagesMap: Record<string, Record<string, any>> = {
   de: messagesDe,
   ru: messagesRu,
 };
+
+// ✅ SEO Metadata
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+
+  const baseUrl = "https://www.aidacoffeeshop.com"; // 🌐 Replace with your real domain
+
+  const meta = {
+    en: {
+      title: "AIDA Coffee | Taste the Best in Induruwa",
+      description: "Experience authentic Sri Lankan coffee brewed to perfection.",
+    },
+    de: {
+      title: "AIDA Kaffee | Der beste Kaffee in Induruwa",
+      description: "Erleben Sie authentischen srilankischen Kaffee, perfekt gebrüht.",
+    },
+    ru: {
+      title: "AIDA Кофе | Лучший кофе в Индурве",
+      description: "Ощутите вкус настоящего цейлонского кофе, приготовленного с любовью.",
+    },
+  } as const;
+
+  // ✅ Explicitly define allowed locales
+  type LocaleKey = keyof typeof meta;
+
+  // ✅ Safely pick locale or fallback to "en"
+  const currentLocale = (["en", "de", "ru"].includes(locale) ? locale : "en") as LocaleKey;
+  const currentMeta = meta[currentLocale];
+
+  return {
+    title: currentMeta.title,
+    description: currentMeta.description,
+    metadataBase: new URL(baseUrl),
+    keywords: [
+      "coffee",
+      "espresso",
+      "cappuccino",
+      "latte",
+      "coffee shop",
+      "best coffee",
+    ],
+    alternates: {
+      canonical: `${baseUrl}/${currentLocale}`,
+      languages: {
+        en: `${baseUrl}/en`,
+        de: `${baseUrl}/de`,
+        ru: `${baseUrl}/ru`,
+      },
+    },
+    openGraph: {
+      title: currentMeta.title,
+      description: currentMeta.description,
+      url: `${baseUrl}/${currentLocale}`,
+      siteName: "AIDA Coffee",
+      images: [
+        {
+          url: `${baseUrl}/MKN05652.jpg`,
+          width: 1200,
+          height: 630,
+          alt: "AIDA Coffee Shop",
+        },
+      ],
+      locale: currentLocale,
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: currentMeta.title,
+      description: currentMeta.description,
+      images: [`${baseUrl}/MKN05652.jpg`],
+    },
+    icons: {
+        icon: [{ url: "/favicon.ico", type: "image/x-icon" },
+        { url: "/favicon.png", type: "image/png" },
+        ],
+        shortcut: "/favicon.png",
+        apple: "/favicon.png",
+      },
+  };
+}
+
 
 // ✅ Server Component Layout
 export default async function LocaleLayout({

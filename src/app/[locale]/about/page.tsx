@@ -7,6 +7,9 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 
 
+
+
+
 export default function About() {
     const t = useTranslations("about");
     return (

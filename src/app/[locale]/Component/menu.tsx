@@ -69,7 +69,7 @@ export default function OurMenu() {
       className2: "mt-40 text-center text-white",
     },
     {
-      src: getImage(cards[2]?.image, "/galleryimage1.jpg"),
+      src: getImage(cards[2]?.image, "/Rectangle17.png"),
       alt: cards[2]?.title || "Coffee",
       title: t("menuTitle4"),
       description:

@@ -80,7 +80,7 @@ export default function BlogSection() {
                   type="button"
                   onClick={() => router.push(`/${locale}/blog`)}  
                 className="border border-red-500 text-white px-4 py-1 rounded-md hover:bg-red-600 transition">
-                  See More
+                  {t("button")}
                 </button>
                 <FaFacebookF className="text-xl text-white hover:text-blue-500 cursor-pointer" />
                 <FaYoutube className="text-xl text-white hover:text-red-600 cursor-pointer" />
