@@ -66,7 +66,7 @@ export default function OurMenu() {
       description:
         t("menu5Subtitle"),
       className: "col-span-1 row-span-1",
-      className2: "mt-40 text-center text-white",
+      className2: "mt-40 text-white",
     },
     {
       src: getImage(cards[2]?.image, "/Rectangle17.png"),
@@ -84,7 +84,7 @@ export default function OurMenu() {
       title: t("menuTitle6"),
       description: t("menu6Subtitle"),
       className: "col-span-1 row-span-1",
-      className2: "mt-40 text-center text-white",
+      className2: "mt-40 text-white",
     },
     {
       src: getImage(cards[3]?.image, "/Rectangle17.png"),
@@ -124,7 +124,7 @@ export default function OurMenu() {
 
             {/* Overlay */}
             <div className="absolute inset-0 flex flex-col justify-center bg-black/40">
-              <div className={`${item.className2}`}>
+              <div className={`px-4 ${item.className2}`}>
                 <h1 className="inria-heading2-bold text-white text-2xl">
                   {item.title}
                 </h1>
