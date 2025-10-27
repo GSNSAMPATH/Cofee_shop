@@ -266,6 +266,7 @@ useEffect(() => {
                     muted
                     loop
                     playsInline
+                    preload="metadata"
                   />
                 </div>
               </div>
