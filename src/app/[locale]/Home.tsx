@@ -52,7 +52,7 @@ export default function Home() {
           src="/Background.png"
           alt="Coffee Background"
           fill
-          className=" h-10 md:h-100 object-cover opacity-900 w-full object-top-left "
+          className=" h-10 md:h-100 object-cover w-full object-top-left "
           priority
         />
         <div className="hidden lg:block absolute top-60 mb-50 right-0 w-[380px] h-[280px] z-0 ">
@@ -91,7 +91,7 @@ export default function Home() {
             </motion.p>
             <a
               href={`/${locale}/offer`}
-              className="inline-flex items-center px-6 py-2 border border-red-500 rounded-full text-white font-medium bg-red-600
+              className="inline-flex items-center px-6 py-2 border border-red-500 rounded-full text-white font-medium bg-red-600 md:bg-transparent md:text-red-600 md:border-2
                hover:bg-red-500 transition duration-300"
             >
               {t("viewOffer")}

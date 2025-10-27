@@ -249,7 +249,7 @@ useEffect(() => {
                 style={{
         background: "linear-gradient(90deg, #4B2E2B 3.75%, rgba(0, 0, 0, 0.25) 70%)",
       }}>
-      <h1 className="inria-heading2 font-bold text-white text-2xl md:text-3xl text-center mb-14">
+      <h1 className="inria-heading2 font-bold text-white  text-center mb-14">
         {t("Team Carousel (Video)")}
         <span className="block w-16 h-[2px] bg-red-600 mx-auto mt-2"></span>
       </h1>
