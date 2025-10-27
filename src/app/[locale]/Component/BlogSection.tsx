@@ -20,7 +20,7 @@ export default function BlogSection() {
     {
       title: "Best Coffee Shops in Induruwa ",
       desc: "Best Coffee Shops in Induruwa  – Why AIDA’s Coffee Shop",
-      image: "https://res.cloudinary.com/diatamf9x/image/upload/v1760608573/MKN05360_lcmqcy.webp",
+      image: "https://res.cloudinary.com/diatamf9x/image/upload/v1760957512/MKN05648_l2xryg.jpg",
     },
     {
       title: "Brewing Coffee with AIDA's Experts",

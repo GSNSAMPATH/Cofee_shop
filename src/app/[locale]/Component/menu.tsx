@@ -66,7 +66,7 @@ export default function OurMenu() {
       description:
         t("menu5Subtitle"),
       className: "col-span-1 row-span-1",
-      className2: " mt-34 sm:mt-35  lg:mt-30 xl:mt-35 text-white",
+      className2: " mt-35 sm:mt-35  lg:mt-30 xl:mt-35 text-white",
     },
     {
       src: getImage(cards[2]?.image, "/Rectangle17.png"),
@@ -84,7 +84,7 @@ export default function OurMenu() {
       title: t("menuTitle6"),
       description: t("menu6Subtitle"),
       className: "col-span-1 row-span-1",
-      className2: "mt-30 sm:mt-30  lg:mt-30 xl:mt-32 text-white",
+      className2: "mt-35 sm:mt-30  lg:mt-30 xl:mt-32 text-white",
     },
     {
       src: getImage(cards[3]?.image, "/Rectangle17.png"),
