@@ -251,6 +251,7 @@ useEffect(() => {
       }}>
       <h1 className="inria-heading2 font-bold text-white text-2xl md:text-3xl text-center mb-14">
         {t("Team Carousel (Video)")}
+        <span className="block w-16 h-[2px] bg-red-600 mx-auto mt-2"></span>
       </h1>
 
       <div className="relative flex items-center justify-center w-full max-w-7xl lg:max-w-7xl mx-auto mt-20">

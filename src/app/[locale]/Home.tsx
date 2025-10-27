@@ -74,7 +74,7 @@ export default function Home() {
           </div>
         </div>
         <div className="w-full h-200 items-center justify-between md:flex md:pl-10 xl:pr-15 md:pr-0  mx-auto ">
-          <div className="md:mt-40 xl:mt-70 mt-30 relative xl:w-full h-200 md:justify-between md:items-center sm:mx-10 md:mx-0 lg:mx-23 sm:mx-1 mx-5">
+          <div className="md:mt-40 xl:mt-70 mt-17 relative xl:w-full h-200 md:justify-between md:items-center sm:mx-10 md:mx-0 lg:mx-23 sm:mx-1 mx-5">
             <motion.h1
               initial={{ opacity: 0, y: -30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -86,7 +86,7 @@ export default function Home() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
               viewport={{ once: true }}
-             className="inria-heading3 sm:leading-6 md:leading-10 :max-w-2xl lg:leading-10 xl:leading-10 text-lg text-white mb-10 line-clamp-2 md:line-clamp-3 lg:line-clamp-3 xl:line-clamp-5 md:w-3/5 lg:w-1/2 xl:w-full">
+             className="inria-heading3 sm:leading-6 md:leading-10 :max-w-2xl lg:leading-10 xl:leading-10 text-lg text-white mb-10 line-clamp-6 w-4/5 md:line-clamp-3 lg:line-clamp-3 xl:line-clamp-5 md:w-3/5 lg:w-1/2 xl:w-full">
               {t("heroSubtitle")}
             </motion.p>
             <a
