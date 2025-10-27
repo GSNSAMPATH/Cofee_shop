@@ -86,7 +86,7 @@ export default function Home() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
               viewport={{ once: true }}
-             className="inria-heading3 sm:leading-6 md:leading-10 :max-w-2xl lg:leading-10 xl:leading-10 text-lg text-white mb-10 line-clamp-6 w-4/5 md:line-clamp-3 lg:line-clamp-3 xl:line-clamp-5 md:w-3/5 lg:w-1/2 xl:w-full">
+             className="inria-heading3 sm:leading-6 md:leading-10 :max-w-2xl lg:leading-10 xl:leading-10 text-lg text-white mb-10 line-clamp-7 w-4/5 md:line-clamp-3 lg:line-clamp-3 xl:line-clamp-5 md:w-3/5 lg:w-1/2 xl:w-full">
               {t("heroSubtitle")}
             </motion.p>
             <a
