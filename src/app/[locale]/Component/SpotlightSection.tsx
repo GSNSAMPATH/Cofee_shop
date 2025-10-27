@@ -233,21 +233,14 @@ useEffect(() => {
 
 
 // 🎥 Play only the active video
-  useEffect(() => {
-    if (!ref.current) return;
-    const videos = Array.from(ref.current.querySelectorAll("video")) as HTMLVideoElement[];
-
-    videos.forEach((video) => {
-      const playPromise = video.play();
-      if (playPromise !== undefined) {
-        playPromise.catch(() => {
-          setTimeout(() => {
-            video.play().catch(() => {});
-          }, 500);
-        });
-      }
-    });
-  }, []);
+useEffect(() => {
+  if (!ref.current) return;
+  const videos = Array.from(ref.current.querySelectorAll('video')) as HTMLVideoElement[];
+  videos.forEach((v, i) => {
+    if (i === active) v.play().catch(() => {});
+    else v.pause();
+  });
+}, [active]);
 
 
   return (
@@ -297,9 +290,10 @@ useEffect(() => {
                   <video
                     muted
                     playsInline
+                    autoPlay
                     loop
                     preload="metadata"
-                    poster="/MKN05652.jpg"
+                    poster="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
                     className="w-full h-full object-cover"
                   >
                     <source src={member.videoMp4} type="video/mp4" />
