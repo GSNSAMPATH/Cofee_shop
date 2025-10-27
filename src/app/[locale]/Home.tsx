@@ -98,7 +98,7 @@ export default function Home() {
             </a>
           </div>
           <div className="hidden lg:flex relative  w-full h-full left-0 px-20">
-            <div className="absolute md:top-17 2xl:top-0 mb-50 2xl:left-[-50] xl:left-[-40] md:left-[-190] left-[-100]  2xl:w-[680px] 2xl:h-[680px] md:w-[520px] md:h-[520px] z-10">
+            <div className="absolute md:top-14 2xl:top-0 mb-50 2xl:left-[-50] xl:left-[-40] md:left-[-190] left-[-100]  2xl:w-[680px] 2xl:h-[680px] md:w-[520px] md:h-[520px] z-10">
               <Image
                 src="/unsplash_RFLDagtOsMM.png"
                 alt="Coffee Background2"
