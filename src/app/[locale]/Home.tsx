@@ -80,7 +80,7 @@ export default function Home() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
-              className="inria-heading text-white md:mt-10 xl:mt-0 mb-4 sm:mb-6 md:mb-5 xl:mb-1">{t("heroTitle")}</motion.h1>
+              className="inria-heading text-white md:mt-10 xl:mt-0 mb-6 md:mb-5 xl:mb-1">{t("heroTitle")}</motion.h1>
             <motion.p
               initial={{ opacity: 0, y: -30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -98,7 +98,7 @@ export default function Home() {
             </a>
           </div>
           <div className="hidden lg:flex relative  w-full h-full left-0 px-20">
-            <div className="absolute md:top-17 xl:top-0 mb-50 xl:left-[-50] lg:left-[-40] md:left-[-190] left-[-100]  xl:w-[680px] xl:h-[680px] md:w-[520px] md:h-[520px] z-10">
+            <div className="absolute md:top-17 2xl:top-0 mb-50 2xl:left-[-50] xl:left-[-40] md:left-[-190] left-[-100]  2xl:w-[680px] 2xl:h-[680px] md:w-[520px] md:h-[520px] z-10">
               <Image
                 src="/unsplash_RFLDagtOsMM.png"
                 alt="Coffee Background2"
