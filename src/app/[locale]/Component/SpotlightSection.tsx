@@ -300,7 +300,7 @@ useEffect(() => {
                     autoPlay
                     loop
                     preload="metadata"
-                    poster="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                    poster="/MKN05652.jpg"
                     className="w-full h-full object-cover"
                   >
                     <source src={member.videoMp4} type="video/mp4" />
