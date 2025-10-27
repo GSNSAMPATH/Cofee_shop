@@ -8,6 +8,12 @@ export const metadata = {
     "Experience the rich aroma and smooth flavor of AIDA Coffee — the best coffee in Induruwa. Brewed with passion and perfection.",
   keywords: [
     "AIDA Coffee",
+    "AIDA Group",
+    "AIDA Coffee Shop",
+    "coffee shop",
+    "coffee",
+    "induruwa",
+    "sri lanka",
     "coffee shop Induruwa",
     "best coffee Sri Lanka",
     "espresso",
@@ -32,7 +38,7 @@ export const metadata = {
     siteName: "AIDA Coffee",
     images: [
       {
-        url: "https://www.aidacoffeeshop.com/og-image.jpg",
+        url: "https://res.cloudinary.com/diatamf9x/image/upload/v1760680901/MKN05360_lnifoz.webp",
         width: 1200,
         height: 630,
         alt: "AIDA Coffee Shop Front",
