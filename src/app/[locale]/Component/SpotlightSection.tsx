@@ -297,7 +297,6 @@ useEffect(() => {
                   <video
                     muted
                     playsInline
-                    autoPlay
                     loop
                     preload="metadata"
                     poster="/MKN05652.jpg"
