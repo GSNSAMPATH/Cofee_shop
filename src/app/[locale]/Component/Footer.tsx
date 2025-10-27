@@ -98,7 +98,7 @@ export default function Footer() {
 
       {/* Bottom copyright */}
       <div className="border-t border-gray-600 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center text-gray-400 text-sm ">
-        <p>Copyright © {new Date().getFullYear()} AIDA’s Coffee <span className="text-white"></span> - the Coffee Shop by AIDA</p>
+        <p>Copyright © {new Date().getFullYear()} The Coffee Shop by AIDA</p>
         <p className="mt-2 md:mt-0 text-center mx-auto sm:mx-0 sm:text-right">
           Built with <span className="text-white"><a href="https://www.xtreamdigital.com">Xtreamdigital</a></span> and <span className="text-white"><a href="https://www.facebook.com/share/1MSV8Ut5B9/">Novrith Technology</a></span> in Sri Lanka
         </p>
