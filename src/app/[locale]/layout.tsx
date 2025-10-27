@@ -83,7 +83,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       siteName: "AIDA Coffee",
       images: [
         {
-          url: `https://res.cloudinary.com/diatamf9x/image/upload/v1760680901/MKN05360_lnifoz.webp`,
+          url: "https://res.cloudinary.com/diatamf9x/image/upload/v1760680901/MKN05360_lnifoz.webp",
           width: 1200,
           height: 630,
           alt: "AIDA Coffee Shop",
