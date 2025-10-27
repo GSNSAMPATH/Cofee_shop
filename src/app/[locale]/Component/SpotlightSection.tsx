@@ -288,16 +288,16 @@ useEffect(() => {
               >
                 <div className="relative w-full h-[500px] overflow-hidden rounded-[20px]">
                   <video
+                    className="w-full h-full object-cover rounded-[20px]"
                     muted
+                    loop
                     playsInline
                     autoPlay
-                    loop
                     preload="metadata"
-                    poster="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
-                    className="w-full h-full object-cover"
                   >
                     <source src={member.videoMp4} type="video/mp4" />
-                    {member.videoWebm && <source src={member.videoWebm} type="video/webm" />}
+                    <source src={member.videoWebm} type="video/webm" />
+                    Your browser does not support the video tag.
                   </video>
                 </div>
               </div>

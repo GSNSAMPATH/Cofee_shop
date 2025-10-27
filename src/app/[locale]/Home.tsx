@@ -73,20 +73,20 @@ export default function Home() {
             />
           </div>
         </div>
-        <div className="w-full h-200 items-center justify-between md:flex md:pl-23 xl:pr-15 md:pr-0  mx-auto ">
-          <div className="md:mt-80 mt-30 relative xl:w-full h-200 md:justify-between md:items-center lg:mx-12 sm:mx-12 mx-5">
+        <div className="w-full h-200 items-center justify-between md:flex md:pl-10 xl:pr-15 md:pr-0  mx-auto ">
+          <div className="md:mt-40 xl:mt-70 mt-30 relative xl:w-full h-200 md:justify-between md:items-center sm:mx-10 md:mx-0 lg:mx-23 sm:mx-1 mx-5">
             <motion.h1
               initial={{ opacity: 0, y: -30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
-              className="inria-heading text-white md:mt-10 mb-6 ">{t("heroTitle")}</motion.h1>
+              className="inria-heading text-white md:mt-10 xl:mt-0 mb-4 sm:mb-6 md:mb-5 xl:mb-1">{t("heroTitle")}</motion.h1>
             <motion.p
               initial={{ opacity: 0, y: -30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
               viewport={{ once: true }}
-             className="inria-text text-lg text-white leading-relaxed mb-8 ">
+             className="inria-heading3 sm:leading-6 md:leading-10 :max-w-2xl lg:leading-10 xl:leading-10 text-lg text-white mb-10 line-clamp-2 md:line-clamp-3 lg:line-clamp-3 xl:line-clamp-5 md:w-3/5 lg:w-1/2 xl:w-full">
               {t("heroSubtitle")}
             </motion.p>
             <a
@@ -97,46 +97,16 @@ export default function Home() {
               {t("viewOffer")}
             </a>
           </div>
-          <div className="hidden lg:flex relative  w-full h-100 left-0">
-            <div className="mt-50 flex  justify-center items-center  bottom-35 ">
-              {/* Big Front Cup */}
-              <div className="absolute Bottom-1 mb-50 right-15 w-[580px] h-[780px] z-10 mouuse-pointer">
-                <Image
-                  src={cups[0].src}
-                  alt={cups[0].name}
-                  fill
-                  className="object-contain drop-shadow-xl rotate-[-10deg]"
-                              
-                />
-                {/* Connector Line */}
-                <div className="relative top-60 -right-8 mr-40 w-44 h-[2px] bg-white"><text className="absolute text-white bottom-1 right-1 text-2xl">{cups[0].name}</text></div>              
-                <div className="absolute top-74 -right-12 mr-80 w-33 h-[2px] bg-white rotate-60"></div>
-              </div>
-                
-              {/* Medium Cup */}
-              <div className="absolute bottom-60 right-20 w-[400px] h-[400px] z-20 mouuse-pointer">
-                <Image
-                  src={cups[1].src}
-                  alt={cups[1].name}
-                  fill
-                  className="object-contain drop-shadow-lg rotate-[-10deg]"
-                />
-                <div className="absolute top-28 -right-0 mr-66 w-30 h-[2px] bg-white"><text className="absolute text-white bottom-1 right-1 text-lg">{cups[1].name}</text></div>
-                <div className="absolute top-38 -right-0 mr-48 w-24 h-[2px] bg-white rotate-60"></div>
-              </div>
-                
-              {/* Small Cup */}
-              <div className="absolute bottom-94 right-5  w-[200px] h-[200px] z-30 mouuse-pointer">
-                <Image
-                  src={cups[2].src}
-                  alt={cups[2].name}
-                  fill
-                  className="object-contain drop-shadow-md rotate-[-10deg]"
-                  />
-                <div className="absolute mt-1 top-8 -right-1 mr-35 w-20 h-[2px] bg-white"><text className="absolute text-white bottom-1 right-1 text-sm">{cups[2].name}</text></div>
-                <div className="absolute top-18 -right-1 mr-20 w-20 h-[2px] bg-white rotate-60"></div>
-              </div>
-            </div>
+          <div className="hidden lg:flex relative  w-full h-full left-0 px-20">
+            <div className="absolute md:top-17 2xl:top-0 mb-50 2xl:left-[-50] xl:left-[-40] md:left-[-190] left-[-100]  2xl:w-[680px] 2xl:h-[680px] md:w-[520px] md:h-[520px] z-10">
+              <Image
+                src="/unsplash_RFLDagtOsMM.png"
+                alt="Coffee Background2"
+                fill
+                className="absolute xl:top-10 md:top-0 opacity-700 left-30 h-20 w-20 object-cover object-top-left "
+                priority
+              />
+          </div>
         </div>
       </div>
     </section>
@@ -208,7 +178,7 @@ export default function Home() {
           </div>
         </div>
         
-        <div className="hidden lg:block relative bottom-10 w-full h-100">
+        <div className="hidden lg:block relative bottom-8 w-full h-100">
         <div className="hidden lg:block absolute mt-100 mb-50  right-0 w-[480px] h-[380px] z-0 ">
           <Image
             src="/bg_cofeenut.png"
@@ -220,7 +190,7 @@ export default function Home() {
         </div>
           <div className="relative flex justify-center items-center">
             {/* Vertical brown bar */}
-            <div className="hidden lg:block absolute h-250 mt-55 w-36 bg-[#4E2A20] rounded-lg"></div>               
+            <div className="hidden lg:block absolute h-230 mt-55 w-36 bg-[#4E2A20] rounded-lg"></div>               
               {/* Top image */}
               <motion.div
                 initial={{ opacity: 0, y: -30 }}

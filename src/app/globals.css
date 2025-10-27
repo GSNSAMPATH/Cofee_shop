@@ -53,7 +53,7 @@ body {
 .inria-heading {
   font-family: "Inria Sans";
   font-weight: 700;
-  font-size: 48px;
+  font-size: 60px;
   line-height: 100%;
 }
 
@@ -75,7 +75,6 @@ body {
   font-family: "Inria Sans";
   font-weight: 700;
   font-size: 24px;
-  line-height: 100%;
 }
 
 /* Tablet */
@@ -85,6 +84,7 @@ body {
   .inria-heading { font-size: 36px; }
   .inria-heading2 { font-size: 28px; }
   .inria-heading2-bold { font-size: 24px; }
+  .inria-heading3 { font-size: 20px; }
 }
 
 /* Mobile */
@@ -94,6 +94,7 @@ body {
   .inria-heading { font-size: 28px; }
   .inria-heading2 { font-size: 22px; }
   .inria-heading2-bold { font-size: 20px; }
+  .inria-heading3 { font-size: 16px; }
 }
 
 /* Inter */
@@ -119,12 +120,14 @@ body {
   .poppins-heading { font-size: 16px; }
   .poppins-heading2 { font-size: 12px; }
   .poppins-text { font-size: 10px; }
+  .inria-heading3 { font-size: 20px; }
 }
 
 @media (max-width: 480px) {
   .poppins-heading { font-size: 14px; }
   .poppins-heading2 { font-size: 10px; }
   .poppins-text { font-size: 9px; }
+  .inria-heading3 { font-size: 16px; }
 }
 
 /* Hover effect */
