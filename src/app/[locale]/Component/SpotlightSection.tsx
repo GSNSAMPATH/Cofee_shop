@@ -142,16 +142,43 @@ import { useTranslations } from 'next-intl';
 interface Member {
   name: string;
   role: string;
-  video: string;
+  videoMp4: string;
+  videoWebm: string;
 }
 
 const team: Member[] = [
-  { name: 'Raymond McKenzie', role: 'CEO', video: 'https://res.cloudinary.com/diatamf9x/video/upload/v1760435429/Reel_9_AIDA_Sep2025_V1_ucmhli.mp4' },
-  { name: 'Elizabeth Turner', role: 'Marketing Director', video: 'https://res.cloudinary.com/diatamf9x/video/upload/v1760435427/Reel_3_AIDA_Sep2025_V1_ltzmnn.mp4' },
-  { name: 'Suzanne Yorke', role: 'Creative Director', video: 'https://res.cloudinary.com/diatamf9x/video/upload/v1760435424/Reel_7_AIDA_Sep2025_V1_irpqut.mp4' },
-  { name: 'Simon Hadley', role: 'Social Media & Networking', video: 'https://res.cloudinary.com/diatamf9x/video/upload/v1760435308/Reel_4_AIDA_Sep2025_V1_nmazqn.mp4' },
-  { name: 'Harriet Johnson', role: 'Front-End Developer', video: 'https://res.cloudinary.com/diatamf9x/video/upload/v1760435268/Reel_1_AIDA_Sep2025_V1_rzkhg9.mp4' },
+  {
+    name: 'Raymond McKenzie',
+    role: 'CEO',
+    videoMp4: 'https://res.cloudinary.com/diatamf9x/video/upload/f_mp4/v1760435429/Reel_9_AIDA_Sep2025_V1_ucmhli.mp4',
+    videoWebm: 'https://res.cloudinary.com/diatamf9x/video/upload/f_webm/v1760435429/Reel_9_AIDA_Sep2025_V1_ucmhli.webm',
+  },
+  {
+    name: 'Elizabeth Turner',
+    role: 'Marketing Director',
+    videoMp4: 'https://res.cloudinary.com/diatamf9x/video/upload/f_mp4/v1760435427/Reel_3_AIDA_Sep2025_V1_ltzmnn.mp4',
+    videoWebm: 'https://res.cloudinary.com/diatamf9x/video/upload/f_webm/v1760435427/Reel_3_AIDA_Sep2025_V1_ltzmnn.webm',
+  },
+  {
+    name: 'Suzanne Yorke',
+    role: 'Creative Director',
+    videoMp4: 'https://res.cloudinary.com/diatamf9x/video/upload/f_mp4/v1760435424/Reel_7_AIDA_Sep2025_V1_irpqut.mp4',
+    videoWebm: 'https://res.cloudinary.com/diatamf9x/video/upload/f_webm/v1760435424/Reel_7_AIDA_Sep2025_V1_irpqut.webm',
+  },
+  {
+    name: 'Simon Hadley',
+    role: 'Social Media & Networking',
+    videoMp4: 'https://res.cloudinary.com/diatamf9x/video/upload/f_mp4/v1760435308/Reel_4_AIDA_Sep2025_V1_nmazqn.mp4',
+    videoWebm: 'https://res.cloudinary.com/diatamf9x/video/upload/f_webm/v1760435308/Reel_4_AIDA_Sep2025_V1_nmazqn.webm',
+  },
+  {
+    name: 'Harriet Johnson',
+    role: 'Front-End Developer',
+    videoMp4: 'https://res.cloudinary.com/diatamf9x/video/upload/f_mp4/v1760435268/Reel_1_AIDA_Sep2025_V1_rzkhg9.mp4',
+    videoWebm: 'https://res.cloudinary.com/diatamf9x/video/upload/f_webm/v1760435268/Reel_1_AIDA_Sep2025_V1_rzkhg9.webm',
+  },
 ];
+
 
 export default function Carousel() {
       const t = useTranslations("teamCarousel");
@@ -261,13 +288,17 @@ useEffect(() => {
               >
                 <div className="relative w-full h-[500px] overflow-hidden rounded-[20px]">
                   <video
-                    src={member.video}
                     className="w-full h-full object-cover rounded-[20px]"
                     muted
                     loop
                     playsInline
+                    autoPlay
                     preload="metadata"
-                  />
+                  >
+                    <source src={member.videoMp4} type="video/mp4" />
+                    <source src={member.videoWebm} type="video/webm" />
+                    Your browser does not support the video tag.
+                  </video>
                 </div>
               </div>
             );
