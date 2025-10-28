@@ -125,7 +125,7 @@ export default function OurMenu() {
             {/* Overlay */}
             <div className="absolute inset-0 flex flex-col justify-center bg-black/40">
               <div className={`px-4  ${item.className2}`}>
-                <h1 className="inria-heading2-bold text-white text-2xl">
+                <h1 className="inria-heading2-bold text-white text-2xl ">
                   {item.title}
                 </h1>
                 <p className="inria-text text-white/80 mt-2 max-w-xs line-clamp-5">
