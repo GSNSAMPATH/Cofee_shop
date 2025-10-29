@@ -226,14 +226,14 @@ export default function Home() {
         </div>
       </section>
       <section className=" pb-10 md:py-16 bg-black w-full">
-          <div className="w-full items-center justify-between md:flex md:max-w-7xl mx-auto ">
-              <div className="mt-[-20px] md:mt-20 md:flex md:justify-between md:items-center lg:mx-0 mx-5">
+          <div className="w-full items-center justify-between md:flex md:max-w-7xl  ">
+              <div className="mt-[-20px] md:mt-20 md:flex md:justify-between md:items-center lg:mx-24 mx-5 ">
                 <motion.h2
                   initial={{ opacity: 0, y: -30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6 }}
                   viewport={{ once: true }}
-                  className="text-white inria-heading2 text-center mb-10 relative inline-block md:px-12">
+                  className="text-white inria-heading2 text-center mb-10 relative inline-block sm:px-8 lg:px-12  2xl:px-12">
                   {t("offerTitle")}
                   <span className="block w-16 h-[2px] bg-red-600 mt-2 "></span>
                 </motion.h2>
