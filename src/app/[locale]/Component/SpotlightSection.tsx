@@ -189,7 +189,7 @@ const scrollTo = (dir: number) => {
   if (!ref.current) return;
   const container = ref.current;
   const width = container.clientWidth;
-  container.scrollBy({ left: dir * width * 0.8, behavior: 'smooth' });
+  container.scrollBy({ left: dir * width * 0.2, behavior: 'smooth' });
 };
 
 useEffect(() => {
@@ -255,9 +255,9 @@ useEffect(() => {
       </h1>
 
       <div className="relative flex items-center justify-center w-full max-w-7xl lg:max-w-7xl mx-auto mt-20">
-        {/* <button className={`${styles.btn} ${styles.prev} hidden md:block`} onClick={() => scrollTo(-1)}>
+        <button className={`${styles.btn} ${styles.prev} hidden xl:block`} onClick={() => scrollTo(-1)}>
           ❮
-        </button> */}
+        </button>
 
         <div ref={ref} className={styles.carousel}>
           <div className={styles.spacer} />
@@ -307,9 +307,9 @@ useEffect(() => {
           <div className={styles.spacer} />
         </div>
 
-        {/* <button className={`${styles.btn} ${styles.next} hidden md:block`} onClick={() => scrollTo(1)}>
+        <button className={`${styles.btn} ${styles.next} hidden xl:block`} onClick={() => scrollTo(1)}>
           ❯
-        </button> */}
+        </button>
           {/* Line indicators */}
           <div className="absolute bottom-[-30px] left-1/2 transform -translate-x-1/2 flex gap-2 max-w-[100px] md:max-w-[400px] ">
             {team.map((_, i) => (
