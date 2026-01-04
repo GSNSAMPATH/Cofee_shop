@@ -28,7 +28,7 @@ export default function GalleryPage() {
       <section className="relative h-130  md:h-[87vh] w-full">
         <Navebar />
         <Image
-          src="https://res.cloudinary.com/diatamf9x/image/upload/v1760680238/MKN05613_hme9sj.webp"
+          src="https://res.cloudinary.com/diatamf9x/image/upload/v1767518529/MKN05613_mfppbu.webp"
           alt="Gallery Hero"
           fill
           className="object-cover opacity-80"

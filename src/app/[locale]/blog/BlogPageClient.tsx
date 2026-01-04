@@ -49,7 +49,7 @@ export default function BlogPageClient({ blogs, locale }: BlogPageClientProps) {
       <div className="relative w-full h-130 md:h-[87vh]">
         <Navbar />
         <Image
-          src="https://res.cloudinary.com/diatamf9x/image/upload/v1760680453/MKN05798_ov91ma.jpg"
+          src="https://res.cloudinary.com/diatamf9x/image/upload/v1767522557/MKN05798_araykt.jpg"
           alt="Blog hero"
           fill
           className="h-100 object-cover opacity-900 w-full"
