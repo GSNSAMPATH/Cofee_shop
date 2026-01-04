@@ -10,19 +10,14 @@ const nextConfig = withNextIntl({
       {
         protocol: 'https',
         hostname: 'res.cloudinary.com',
-        port: '', // optional, can omit
         pathname: '/**',
       },
       {
         protocol: 'https',
-        hostname: 'cdn.sanity.io', // removed extra quotes ✅
-        port: '', // optional
+        hostname: 'cdn.sanity.io',
         pathname: '/**',
       },
     ],
-  },
-  eslint: {
-    ignoreDuringBuilds: true, // optional: allows builds despite ESLint errors
   },
 });
 

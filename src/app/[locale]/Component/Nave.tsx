@@ -40,7 +40,7 @@ export default function Navbar() {
         {/* Logo */}
         <Link href={`/${currentLocale}/`} className="text-2xl font-bold text-gray-800">
           <Image
-            src="https://res.cloudinary.com/diatamf9x/image/upload/v1760798950/logocofee_pjh43r.png"
+            src="https://res.cloudinary.com/diatamf9x/image/upload/v1767516387/icons_sajopv.png"
             alt="Logo"
             width={50}
             height={50}

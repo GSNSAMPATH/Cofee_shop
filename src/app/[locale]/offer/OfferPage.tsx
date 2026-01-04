@@ -15,20 +15,20 @@ const offers = [
   {
     title: t("offer1Title"),
     image:
-      "https://res.cloudinary.com/diatamf9x/image/upload/v1760956844/MKN05548_gqmxxw.webp",
+      "https://res.cloudinary.com/diatamf9x/image/upload/v1767517716/MKN05548_ypyi6z.webp",
     desc: t("offer1desc"),
     details: t("offer1details"),
     extraImages: [
       {
-        src: "https://res.cloudinary.com/diatamf9x/image/upload/v1760957207/MKN05270_xoamfd.webp",
+        src: "https://res.cloudinary.com/diatamf9x/image/upload/v1767517846/MKN05270_nl4l4v.webp",
         caption: t("offer1image1"),
       },
       {
-        src: "https://res.cloudinary.com/diatamf9x/image/upload/v1760944812/MKN05326_yf8tmi.webp",
+        src: "https://res.cloudinary.com/diatamf9x/image/upload/v1767517845/MKN05291_fcggkq.webp",
         caption: t("offer1image2"),
       },
       {
-        src: "https://res.cloudinary.com/diatamf9x/image/upload/v1760944926/MKN05291_oixhcp.webp",
+        src: "https://res.cloudinary.com/diatamf9x/image/upload/v1767517839/MKN05326_bulj1x.webp",
         caption: t("offer1image3"),
       },
     ],
@@ -57,20 +57,20 @@ const offers = [
   {
     title: t("offer3Title"),
     image:
-      "https://res.cloudinary.com/diatamf9x/image/upload/v1760680901/MKN05360_lnifoz.webp",
+      "https://res.cloudinary.com/diatamf9x/image/upload/v1767518006/MKN05633_l9ayna.webp",
     desc: t("offer3desc"),
     details: t("offer3details"),
     extraImages: [
       {
-        src: "https://res.cloudinary.com/diatamf9x/image/upload/v1760608535/MKN05633_ou3v1n.webp",
+        src: "https://res.cloudinary.com/diatamf9x/image/upload/v1767518462/MKN05648_flm24c.jpg",
         caption: t("offer3image1"),
       },
       {
-        src: "https://res.cloudinary.com/diatamf9x/image/upload/v1760957512/MKN05648_l2xryg.jpg",
+        src: "https://res.cloudinary.com/diatamf9x/image/upload/v1767516949/MKN05360_z2xvoj.webp",
         caption: t("offer3image2"),
       },
       {
-        src: "https://res.cloudinary.com/diatamf9x/image/upload/v1760607805/MKN05652_xjq9sa.webp",
+        src: "https://res.cloudinary.com/diatamf9x/image/upload/v1767517260/MKN05652_xqpxlw.webp",
         caption: t("offer3image3"),
       },
     ],
@@ -78,7 +78,7 @@ const offers = [
   {
     title: t("offer4Title"),
     image:
-      "https://res.cloudinary.com/diatamf9x/image/upload/v1760680238/MKN05613_hme9sj.webp",
+      "https://res.cloudinary.com/diatamf9x/image/upload/v1767518529/MKN05613_mfppbu.webp",
     desc: t("offer4desc"),
     details: t("offer4details"),
     extraImages: [
@@ -88,20 +88,20 @@ const offers = [
   {
     title: t("offer5Title"),
     image:
-      "https://res.cloudinary.com/diatamf9x/image/upload/v1760680100/MKN06013_zungn6.webp",
+      "https://res.cloudinary.com/diatamf9x/image/upload/v1767517441/MKN06013_uklcxp.webp",
     desc: t("offer5desc"),
     details: t("offer1details"),
     extraImages: [
       {
-        src: "https://res.cloudinary.com/diatamf9x/image/upload/v1760971727/MKN05972_t731ty.webp",
+        src: "https://res.cloudinary.com/diatamf9x/image/upload/v1767517548/MKN05921_soqxne.webp",
         caption: t("offer5image1"),
       },
       {
-        src: "https://res.cloudinary.com/diatamf9x/image/upload/v1760972009/MKN05995_fx22l6.jpg",
+        src: "https://res.cloudinary.com/diatamf9x/image/upload/v1767518624/MKN05972_jqqqsq.webp",
         caption: t("offer5image2"),
       },
       {
-        src: "https://res.cloudinary.com/diatamf9x/image/upload/v1760971880/MKN06182_wfaac3.webp",
+        src: "https://res.cloudinary.com/diatamf9x/image/upload/v1767518631/MKN05995_h5a4rj.jpg",
         caption: t("offer5image3"),
       },
     ],
@@ -109,20 +109,20 @@ const offers = [
   {
     title: t("offer6Title"),
     image:
-      "https://res.cloudinary.com/diatamf9x/image/upload/v1760936369/MKN05415_xojhj9.webp",
+      "https://res.cloudinary.com/diatamf9x/image/upload/v1767517627/MKN05415_s0btq0.webp",
     desc: t("offer6desc"),
     details: t("offer6details"),
     extraImages: [
       {
-        src: "https://res.cloudinary.com/diatamf9x/image/upload/v1760958023/MKN05440_uajo3d.jpg",
+        src: "https://res.cloudinary.com/diatamf9x/image/upload/v1767518737/MKN06027_ki3iec.webp",
         caption: t("offer6image1"),
       },
       {
-        src: "https://res.cloudinary.com/diatamf9x/image/upload/v1760958234/MKN05818_sykm2s.webp",
+        src: "https://res.cloudinary.com/diatamf9x/image/upload/v1767518731/MKN06170_ym8ohh.webp",
         caption: t("offer6image2"),
       },
       {
-        src: "https://res.cloudinary.com/diatamf9x/image/upload/v1760958655/MKN06170_deofjp.webp",
+        src: "https://res.cloudinary.com/diatamf9x/image/upload/v1767518724/MKN06079_h9weft.webp",
         caption: t("offer6image3"),
       },
     ],
@@ -166,7 +166,7 @@ const offers = [
       <section className="relative w-full h-130 md:h-[87vh]">
         <Navbar />
         <Image
-          src="https://res.cloudinary.com/diatamf9x/image/upload/v1760936369/MKN05415_xojhj9.webp"
+          src="https://res.cloudinary.com/diatamf9x/image/upload/v1767517627/MKN05415_s0btq0.webp"
           alt="We Offer"
           fill
           className="object-cover"

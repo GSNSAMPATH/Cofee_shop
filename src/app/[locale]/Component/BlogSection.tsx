@@ -15,17 +15,17 @@ export default function BlogSection() {
     {
       title: "AIDA's Coffee Blog",
       desc: "Our blog brings together stories from coffee culture, travel, and AIDA’s legacy in hospitality",
-      image: "https://res.cloudinary.com/diatamf9x/image/upload/v1760608885/MKN05685_u3sbe6.webp", // replace with your real images
+      image: "https://res.cloudinary.com/diatamf9x/image/upload/v1767516953/MKN05685_bpl6vl.webp", // replace with your real images
     },
     {
       title: "Best Coffee Shops in Induruwa ",
       desc: "Best Coffee Shops in Induruwa  – Why AIDA’s Coffee Shop",
-      image: "https://res.cloudinary.com/diatamf9x/image/upload/v1760957512/MKN05648_l2xryg.jpg",
+      image: "https://res.cloudinary.com/diatamf9x/image/upload/v1767516949/MKN05360_z2xvoj.webp",
     },
     {
       title: "Brewing Coffee with AIDA's Experts",
       desc: "Discover the art of brewing coffee with AIDA’s experts",
-      image: "https://res.cloudinary.com/diatamf9x/image/upload/v1760607805/MKN05652_xjq9sa.webp",
+      image: "https://res.cloudinary.com/diatamf9x/image/upload/v1767517260/MKN05652_xqpxlw.webp",
     },
   ];
 

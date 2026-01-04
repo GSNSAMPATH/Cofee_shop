@@ -27,8 +27,8 @@ export default function Footer() {
 
   
   return (
-    <footer className="bg-gradient-to-r from-[#3e2723] to-[#1c1c1c] text-white pt-16 pb-6 px-6">
-      <div className="px-16 mx-auto grid md:grid-cols-3 gap-12">
+    <footer className="bg-gradient-to-r from-[#3e2723] to-[#1c1c1c] text-white pt-16 pb-6 ">
+      <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-12">
         
         {/* Middle - Services */}
         <div className="justify-center flex flex-col items-center sm:items-start">
@@ -68,7 +68,7 @@ export default function Footer() {
           <div className="mb-4 ">
             <Link href="/" target="_blank" rel="noreferrer">
             <Image
-              src="https://res.cloudinary.com/diatamf9x/image/upload/v1760798950/logocofee_pjh43r.png"
+              src="https://res.cloudinary.com/diatamf9x/image/upload/v1767516387/icons_sajopv.png"
               alt="QR Code"
               width={120}
               height={120}

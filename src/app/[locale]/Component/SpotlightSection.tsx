@@ -150,32 +150,32 @@ const team: Member[] = [
   {
     name: 'Raymond McKenzie',
     role: 'CEO',
-    videoMp4: 'https://res.cloudinary.com/diatamf9x/video/upload/f_mp4/v1760435429/Reel_9_AIDA_Sep2025_V1_ucmhli.mp4',
-    videoWebm: 'https://res.cloudinary.com/diatamf9x/video/upload/f_webm/v1760435429/Reel_9_AIDA_Sep2025_V1_ucmhli.webm',
+    videoMp4: 'https://res.cloudinary.com/dy0tcxfmu/video/upload/v1767521165/Reel_9_AIDA_Sep2025_V1_rpouir.mp4',
+    videoWebm: 'https://res.cloudinary.com/dy0tcxfmu/video/upload/v1767521165/Reel_9_AIDA_Sep2025_V1_rpouir.webm',
   },
   {
     name: 'Elizabeth Turner',
     role: 'Marketing Director',
-    videoMp4: 'https://res.cloudinary.com/diatamf9x/video/upload/f_mp4/v1760435427/Reel_3_AIDA_Sep2025_V1_ltzmnn.mp4',
-    videoWebm: 'https://res.cloudinary.com/diatamf9x/video/upload/f_webm/v1760435427/Reel_3_AIDA_Sep2025_V1_ltzmnn.webm',
+    videoMp4: 'https://res.cloudinary.com/dy0tcxfmu/video/upload/v1767521401/Reel_1_AIDA_Sep2025_V1_odutl1.mp4',
+    videoWebm: 'https://res.cloudinary.com/dy0tcxfmu/video/upload/v1767521401/Reel_1_AIDA_Sep2025_V1_odutl1.webm',
   },
   {
     name: 'Suzanne Yorke',
     role: 'Creative Director',
-    videoMp4: 'https://res.cloudinary.com/diatamf9x/video/upload/f_mp4/v1760435424/Reel_7_AIDA_Sep2025_V1_irpqut.mp4',
-    videoWebm: 'https://res.cloudinary.com/diatamf9x/video/upload/f_webm/v1760435424/Reel_7_AIDA_Sep2025_V1_irpqut.webm',
+    videoMp4: 'https://res.cloudinary.com/dy0tcxfmu/video/upload/v1767521517/Reel_5_AIDA_Sep2025_V1_przfca.mp4',
+    videoWebm: 'https://res.cloudinary.com/dy0tcxfmu/video/upload/v1767521517/Reel_5_AIDA_Sep2025_V1_przfca.webm',
   },
   {
     name: 'Simon Hadley',
     role: 'Social Media & Networking',
-    videoMp4: 'https://res.cloudinary.com/diatamf9x/video/upload/f_mp4/v1760435308/Reel_4_AIDA_Sep2025_V1_nmazqn.mp4',
-    videoWebm: 'https://res.cloudinary.com/diatamf9x/video/upload/f_webm/v1760435308/Reel_4_AIDA_Sep2025_V1_nmazqn.webm',
+    videoMp4: 'https://res.cloudinary.com/dy0tcxfmu/video/upload/v1767521649/Reel_7_AIDA_Sep2025_V1_uavrbb.mp4',
+    videoWebm: 'https://res.cloudinary.com/dy0tcxfmu/video/upload/v1767521649/Reel_7_AIDA_Sep2025_V1_uavrbb.webm',
   },
   {
     name: 'Harriet Johnson',
     role: 'Front-End Developer',
-    videoMp4: 'https://res.cloudinary.com/diatamf9x/video/upload/f_mp4/v1760435268/Reel_1_AIDA_Sep2025_V1_rzkhg9.mp4',
-    videoWebm: 'https://res.cloudinary.com/diatamf9x/video/upload/f_webm/v1760435268/Reel_1_AIDA_Sep2025_V1_rzkhg9.webm',
+    videoMp4: 'https://res.cloudinary.com/dy0tcxfmu/video/upload/v1767521824/Reel_3_AIDA_Sep2025_V1_vfjeom.mp4',
+    videoWebm: 'https://res.cloudinary.com/dy0tcxfmu/video/upload/v1767521824/Reel_3_AIDA_Sep2025_V1_vfjeom.webm',
   },
 ];
 

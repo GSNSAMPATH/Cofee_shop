@@ -17,7 +17,7 @@ export default function About() {
             <section className="relative h-130 md:h-[87vh] bg-black w-full">
                 <Navbar />
                 <Image
-                    src="https://res.cloudinary.com/diatamf9x/image/upload/v1760680100/MKN06013_zungn6.webp"
+                    src="https://res.cloudinary.com/diatamf9x/image/upload/v1767517441/MKN06013_uklcxp.webp"
                     alt="Coffee Background"
                     fill
                     className=" h-100 object-cover opacity-700 w-full bg-black"
@@ -37,7 +37,7 @@ export default function About() {
                 <div className="absolute 2xl:left-300  xl:left-260 lg:left-200 md:left-100 sm:left-50 ml-20 hidden lg:block h-250 top-60 w-36 bg-[#4E2A20] rounded-lg">
                     <div className="relative h-20 mb-10">
                     <Image 
-                        src="https://res.cloudinary.com/diatamf9x/image/upload/v1760608885/MKN05685_u3sbe6.webp"
+                        src="https://res.cloudinary.com/diatamf9x/image/upload/v1767516953/MKN05685_bpl6vl.webp"
                         alt="about"
                         width={400}
                         height={100}
@@ -47,7 +47,7 @@ export default function About() {
                     </div>
                     <div className="relative h-10 mb-10 ml-0 mt-12">
                         <Image 
-                        src="https://res.cloudinary.com/diatamf9x/image/upload/v1760607805/MKN05652_xjq9sa.webp"
+                        src="https://res.cloudinary.com/diatamf9x/image/upload/v1767517260/MKN05652_xqpxlw.webp"
                         alt="about"
                         width={400}
                         height={100}
@@ -57,7 +57,7 @@ export default function About() {
                     </div>
                     <div className="relative h-20 mt-22">
                         <Image 
-                        src="https://res.cloudinary.com/diatamf9x/image/upload/v1760682367/MKN05921_fw80qi.webp"
+                        src="https://res.cloudinary.com/diatamf9x/image/upload/v1767517548/MKN05921_soqxne.webp"
                         alt="about"
                         width={400}
                         height={100}

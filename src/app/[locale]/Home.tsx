@@ -199,7 +199,7 @@ export default function Home() {
                 viewport={{ once: true }}
                 className="hidden lg:block relative z-10 ml-10 bottom-20">
                 <Image
-                  src="https://res.cloudinary.com/diatamf9x/image/upload/v1760680901/MKN05360_lnifoz.webp"
+                  src="https://res.cloudinary.com/diatamf9x/image/upload/v1767516949/MKN05360_z2xvoj.webp"
                   alt="Coffee & Pastries"
                   width={250}
                   height={300}
@@ -207,7 +207,7 @@ export default function Home() {
                 />
                 {/* Bottom image */}
                 <Image
-                  src="https://res.cloudinary.com/diatamf9x/image/upload/v1760608885/MKN05685_u3sbe6.webp"
+                  src="https://res.cloudinary.com/diatamf9x/image/upload/v1767516953/MKN05685_bpl6vl.webp"
                   alt="Coffee Latte"
                   width={250}
                   height={300}
