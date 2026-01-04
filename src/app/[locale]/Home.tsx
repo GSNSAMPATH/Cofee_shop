@@ -73,7 +73,7 @@ export default function Home() {
             />
           </div>
         </div>
-        <div className="w-full h-200 items-center justify-between md:flex md:pl-10 xl:pr-15 md:pr-0  mx-auto ">
+        <div className="w-full h-200 items-center justify-between md:flex px-10 md:px-10  mx-auto ">
           <div className="md:mt-40 xl:mt-70 mt-17 relative xl:w-full h-200 md:justify-between md:items-center sm:mx-10 md:mx-0 lg:mx-23 sm:mx-1 mx-5">
             <motion.h1
               initial={{ opacity: 0, y: -30 }}

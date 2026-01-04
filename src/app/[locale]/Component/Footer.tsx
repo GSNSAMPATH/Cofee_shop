@@ -28,7 +28,7 @@ export default function Footer() {
   
   return (
     <footer className="bg-gradient-to-r from-[#3e2723] to-[#1c1c1c] text-white pt-16 pb-6 px-6">
-      <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-12">
+      <div className="px-16 mx-auto grid md:grid-cols-3 gap-12">
         
         {/* Middle - Services */}
         <div className="justify-center flex flex-col items-center sm:items-start">
