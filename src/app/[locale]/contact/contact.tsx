@@ -55,7 +55,7 @@ export default function ContactPage() {
             <section className="relative h-130 md:h-[87vh] bg-black w-full">
                 <Navbar />
                 <Image
-                    src="https://res.cloudinary.com/diatamf9x/image/upload/v1760680901/MKN05360_lnifoz.webp"
+                    src="https://res.cloudinary.com/diatamf9x/image/upload/v1767516949/MKN05360_z2xvoj.webp"
                     alt="Coffee Background"
                     fill
                     className=" h-100 object-cover opacity-900 w-full"
